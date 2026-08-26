@@ -18,7 +18,9 @@ const els = {
   pickForm: document.getElementById("planner-pick-form"),
   filmAInput: document.getElementById("planner-film-a"),
   filmBInput: document.getElementById("planner-film-b"),
-  filmOptions: document.getElementById("planner-film-options"),
+  filmBHint: document.getElementById("planner-film-b-hint"),
+  filmOptionsA: document.getElementById("planner-film-options-a"),
+  filmOptionsB: document.getElementById("planner-film-options-b"),
   results: document.getElementById("planner-results"),
 };
 
@@ -79,7 +81,7 @@ function pairCardHtml({ filmA, filmB, gapMinutes, sameCinema }) {
         .map(
           (s, i) => `
         <div class="pair-film">
-          <div class="pair-film-label">${i === 0 ? "First" : "Then"}</div>
+          <div class="pair-film-label">${i === 0 ? "Watch first" : "Watch second"}</div>
           <div class="pair-film-title">${escapeHtml(s.film)}</div>
           <div class="pair-film-details">
             ${escapeHtml(s.cinema)} · ${formatTime12h(s.time)}
@@ -189,15 +191,69 @@ function initDateInput() {
   });
 }
 
+// The second dropdown should only ever offer films that can actually
+// follow the chosen first film somewhere in the data — otherwise you can
+// pick a pairing that was never going to work and only find out after
+// hitting "no results". findPairs with just filmA set (no filmB) already
+// returns every valid pairing for that film in one pass, so we don't need
+// to check candidates one at a time.
+function updateFilmBOptions() {
+  if (!state.filmA) {
+    els.filmOptionsB.innerHTML = "";
+    els.filmBInput.disabled = true;
+    els.filmBInput.placeholder = "Pick a first film above";
+    els.filmBHint.textContent = "";
+    return;
+  }
+
+  const candidatePairs = findPairs(state.showings, { filmA: state.filmA });
+  const validSecondFilms = uniqueFilmTitles(candidatePairs.map((p) => p.filmB));
+
+  if (validSecondFilms.length === 0) {
+    els.filmOptionsB.innerHTML = "";
+    els.filmBInput.disabled = true;
+    els.filmBInput.placeholder = "No films pair with this one";
+    els.filmBHint.textContent = `No film currently pairs with "${state.filmA}" on any day in your cinema list — try a different first film.`;
+    if (state.filmB) {
+      state.filmB = null;
+      els.filmBInput.value = "";
+    }
+    return;
+  }
+
+  els.filmBInput.disabled = false;
+  els.filmBInput.placeholder = "Type a film title…";
+  els.filmOptionsB.innerHTML = validSecondFilms
+    .map((title) => `<option value="${escapeHtml(title)}"></option>`)
+    .join("");
+  els.filmBHint.textContent = `${validSecondFilms.length} film${
+    validSecondFilms.length === 1 ? "" : "s"
+  } pair well with "${state.filmA}".`;
+
+  // If the previously chosen second film is no longer valid for this
+  // first film, clear it rather than silently keep an invalid selection.
+  const stillValid =
+    state.filmB &&
+    validSecondFilms.some(
+      (t) => normalizeTitleForGrouping(t) === normalizeTitleForGrouping(state.filmB)
+    );
+  if (state.filmB && !stillValid) {
+    state.filmB = null;
+    els.filmBInput.value = "";
+  }
+}
+
 function initPickForm() {
   els.filmAInput.addEventListener("change", () => {
     state.filmA = els.filmAInput.value || null;
+    updateFilmBOptions();
     render();
   });
   els.filmBInput.addEventListener("change", () => {
     state.filmB = els.filmBInput.value || null;
     render();
   });
+  updateFilmBOptions(); // set the initial disabled state
 }
 
 export async function initPlanner() {
@@ -211,7 +267,7 @@ export async function initPlanner() {
     const data = await res.json();
     state.showings = data.showings;
 
-    els.filmOptions.innerHTML = uniqueFilmTitles(state.showings)
+    els.filmOptionsA.innerHTML = uniqueFilmTitles(state.showings)
       .map((title) => `<option value="${escapeHtml(title)}"></option>`)
       .join("");
 

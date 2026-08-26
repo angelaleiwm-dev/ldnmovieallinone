@@ -253,6 +253,17 @@ main {
   color: var(--text-muted);
 }
 
+.field-hint {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.search-box:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .pair-card {
   background: var(--surface);
   border: 1px solid var(--border);

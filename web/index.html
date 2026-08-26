@@ -56,21 +56,25 @@
       </div>
 
       <form id="planner-pick-form" class="planner-pick-form" hidden>
-        <label for="planner-film-a">First film</label>
+        <label for="planner-film-a">First film — the one you'll watch first</label>
         <input
-          list="planner-film-options"
+          list="planner-film-options-a"
           id="planner-film-a"
           class="search-box"
           placeholder="Type a film title…"
         />
-        <label for="planner-film-b">Second film</label>
+        <datalist id="planner-film-options-a"></datalist>
+
+        <label for="planner-film-b">Second film — only shows films that can actually follow it</label>
         <input
-          list="planner-film-options"
+          list="planner-film-options-b"
           id="planner-film-b"
           class="search-box"
-          placeholder="Type a film title…"
+          placeholder="Pick a first film above"
+          disabled
         />
-        <datalist id="planner-film-options"></datalist>
+        <datalist id="planner-film-options-b"></datalist>
+        <p class="field-hint" id="planner-film-b-hint"></p>
       </form>
     </div>
 
