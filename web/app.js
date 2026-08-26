@@ -2,15 +2,22 @@ import { normalizeTitleForGrouping } from "./title-utils.mjs";
 
 const DATA_URL = "/data/combined.json";
 
+// A film card auto-expands once it has this many showings or fewer —
+// no point hiding 1-2 rows behind a click.
+const AUTO_EXPAND_THRESHOLD = 2;
+
 const state = {
   showings: [],
   activeFilter: "today",
   searchTerm: "",
+  cinemaFilter: new Set(), // empty = no filter, show every cinema
+  expandedCards: new Set(), // manually-expanded card keys
 };
 
 const resultsEl = document.getElementById("results");
 const statusEl = document.getElementById("status");
 const searchEl = document.getElementById("search");
+const cinemaFilterEl = document.getElementById("cinema-filter");
 const lastUpdatedEl = document.getElementById("last-updated");
 // Scoped to #browse-view specifically — the planner's mode-tab buttons
 // share the ".filter-tab" class for styling only, and must NOT also be
@@ -51,26 +58,27 @@ function formatTime12h(time24) {
 
 function getFilteredShowings() {
   const term = state.searchTerm.trim().toLowerCase();
+  const today = todayISO();
 
+  let byDate;
   // A search overrides the date-tab filter — the user explicitly asked to
   // look something up, so we search everything we have, not just "today".
   if (term) {
-    return state.showings.filter((s) => s.film.toLowerCase().includes(term));
+    byDate = state.showings.filter((s) => s.film.toLowerCase().includes(term));
+  } else if (state.activeFilter === "today") {
+    byDate = state.showings.filter((s) => s.date === today);
+  } else if (state.activeFilter === "tomorrow") {
+    const tomorrow = addDays(today, 1);
+    byDate = state.showings.filter((s) => s.date === tomorrow);
+  } else if (state.activeFilter === "week") {
+    const weekEnd = addDays(today, 6);
+    byDate = state.showings.filter((s) => s.date >= today && s.date <= weekEnd);
+  } else {
+    byDate = state.showings; // "all"
   }
 
-  const today = todayISO();
-  if (state.activeFilter === "today") {
-    return state.showings.filter((s) => s.date === today);
-  }
-  if (state.activeFilter === "tomorrow") {
-    const tomorrow = addDays(today, 1);
-    return state.showings.filter((s) => s.date === tomorrow);
-  }
-  if (state.activeFilter === "week") {
-    const weekEnd = addDays(today, 6);
-    return state.showings.filter((s) => s.date >= today && s.date <= weekEnd);
-  }
-  return state.showings; // "all"
+  if (state.cinemaFilter.size === 0) return byDate;
+  return byDate.filter((s) => state.cinemaFilter.has(s.cinema));
 }
 
 function groupByDateThenFilm(showings) {
@@ -107,6 +115,87 @@ function groupByDateThenFilm(showings) {
     });
 }
 
+// A popular film can rack up a dozen+ showings across several cinemas in
+// one day — a flat time list gets unreadable fast. Grouping by cinema
+// when expanded makes it scannable ("Prince Charles: 6:15, 8:35 /
+// Picturehouse: 7:00") instead of one jumbled list sorted only by time.
+function groupShowingsByCinema(showings) {
+  const byCinema = new Map();
+  for (const s of showings) {
+    if (!byCinema.has(s.cinema)) byCinema.set(s.cinema, []);
+    byCinema.get(s.cinema).push(s);
+  }
+  return [...byCinema.entries()]
+    .map(([cinema, list]) => ({
+      cinema,
+      showings: list.sort((a, b) => a.time.localeCompare(b.time)),
+    }))
+    .sort((a, b) => a.showings[0].time.localeCompare(b.showings[0].time));
+}
+
+function filmCardHtml(filmGroup, dateKey) {
+  const cardKey = `${dateKey}|${normalizeTitleForGrouping(filmGroup.film)}`;
+  const count = filmGroup.showings.length;
+  const cinemas = [...new Set(filmGroup.showings.map((s) => s.cinema))];
+  const runtimeMinutes = filmGroup.showings.find((s) => s.runtimeMinutes)?.runtimeMinutes;
+
+  // Small enough lists just show as-is — collapsing 1-2 rows behind a
+  // click would be more friction than it saves, so they're not
+  // collapsible at all (no point rendering a toggle that can't do
+  // anything). A search implies you want to see this specific film's
+  // times, so matches auto-expand too, but stay collapsible since a
+  // large search-expanded list may still be worth collapsing back.
+  const isCollapsible = count > AUTO_EXPAND_THRESHOLD;
+  const expanded =
+    !isCollapsible || state.searchTerm.trim().length > 0 || state.expandedCards.has(cardKey);
+
+  const summaryParts = [`${count} showing${count === 1 ? "" : "s"}`];
+  if (cinemas.length > 1) summaryParts.push(`${cinemas.length} cinemas`);
+  if (runtimeMinutes) summaryParts.push(`${runtimeMinutes} min`);
+
+  const byCinema = groupShowingsByCinema(filmGroup.showings);
+  const headingTag = isCollapsible ? "button" : "div";
+  const headingAttrs = isCollapsible
+    ? `class="film-card-toggle" data-toggle="${escapeHtml(cardKey)}" aria-expanded="${expanded}"`
+    : `class="film-card-toggle film-card-toggle--static"`;
+
+  return `
+    <article class="film-card">
+      <${headingTag} ${headingAttrs}>
+        <span>
+          <span class="film-title">${escapeHtml(filmGroup.film)}</span>
+          <span class="film-summary">${escapeHtml(summaryParts.join(" · "))}</span>
+        </span>
+        ${isCollapsible ? `<span class="toggle-icon" aria-hidden="true">${expanded ? "−" : "+"}</span>` : ""}
+      </${headingTag}>
+      <div class="film-card-times" ${expanded ? "" : "hidden"}>
+        ${byCinema
+          .map(
+            (cinemaGroup) => `
+          <div class="cinema-group">
+            <div class="cinema-group-name">${escapeHtml(cinemaGroup.cinema)}</div>
+            ${cinemaGroup.showings
+              .map(
+                (s) => `
+              <div class="showing-row">
+                <div class="showing-cinema">
+                  ${s.format ? `<div class="showing-format">${escapeHtml(s.format)}</div>` : ""}
+                </div>
+                <div class="showing-time">${formatTime12h(s.time)}</div>
+                <a class="book-btn" href="${s.bookingUrl}" target="_blank" rel="noopener noreferrer">Book</a>
+              </div>
+            `
+              )
+              .join("")}
+          </div>
+        `
+          )
+          .join("")}
+      </div>
+    </article>
+  `;
+}
+
 function render() {
   const filtered = getFilteredShowings();
 
@@ -122,29 +211,7 @@ function render() {
       (dayGroup) => `
       <section class="day-group">
         <h2 class="day-heading">${formatDayHeading(dayGroup.date)}</h2>
-        ${dayGroup.films
-          .map(
-            (filmGroup) => `
-          <article class="film-card">
-            <h3 class="film-title">${escapeHtml(filmGroup.film)}</h3>
-            ${filmGroup.showings
-              .map(
-                (s) => `
-              <div class="showing-row">
-                <div class="showing-cinema">
-                  <div class="showing-cinema-name">${escapeHtml(s.cinema)}</div>
-                  ${s.format ? `<div class="showing-format">${escapeHtml(s.format)}</div>` : ""}
-                </div>
-                <div class="showing-time">${formatTime12h(s.time)}</div>
-                <a class="book-btn" href="${s.bookingUrl}" target="_blank" rel="noopener noreferrer">Book</a>
-              </div>
-            `
-              )
-              .join("")}
-          </article>
-        `
-          )
-          .join("")}
+        ${dayGroup.films.map((filmGroup) => filmCardHtml(filmGroup, dayGroup.date)).join("")}
       </section>
     `
     )
@@ -155,6 +222,33 @@ function escapeHtml(str) {
   const div = document.createElement("div");
   div.textContent = str;
   return div.innerHTML;
+}
+
+function renderCinemaFilterChips() {
+  const cinemas = [...new Set(state.showings.map((s) => s.cinema))].sort();
+  cinemaFilterEl.innerHTML = cinemas
+    .map(
+      (cinema) => `
+      <button class="cinema-chip" data-cinema="${escapeHtml(cinema)}">
+        ${escapeHtml(cinema)}
+      </button>
+    `
+    )
+    .join("");
+
+  cinemaFilterEl.querySelectorAll(".cinema-chip").forEach((chip) => {
+    chip.addEventListener("click", () => {
+      const cinema = chip.dataset.cinema;
+      if (state.cinemaFilter.has(cinema)) {
+        state.cinemaFilter.delete(cinema);
+        chip.classList.remove("active");
+      } else {
+        state.cinemaFilter.add(cinema);
+        chip.classList.add("active");
+      }
+      render();
+    });
+  });
 }
 
 async function init() {
@@ -170,6 +264,7 @@ async function init() {
       timeStyle: "short",
     })}`;
 
+    renderCinemaFilterChips();
     render();
   } catch (err) {
     statusEl.textContent = `Couldn't load showtimes: ${err.message}`;
@@ -187,6 +282,22 @@ filterTabs.forEach((tab) => {
 
 searchEl.addEventListener("input", (e) => {
   state.searchTerm = e.target.value;
+  render();
+});
+
+// Event delegation for card expand/collapse — the results list is
+// rewritten wholesale on every render, so listeners attached directly to
+// individual cards would be lost each time; one listener on the
+// container survives re-renders.
+resultsEl.addEventListener("click", (e) => {
+  const toggle = e.target.closest("[data-toggle]");
+  if (!toggle) return;
+  const key = toggle.dataset.toggle;
+  if (state.expandedCards.has(key)) {
+    state.expandedCards.delete(key);
+  } else {
+    state.expandedCards.add(key);
+  }
   render();
 });
 

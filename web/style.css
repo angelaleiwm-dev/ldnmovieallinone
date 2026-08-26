@@ -103,6 +103,30 @@ body {
   color: var(--text-muted);
 }
 
+.cinema-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.cinema-chip {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cinema-chip.active {
+  background: var(--accent);
+  color: var(--accent-text);
+  border-color: var(--accent);
+}
+
 main {
   padding: 16px;
   max-width: 720px;
@@ -137,10 +161,70 @@ main {
   margin-bottom: 10px;
 }
 
+.film-card-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: var(--text);
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.film-card-toggle--static {
+  cursor: default;
+}
+
 .film-title {
+  display: block;
   font-size: 1.05rem;
   font-weight: 700;
-  margin: 0 0 10px;
+}
+
+.film-summary {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.toggle-icon {
+  flex: 0 0 auto;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--surface-raised);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.film-card-times {
+  margin-top: 12px;
+}
+
+.cinema-group {
+  margin-top: 10px;
+}
+
+.cinema-group:first-child {
+  margin-top: 0;
+}
+
+.cinema-group-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 4px;
 }
 
 .showing-row {
@@ -158,14 +242,6 @@ main {
 .showing-cinema {
   flex: 1;
   min-width: 0;
-}
-
-.showing-cinema-name {
-  font-size: 0.9rem;
-  font-weight: 600;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .showing-format {
