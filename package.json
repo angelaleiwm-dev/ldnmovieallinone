@@ -5,7 +5,11 @@
   "type": "module",
   "description": "All-in-one showtimes site for a curated list of London cinemas.",
   "scripts": {
-    "fetch:prince-charles": "node fetchers/prince-charles.mjs"
+    "fetch:prince-charles": "node fetchers/prince-charles.mjs",
+    "fetch:cineworld-o2-greenwich": "node fetchers/cineworld-o2-greenwich.mjs",
+    "fetch:vue-westfield-stratford": "node fetchers/vue-westfield-stratford.mjs",
+    "combine": "node combine.mjs",
+    "web": "node web/serve.mjs"
   },
   "dependencies": {
     "playwright": "^1.62.1"

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LDN Screens — London cinema showtimes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>LDN Screens</h1>
+    <p class="subtitle">Showtimes across your London cinemas</p>
+  </header>
+
+  <div class="controls">
+    <div class="filter-tabs" role="tablist" aria-label="Date range">
+      <button class="filter-tab active" data-filter="today">Today</button>
+      <button class="filter-tab" data-filter="tomorrow">Tomorrow</button>
+      <button class="filter-tab" data-filter="week">This Week</button>
+      <button class="filter-tab" data-filter="all">All</button>
+    </div>
+    <input
+      class="search-box"
+      type="search"
+      id="search"
+      placeholder="Search by film title…"
+      aria-label="Search by film title"
+    />
+  </div>
+
+  <main id="results" aria-live="polite">
+    <p class="status" id="status">Loading showtimes…</p>
+  </main>
+
+  <footer class="app-footer">
+    <p id="last-updated"></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
