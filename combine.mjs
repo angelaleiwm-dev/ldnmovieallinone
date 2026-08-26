@@ -12,6 +12,11 @@ import { fetchCineworldO2Greenwich } from "./fetchers/cineworld-o2-greenwich.mjs
 import { fetchVueWestfieldStratford } from "./fetchers/vue-westfield-stratford.mjs";
 import { fetchPicturehouseCentral } from "./fetchers/picturehouse-central.mjs";
 import { fetchBfi } from "./fetchers/bfi.mjs";
+import { fetchBarbican } from "./fetchers/barbican.mjs";
+import { fetchIca } from "./fetchers/ica.mjs";
+import { fetchGenesis } from "./fetchers/genesis.mjs";
+import { fetchCastle } from "./fetchers/castle.mjs";
+import { fetchRio } from "./fetchers/rio.mjs";
 
 const FETCHERS = [
   fetchPrinceCharles,
@@ -19,6 +24,11 @@ const FETCHERS = [
   fetchVueWestfieldStratford,
   fetchPicturehouseCentral,
   fetchBfi,
+  fetchBarbican,
+  fetchIca,
+  fetchGenesis,
+  fetchCastle,
+  fetchRio,
 ];
 
 const OUTPUT_PATH = "data/combined.json";

@@ -10,6 +10,11 @@
     "fetch:vue-westfield-stratford": "node fetchers/vue-westfield-stratford.mjs",
     "fetch:picturehouse-central": "node fetchers/picturehouse-central.mjs",
     "fetch:bfi": "node fetchers/bfi.mjs",
+    "fetch:barbican": "node fetchers/barbican.mjs",
+    "fetch:ica": "node fetchers/ica.mjs",
+    "fetch:genesis": "node fetchers/genesis.mjs",
+    "fetch:castle": "node fetchers/castle.mjs",
+    "fetch:rio": "node fetchers/rio.mjs",
     "combine": "node combine.mjs",
     "web": "node web/serve.mjs"
   },
