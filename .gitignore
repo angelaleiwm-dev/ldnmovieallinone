@@ -1,0 +1,17 @@
+# Dependencies — regenerated from package.json on any machine via `npm install`.
+# Committing this would bloat the repo for no benefit.
+node_modules/
+
+# Playwright's downloaded browser binaries — same idea, regenerated via
+# `npx playwright install chromium`, and it's huge (~700MB).
+.playwright/
+
+# Fetched showtime data and generated site output — these change constantly
+# and aren't "source code"; we'll decide later whether any of this belongs
+# in the repo once the pipeline is running end-to-end.
+data/*.json
+web/dist/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
