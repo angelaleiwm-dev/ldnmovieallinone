@@ -89,6 +89,8 @@ export async function fetchVueWestfieldStratford() {
               date: showDate, // ISO YYYY-MM-DD
               time: showTime.slice(0, 5), // "15:05:00" -> "15:05"
               format: formatTags.length ? formatTags.join(", ") : null,
+              runtimeMinutes:
+                typeof film.runningTime === "number" ? film.runningTime : null,
               bookingUrl: session.bookingUrl
                 ? `${BOOKING_ORIGIN}${session.bookingUrl}`
                 : null,

@@ -11,24 +11,29 @@ import { fetchPrinceCharles } from "./fetchers/prince-charles.mjs";
 import { fetchCineworldO2Greenwich } from "./fetchers/cineworld-o2-greenwich.mjs";
 import { fetchVueWestfieldStratford } from "./fetchers/vue-westfield-stratford.mjs";
 import { fetchPicturehouseCentral } from "./fetchers/picturehouse-central.mjs";
+import { fetchBfi } from "./fetchers/bfi.mjs";
 
 const FETCHERS = [
   fetchPrinceCharles,
   fetchCineworldO2Greenwich,
   fetchVueWestfieldStratford,
   fetchPicturehouseCentral,
+  fetchBfi,
 ];
 
 const OUTPUT_PATH = "data/combined.json";
 
 const MONTHS = {
-  january: 0, february: 1, march: 2, april: 3, may: 4, june: 5,
-  july: 6, august: 7, september: 8, october: 9, november: 10, december: 11,
+  january: 0, jan: 0, february: 1, feb: 1, march: 2, mar: 2, april: 3, apr: 3,
+  may: 4, june: 5, jun: 5, july: 6, jul: 6, august: 7, aug: 7,
+  september: 8, sep: 8, sept: 8, october: 9, oct: 9, november: 10, nov: 10,
+  december: 11, dec: 11,
 };
 
-// Some fetchers (Prince Charles Cinema) give dates as human text with no
-// year, e.g. "Wednesday 26th August". Others (Cineworld, Vue) already give
-// ISO dates. This turns either into a plain "YYYY-MM-DD" string.
+// Some fetchers (Prince Charles Cinema: "Wednesday 26th August", BFI:
+// "Sat 5 Sep") give dates as human text with no year. Others (Cineworld,
+// Vue, Picturehouse) already give ISO dates. This turns either into a
+// plain "YYYY-MM-DD" string.
 function normalizeDate(rawDate, referenceDate) {
   if (/^\d{4}-\d{2}-\d{2}$/.test(rawDate)) return rawDate;
 
@@ -50,6 +55,22 @@ function normalizeDate(rawDate, referenceDate) {
   }
 
   return candidate.toISOString().slice(0, 10);
+}
+
+// Adds minutes to a "YYYY-MM-DDTHH:MM:SS" string and returns the same
+// format. Deliberately avoids `new Date(dateTime)` on a string with no
+// timezone suffix — that's parsed as the SERVER's local time in JS, which
+// would silently break this math if the fetch step ever runs somewhere
+// other than the UK. Using Date.UTC purely as neutral arithmetic (not as
+// a real UTC instant) keeps this stable regardless of server timezone,
+// since every value here is only ever compared to another value computed
+// the same way.
+function addMinutes(dateTime, minutes) {
+  const [datePart, timePart] = dateTime.split("T");
+  const [y, m, d] = datePart.split("-").map(Number);
+  const [h, min, s] = timePart.split(":").map(Number);
+  const ms = Date.UTC(y, m - 1, d, h, min, s) + minutes * 60000;
+  return new Date(ms).toISOString().slice(0, 19);
 }
 
 // Some fetchers give 24-hour "HH:MM" already. Prince Charles Cinema gives
@@ -84,12 +105,22 @@ async function main() {
           errors.push({ fetcher: fetcher.name, reason: "unparsable date/time", showing });
           continue;
         }
+        const dateTime = `${date}T${time}:00`;
+        const runtimeMinutes =
+          typeof showing.runtimeMinutes === "number" ? showing.runtimeMinutes : null;
+        // The double-bill planner needs to know when a film actually ends —
+        // precompute it here once, rather than have every consumer redo
+        // the same date-math (and get it wrong at midnight boundaries).
+        const endDateTime = runtimeMinutes ? addMinutes(dateTime, runtimeMinutes) : null;
+
         combined.push({
           cinema: showing.cinema,
           film: showing.film,
           date,
           time,
-          dateTime: `${date}T${time}:00`,
+          dateTime,
+          runtimeMinutes,
+          endDateTime,
           format: showing.format ?? null,
           bookingUrl: showing.bookingUrl,
         });

@@ -38,6 +38,12 @@ export async function fetchPrinceCharles() {
         const film = titleEl ? titleEl.textContent.trim() : null;
         if (!film) return; // skip anything we can't confidently name
 
+        // Runtime is printed in the film's info block as plain text, e.g.
+        // "150mins" — not in its own element, so match it out of the
+        // block's full text rather than relying on a selector.
+        const runtimeMatch = eventEl.textContent.match(/(\d+)\s*mins/);
+        const runtimeMinutes = runtimeMatch ? parseInt(runtimeMatch[1], 10) : null;
+
         eventEl
           .querySelectorAll(".performance-list-items")
           .forEach((list) => {
@@ -72,6 +78,7 @@ export async function fetchPrinceCharles() {
                   date: currentDate,
                   time,
                   format,
+                  runtimeMinutes,
                   bookingUrl,
                 });
               }

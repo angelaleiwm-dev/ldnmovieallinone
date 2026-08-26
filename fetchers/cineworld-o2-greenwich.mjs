@@ -89,6 +89,7 @@ export async function fetchCineworldO2Greenwich() {
         date: event.businessDay || date, // ISO YYYY-MM-DD
         time: time.slice(0, 5), // "14:15:00" -> "14:15"
         format: formatTags.length ? formatTags.join(", ") : null,
+        runtimeMinutes: typeof film.length === "number" ? film.length : null,
         bookingUrl: event.bookingLink || null,
       });
     }

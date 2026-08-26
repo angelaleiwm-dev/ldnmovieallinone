@@ -50,6 +50,32 @@ async function getSession() {
   return { cookieHeader, csrfToken };
 }
 
+// Runtime isn't in the showtimes API response, but each film's own detail
+// page has it in plain text (e.g. "130 min"). The slug in that URL is
+// purely cosmetic — the page resolves from the film ID alone, confirmed
+// by requesting it with a nonsense slug — so we don't need to know the
+// real one. Cached by film ID so each film is only fetched once, not
+// once per showing.
+async function getRuntimeMinutes(scheduledFilmId, cache) {
+  if (cache.has(scheduledFilmId)) return cache.get(scheduledFilmId);
+
+  let minutes = null;
+  try {
+    const url = `https://www.picturehouses.com/movie-details/${CINEMA_ID}/${scheduledFilmId}/x`;
+    const res = await fetch(url, { headers: { "User-Agent": USER_AGENT } });
+    if (res.ok) {
+      const html = await res.text();
+      const match = html.match(/(\d+)\s*min/i);
+      minutes = match ? parseInt(match[1], 10) : null;
+    }
+  } catch {
+    minutes = null; // don't let one bad lookup fail the whole fetch
+  }
+
+  cache.set(scheduledFilmId, minutes);
+  return minutes;
+}
+
 export async function fetchPicturehouseCentral() {
   const { cookieHeader, csrfToken } = await getSession();
 
@@ -69,8 +95,11 @@ export async function fetchPicturehouseCentral() {
   }
   const data = await res.json();
 
+  const runtimeCache = new Map(); // ScheduledFilmId -> minutes, one lookup per film
   const results = [];
   for (const movie of data.movies ?? []) {
+    const runtimeMinutes = await getRuntimeMinutes(movie.ScheduledFilmId, runtimeCache);
+
     for (const showtime of movie.show_times ?? []) {
       if (showtime.CinemaId !== CINEMA_ID) continue; // defensive, API already filters
 
@@ -82,6 +111,7 @@ export async function fetchPicturehouseCentral() {
         date: showtime.date_f, // already ISO YYYY-MM-DD
         time: showtime.time, // already 24-hour HH:MM
         format: formatTags.length ? formatTags.join(", ") : null,
+        runtimeMinutes,
         bookingUrl: BOOKING_URL_TEMPLATE(CINEMA_ID, showtime.SessionId),
       });
     }
