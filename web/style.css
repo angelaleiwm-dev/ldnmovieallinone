@@ -14,6 +14,16 @@
   box-sizing: border-box;
 }
 
+/* The browser's own [hidden] default (display:none) is easy to
+   accidentally defeat — any class rule that sets `display` on the same
+   element (e.g. `.planner-pick-form { display: flex }`) silently wins,
+   because author stylesheets always override the browser's built-in
+   styles regardless of selector specificity. This guarantees `hidden`
+   always actually hides, everywhere in the app, permanently. */
+[hidden] {
+  display: none !important;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;

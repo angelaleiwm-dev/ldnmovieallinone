@@ -12,7 +12,11 @@ const resultsEl = document.getElementById("results");
 const statusEl = document.getElementById("status");
 const searchEl = document.getElementById("search");
 const lastUpdatedEl = document.getElementById("last-updated");
-const filterTabs = document.querySelectorAll(".filter-tab");
+// Scoped to #browse-view specifically — the planner's mode-tab buttons
+// share the ".filter-tab" class for styling only, and must NOT also be
+// picked up by this query, or clicking them fires this file's handler
+// too (silently corrupting the browse view's filter state).
+const filterTabs = document.querySelectorAll("#browse-view .filter-tab");
 
 function todayISO() {
   return new Date().toISOString().slice(0, 10);
