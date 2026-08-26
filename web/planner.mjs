@@ -10,7 +10,16 @@ const state = {
   date: todayISO(),
   filmA: null,
   filmB: null,
+  knownFilmKeys: new Set(), // populated once data loads
 };
+
+// Since results now update on every keystroke, typing "A Confu..." partway
+// through "A Confucian Confusion" would otherwise briefly render as "no
+// film pairs with 'A Confu...'" — treat a title as chosen only once it
+// exactly matches a real film, not any non-empty text.
+function isKnownFilm(title) {
+  return !!title && state.knownFilmKeys.has(normalizeTitleForGrouping(title));
+}
 
 const els = {
   modeTabs: document.querySelectorAll(".planner-mode-tab"),
@@ -144,7 +153,7 @@ function renderSurprise() {
 }
 
 function renderPick() {
-  if (!state.filmA || !state.filmB) {
+  if (!isKnownFilm(state.filmA) || !isKnownFilm(state.filmB)) {
     els.results.innerHTML = `<p class="status">Pick two films above to see how you could watch them back-to-back.</p>`;
     return;
   }
@@ -198,10 +207,12 @@ function initDateInput() {
 // returns every valid pairing for that film in one pass, so we don't need
 // to check candidates one at a time.
 function updateFilmBOptions() {
-  if (!state.filmA) {
+  if (!isKnownFilm(state.filmA)) {
     els.filmOptionsB.innerHTML = "";
     els.filmBInput.disabled = true;
-    els.filmBInput.placeholder = "Pick a first film above";
+    els.filmBInput.placeholder = state.filmA
+      ? "Finish typing or pick from the list above"
+      : "Pick a first film above";
     els.filmBHint.textContent = "";
     return;
   }
@@ -244,12 +255,21 @@ function updateFilmBOptions() {
 }
 
 function initPickForm() {
-  els.filmAInput.addEventListener("change", () => {
+  // These inputs live inside a <form>, so pressing Enter would otherwise
+  // submit it — a full page reload/navigation that silently wipes the
+  // planner's state, which looks exactly like "I pressed Enter and
+  // nothing happened, then the results didn't update."
+  els.pickForm.addEventListener("submit", (e) => e.preventDefault());
+
+  // "input" (not just "change") so results update live as you type —
+  // change only fires once the field loses focus, which meant nothing
+  // visibly happened until you clicked elsewhere.
+  els.filmAInput.addEventListener("input", () => {
     state.filmA = els.filmAInput.value || null;
     updateFilmBOptions();
     render();
   });
-  els.filmBInput.addEventListener("change", () => {
+  els.filmBInput.addEventListener("input", () => {
     state.filmB = els.filmBInput.value || null;
     render();
   });
@@ -267,7 +287,9 @@ export async function initPlanner() {
     const data = await res.json();
     state.showings = data.showings;
 
-    els.filmOptionsA.innerHTML = uniqueFilmTitles(state.showings)
+    const filmTitles = uniqueFilmTitles(state.showings);
+    state.knownFilmKeys = new Set(filmTitles.map(normalizeTitleForGrouping));
+    els.filmOptionsA.innerHTML = filmTitles
       .map((title) => `<option value="${escapeHtml(title)}"></option>`)
       .join("");
 
