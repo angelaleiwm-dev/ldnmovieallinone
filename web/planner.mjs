@@ -90,7 +90,7 @@ function pairCardHtml({ filmA, filmB, gapMinutes, sameCinema }) {
         .map(
           (s, i) => `
         <div class="pair-film">
-          <div class="pair-film-label">${i === 0 ? "Watch first" : "Watch second"}</div>
+          <div class="pair-film-label">${i === 0 ? "First" : "Then"}</div>
           <div class="pair-film-title">${escapeHtml(s.film)}</div>
           <div class="pair-film-details">
             ${escapeHtml(s.cinema)} · ${formatTime12h(s.time)}
