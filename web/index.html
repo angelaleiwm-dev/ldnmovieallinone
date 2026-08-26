@@ -12,30 +12,93 @@
     <p class="subtitle">Showtimes across your London cinemas</p>
   </header>
 
-  <div class="controls">
-    <div class="filter-tabs" role="tablist" aria-label="Date range">
-      <button class="filter-tab active" data-filter="today">Today</button>
-      <button class="filter-tab" data-filter="tomorrow">Tomorrow</button>
-      <button class="filter-tab" data-filter="week">This Week</button>
-      <button class="filter-tab" data-filter="all">All</button>
-    </div>
-    <input
-      class="search-box"
-      type="search"
-      id="search"
-      placeholder="Search by film title…"
-      aria-label="Search by film title"
-    />
+  <div class="view-tabs" role="tablist" aria-label="View">
+    <button class="view-tab active" data-view="browse">Browse</button>
+    <button class="view-tab" data-view="planner">Plan a double bill</button>
   </div>
 
-  <main id="results" aria-live="polite">
-    <p class="status" id="status">Loading showtimes…</p>
-  </main>
+  <div id="browse-view" class="view">
+    <div class="controls">
+      <div class="filter-tabs" role="tablist" aria-label="Date range">
+        <button class="filter-tab active" data-filter="today">Today</button>
+        <button class="filter-tab" data-filter="tomorrow">Tomorrow</button>
+        <button class="filter-tab" data-filter="week">This Week</button>
+        <button class="filter-tab" data-filter="all">All</button>
+      </div>
+      <input
+        class="search-box"
+        type="search"
+        id="search"
+        placeholder="Search by film title…"
+        aria-label="Search by film title"
+      />
+    </div>
 
-  <footer class="app-footer">
-    <p id="last-updated"></p>
-  </footer>
+    <main id="results" aria-live="polite">
+      <p class="status" id="status">Loading showtimes…</p>
+    </main>
 
-  <script src="app.js"></script>
+    <footer class="app-footer">
+      <p id="last-updated"></p>
+    </footer>
+  </div>
+
+  <div id="planner-view" class="view" hidden>
+    <div class="controls">
+      <div class="filter-tabs" role="tablist" aria-label="Planner mode">
+        <button class="filter-tab planner-mode-tab active" data-mode="surprise">Surprise me</button>
+        <button class="filter-tab planner-mode-tab" data-mode="pick">Pick two films</button>
+      </div>
+
+      <div class="planner-date-row">
+        <label for="planner-date">Date</label>
+        <input type="date" id="planner-date" class="search-box" />
+      </div>
+
+      <form id="planner-pick-form" class="planner-pick-form" hidden>
+        <label for="planner-film-a">First film</label>
+        <input
+          list="planner-film-options"
+          id="planner-film-a"
+          class="search-box"
+          placeholder="Type a film title…"
+        />
+        <label for="planner-film-b">Second film</label>
+        <input
+          list="planner-film-options"
+          id="planner-film-b"
+          class="search-box"
+          placeholder="Type a film title…"
+        />
+        <datalist id="planner-film-options"></datalist>
+      </form>
+    </div>
+
+    <main id="planner-results" aria-live="polite">
+      <p class="status">Loading showtimes…</p>
+    </main>
+  </div>
+
+  <script type="module" src="app.js"></script>
+  <script type="module">
+    import { initPlanner } from "./planner.mjs";
+
+    const viewTabs = document.querySelectorAll(".view-tab");
+    const views = { browse: document.getElementById("browse-view"), planner: document.getElementById("planner-view") };
+    let plannerStarted = false;
+
+    viewTabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        viewTabs.forEach((t) => t.classList.remove("active"));
+        tab.classList.add("active");
+        const target = tab.dataset.view;
+        Object.entries(views).forEach(([name, el]) => (el.hidden = name !== target));
+        if (target === "planner" && !plannerStarted) {
+          plannerStarted = true;
+          initPlanner();
+        }
+      });
+    });
+  </script>
 </body>
 </html>

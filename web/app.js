@@ -1,3 +1,5 @@
+import { normalizeTitleForGrouping } from "./title-utils.mjs";
+
 const DATA_URL = "/data/combined.json";
 
 const state = {
@@ -65,22 +67,6 @@ function getFilteredShowings() {
     return state.showings.filter((s) => s.date >= today && s.date <= weekEnd);
   }
   return state.showings; // "all"
-}
-
-// Cinemas format the same film's title slightly differently — e.g.
-// "Coyote vs. ACME" vs "Coyote vs. Acme" (just capitalization), or
-// "The Odyssey" vs "The Odyssey (2026)" (a trailing year). This turns
-// either into the same grouping key so they merge into one card instead
-// of showing as separate films. It deliberately does NOT strip other
-// parenthetical text, because things like "Toxic (Kannada)" vs
-// "Toxic (Telugu)" are genuinely different screenings (different
-// language prints) that must stay separate.
-function normalizeTitleForGrouping(title) {
-  return title
-    .toLowerCase()
-    .replace(/\(\s*(19|20)\d{2}\s*\)\s*$/, "")
-    .trim()
-    .replace(/\s+/g, " ");
 }
 
 function groupByDateThenFilm(showings) {
