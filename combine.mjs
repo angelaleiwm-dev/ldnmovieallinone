@@ -10,11 +10,13 @@ import { writeFile, mkdir } from "node:fs/promises";
 import { fetchPrinceCharles } from "./fetchers/prince-charles.mjs";
 import { fetchCineworldO2Greenwich } from "./fetchers/cineworld-o2-greenwich.mjs";
 import { fetchVueWestfieldStratford } from "./fetchers/vue-westfield-stratford.mjs";
+import { fetchPicturehouseCentral } from "./fetchers/picturehouse-central.mjs";
 
 const FETCHERS = [
   fetchPrinceCharles,
   fetchCineworldO2Greenwich,
   fetchVueWestfieldStratford,
+  fetchPicturehouseCentral,
 ];
 
 const OUTPUT_PATH = "data/combined.json";
