@@ -141,15 +141,53 @@ function renderSurprise() {
     return;
   }
 
-  const pairs = findPairs(dayShowings).slice(0, MAX_SUGGESTIONS);
-  if (pairs.length === 0) {
+  const allPairs = findPairs(dayShowings);
+  if (allPairs.length === 0) {
     els.results.innerHTML = `<p class="status">No workable double-bill pairing found for ${dateLabel} — the films on don't line up with enough gap (or enough travel time) between them. Try a different date.</p>`;
     return;
   }
 
-  els.results.innerHTML = `<h2 class="day-heading">${dateLabel}</h2>${pairs
-    .map(pairCardHtml)
-    .join("")}`;
+  // Split into two even halves — same-cinema pairs (simplest, no travel)
+  // and cross-cinema pairs — rather than one list where same-cinema
+  // volume can crowd out cross-cinema options entirely. If one side has
+  // nothing, the other gets the full double allowance instead of sitting
+  // at half capacity for no reason.
+  const sameCinemaPairs = allPairs.filter((p) => p.sameCinema);
+  const crossCinemaPairs = allPairs.filter((p) => !p.sameCinema);
+
+  let sameCinemaShown;
+  let crossCinemaShown;
+  if (sameCinemaPairs.length === 0) {
+    sameCinemaShown = [];
+    crossCinemaShown = crossCinemaPairs.slice(0, MAX_SUGGESTIONS * 2);
+  } else if (crossCinemaPairs.length === 0) {
+    sameCinemaShown = sameCinemaPairs.slice(0, MAX_SUGGESTIONS * 2);
+    crossCinemaShown = [];
+  } else {
+    sameCinemaShown = sameCinemaPairs.slice(0, MAX_SUGGESTIONS);
+    crossCinemaShown = crossCinemaPairs.slice(0, MAX_SUGGESTIONS);
+  }
+
+  els.results.innerHTML = `
+    <h2 class="day-heading">${dateLabel}</h2>
+    <div class="surprise-columns">
+      ${surpriseColumnHtml("Same Cinema", sameCinemaShown)}
+      ${surpriseColumnHtml("Different Cinemas", crossCinemaShown)}
+    </div>
+  `;
+}
+
+function surpriseColumnHtml(title, pairs) {
+  return `
+    <section class="surprise-column">
+      <h3 class="surprise-column-heading">${escapeHtml(title)}</h3>
+      ${
+        pairs.length
+          ? pairs.map(pairCardHtml).join("")
+          : `<p class="status status--compact">None available for this date.</p>`
+      }
+    </section>
+  `;
 }
 
 function renderPick() {

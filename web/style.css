@@ -140,6 +140,33 @@ main {
   padding: 40px 16px;
 }
 
+.status--compact {
+  padding: 12px 4px;
+  text-align: left;
+  font-size: 0.85rem;
+}
+
+.surprise-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 700px) {
+  .surprise-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.surprise-column-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin: 0 0 10px;
+}
+
 .day-group {
   margin-bottom: 24px;
 }
