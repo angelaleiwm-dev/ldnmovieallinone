@@ -13,8 +13,15 @@
   </header>
 
   <div class="view-tabs" role="tablist" aria-label="View">
-    <button class="view-tab active" data-view="browse">Browse</button>
+    <button class="view-tab" data-view="lff">BFI LFF 2026</button>
     <button class="view-tab" data-view="planner">Plan a double bill</button>
+    <button class="view-tab active" data-view="browse">Browse</button>
+  </div>
+
+  <div id="lff-view" class="view" hidden>
+    <main>
+      <p class="status">BFI LFF 2026 — coming soon.</p>
+    </main>
   </div>
 
   <div id="browse-view" class="view">
@@ -89,7 +96,11 @@
     import { initPlanner } from "./planner.mjs";
 
     const viewTabs = document.querySelectorAll(".view-tab");
-    const views = { browse: document.getElementById("browse-view"), planner: document.getElementById("planner-view") };
+    const views = {
+      lff: document.getElementById("lff-view"),
+      planner: document.getElementById("planner-view"),
+      browse: document.getElementById("browse-view"),
+    };
     let plannerStarted = false;
 
     viewTabs.forEach((tab) => {
