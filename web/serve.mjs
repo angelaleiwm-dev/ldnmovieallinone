@@ -24,8 +24,8 @@ async function handleRequest(req, res) {
   if (urlPath === "/") urlPath = "/index.html";
 
   let filePath;
-  if (urlPath === "/data/combined.json") {
-    filePath = join(PROJECT_ROOT, "data", "combined.json");
+  if (urlPath === "/data/combined.json" || urlPath === "/data/lff-combined.json") {
+    filePath = join(PROJECT_ROOT, "data", urlPath.replace("/data/", ""));
   } else {
     filePath = join(WEB_DIR, urlPath);
   }

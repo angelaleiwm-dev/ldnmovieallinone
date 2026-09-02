@@ -309,6 +309,29 @@ main {
   font-size: 0.78rem;
 }
 
+.site-footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 16px 40px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  border-top: 1px solid var(--border);
+}
+
+.site-footer p {
+  margin: 6px 0;
+}
+
+.site-footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
 @media (min-width: 600px) {
   .app-header {
     padding: 28px 24px 16px;

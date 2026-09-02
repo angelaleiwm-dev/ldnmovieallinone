@@ -1,4 +1,5 @@
 import { findPairs } from "./pairing.mjs";
+import { minGapMinutes } from "./zones.mjs";
 import { normalizeTitleForGrouping } from "./title-utils.mjs";
 
 const DATA_URL = "/data/combined.json";
@@ -141,7 +142,7 @@ function renderSurprise() {
     return;
   }
 
-  const allPairs = findPairs(dayShowings);
+  const allPairs = findPairs(dayShowings, minGapMinutes);
   if (allPairs.length === 0) {
     els.results.innerHTML = `<p class="status">No workable double-bill pairing found for ${dateLabel} — the films on don't line up with enough gap (or enough travel time) between them. Try a different date.</p>`;
     return;
@@ -196,7 +197,10 @@ function renderPick() {
     return;
   }
 
-  const pairs = findPairs(state.showings, { filmA: state.filmA, filmB: state.filmB });
+  const pairs = findPairs(state.showings, minGapMinutes, {
+    filmA: state.filmA,
+    filmB: state.filmB,
+  });
   if (pairs.length === 0) {
     els.results.innerHTML = `<p class="status">"${escapeHtml(state.filmA)}" and "${escapeHtml(
       state.filmB
@@ -255,7 +259,7 @@ function updateFilmBOptions() {
     return;
   }
 
-  const candidatePairs = findPairs(state.showings, { filmA: state.filmA });
+  const candidatePairs = findPairs(state.showings, minGapMinutes, { filmA: state.filmA });
   const validSecondFilms = uniqueFilmTitles(candidatePairs.map((p) => p.filmB));
 
   if (validSecondFilms.length === 0) {

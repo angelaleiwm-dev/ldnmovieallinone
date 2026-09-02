@@ -10,6 +10,7 @@ node_modules/
 # and aren't "source code"; we'll decide later whether any of this belongs
 # in the repo once the pipeline is running end-to-end.
 data/*.json
+data/lff-cache/
 web/dist/
 
 # OS/editor noise
