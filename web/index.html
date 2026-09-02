@@ -14,15 +14,24 @@
 
   <div class="view-tabs" id="top-view-tabs" role="tablist" aria-label="View">
     <button class="view-tab" data-view="lff">BFI LFF 2026</button>
-    <button class="view-tab" data-view="planner">Plan a double bill</button>
+    <button class="view-tab" data-view="planner">Double Bill</button>
     <button class="view-tab active" data-view="browse">Browse</button>
   </div>
 
   <div id="lff-view" class="view" hidden>
     <div class="view-tabs lff-sub-tabs" role="tablist" aria-label="Festival section">
-      <button class="view-tab active" data-lff-view="double">Double Bill Planner</button>
-      <button class="view-tab" data-lff-view="triple">Triple Bill Planner</button>
-      <button class="view-tab" data-lff-view="browse">Browse</button>
+      <button class="view-tab lff-sub-tab active" data-lff-view="double">
+        <span class="lff-tab-eyebrow">LFF</span>
+        <span class="lff-tab-label">Double Bill</span>
+      </button>
+      <button class="view-tab lff-sub-tab" data-lff-view="triple">
+        <span class="lff-tab-eyebrow">LFF</span>
+        <span class="lff-tab-label">Triple Bill</span>
+      </button>
+      <button class="view-tab lff-sub-tab" data-lff-view="browse">
+        <span class="lff-tab-eyebrow">LFF</span>
+        <span class="lff-tab-label">Browse</span>
+      </button>
     </div>
 
     <div id="lff-double-view" class="lff-subview">

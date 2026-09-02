@@ -372,6 +372,40 @@ main {
   border-color: var(--accent);
 }
 
+/* LFF section's own sub-tabs (Double Bill / Triple Bill / Browse) — kept
+   visually smaller and secondary to the top-level view tabs, with a
+   small "LFF" eyebrow label on each one, so it reads as "inside the
+   festival section" rather than a second, unrelated set of tabs with
+   confusingly similar names. */
+.lff-sub-tabs {
+  padding: 10px 16px 10px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.lff-sub-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 6px 8px;
+  border-radius: var(--radius);
+  border-bottom: 1px solid var(--border);
+  max-width: 140px;
+}
+
+.lff-tab-eyebrow {
+  font-family: inherit;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  opacity: 0.7;
+}
+
+.lff-tab-label {
+  font-size: 0.8rem;
+}
+
 /* Double-bill planner */
 
 .planner-date-row,
