@@ -2,7 +2,7 @@ import { findPairs } from "./pairing.mjs";
 import { minGapMinutes } from "./zones.mjs";
 import { normalizeTitleForGrouping } from "./title-utils.mjs";
 
-const DATA_URL = "/data/combined.json";
+const DATA_URL = "data/combined.json";
 const MAX_SUGGESTIONS = 4;
 
 const state = {

@@ -1,6 +1,6 @@
 import { normalizeTitleForGrouping } from "./title-utils.mjs";
 
-const DATA_URL = "/data/combined.json";
+const DATA_URL = "data/combined.json";
 
 // A film card auto-expands once it has this many showings or fewer —
 // no point hiding 1-2 rows behind a click.
@@ -251,7 +251,27 @@ function renderCinemaFilterChips() {
   });
 }
 
+// The filter tabs say "Today"/"Tomorrow"/"This Week", which is ambiguous
+// right around midnight — show the actual date(s) too so it's unambiguous
+// regardless of when someone's looking at it.
+function populateFilterTabDates() {
+  const today = todayISO();
+  const tomorrow = addDays(today, 1);
+  const weekEnd = addDays(today, 6);
+  const short = (isoDate) =>
+    new Date(`${isoDate}T00:00:00Z`).toLocaleDateString("en-GB", {
+      day: "numeric",
+      month: "short",
+      timeZone: "UTC",
+    });
+
+  document.getElementById("filter-date-today").textContent = ` (${short(today)})`;
+  document.getElementById("filter-date-tomorrow").textContent = ` (${short(tomorrow)})`;
+  document.getElementById("filter-date-week").textContent = ` (${short(today)}–${short(weekEnd)})`;
+}
+
 async function init() {
+  populateFilterTabDates();
   try {
     const res = await fetch(DATA_URL);
     if (!res.ok) throw new Error(`Failed to load showtimes (${res.status})`);

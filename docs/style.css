@@ -89,6 +89,12 @@ body {
   border-color: var(--accent);
 }
 
+.filter-tab-date {
+  font-weight: 400;
+  font-size: 0.8em;
+  opacity: 0.75;
+}
+
 .search-box {
   width: 100%;
   padding: 10px 14px;
@@ -330,6 +336,12 @@ main {
 
 .site-footer a:hover {
   text-decoration: underline;
+}
+
+.version-tag {
+  font-size: 0.7rem;
+  opacity: 0.6;
+  margin-top: 12px !important;
 }
 
 @media (min-width: 600px) {

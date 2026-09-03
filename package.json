@@ -18,7 +18,7 @@
     "fetch:lff": "node fetchers/lff.mjs",
     "combine": "node combine.mjs",
     "combine:lff": "node combine-lff.mjs",
-    "web": "node web/serve.mjs"
+    "web": "node docs/serve.mjs"
   },
   "dependencies": {
     "cheerio": "^1.2.0",

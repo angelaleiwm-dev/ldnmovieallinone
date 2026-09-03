@@ -4,7 +4,7 @@
     {
       "name": "ldnmovieallinone-web",
       "runtimeExecutable": "node",
-      "runtimeArgs": ["web/serve.mjs"],
+      "runtimeArgs": ["docs/serve.mjs"],
       "port": 5173,
       "autoPort": true
     }

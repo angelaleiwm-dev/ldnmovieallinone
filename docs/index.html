@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LDN Screens — London cinema showtimes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>LDN Screens</h1>
+    <p class="subtitle">Showtimes across your London cinemas</p>
+  </header>
+
+  <div class="view-tabs" id="top-view-tabs" role="tablist" aria-label="View">
+    <button class="view-tab" data-view="planner">Double Bill</button>
+    <button class="view-tab active" data-view="browse">Browse</button>
+  </div>
+
+  <div id="browse-view" class="view">
+    <div class="controls">
+      <div class="filter-tabs" role="tablist" aria-label="Date range">
+        <button class="filter-tab active" data-filter="today">
+          Today<span class="filter-tab-date" id="filter-date-today"></span>
+        </button>
+        <button class="filter-tab" data-filter="tomorrow">
+          Tomorrow<span class="filter-tab-date" id="filter-date-tomorrow"></span>
+        </button>
+        <button class="filter-tab" data-filter="week">
+          This Week<span class="filter-tab-date" id="filter-date-week"></span>
+        </button>
+        <button class="filter-tab" data-filter="all">All</button>
+      </div>
+      <input
+        class="search-box"
+        type="search"
+        id="search"
+        placeholder="Search by film title…"
+        aria-label="Search by film title"
+      />
+      <div class="cinema-filter" id="cinema-filter" aria-label="Filter by cinema"></div>
+    </div>
+
+    <main id="results" aria-live="polite">
+      <p class="status" id="status">Loading showtimes…</p>
+    </main>
+
+    <footer class="app-footer">
+      <p id="last-updated"></p>
+    </footer>
+  </div>
+
+  <div id="planner-view" class="view" hidden>
+    <div class="controls">
+      <div class="filter-tabs" role="tablist" aria-label="Planner mode">
+        <button class="filter-tab planner-mode-tab active" data-mode="surprise">Surprise me</button>
+        <button class="filter-tab planner-mode-tab" data-mode="pick">Pick two films</button>
+      </div>
+
+      <div class="planner-date-row">
+        <label for="planner-date">Date</label>
+        <input type="date" id="planner-date" class="search-box" />
+      </div>
+
+      <form id="planner-pick-form" class="planner-pick-form" hidden>
+        <label for="planner-film-a">First film — the one you'll watch first</label>
+        <input
+          list="planner-film-options-a"
+          id="planner-film-a"
+          class="search-box"
+          placeholder="Type a film title…"
+        />
+        <datalist id="planner-film-options-a"></datalist>
+
+        <label for="planner-film-b">Second film — only shows films that can actually follow it</label>
+        <input
+          list="planner-film-options-b"
+          id="planner-film-b"
+          class="search-box"
+          placeholder="Pick a first film above"
+          disabled
+        />
+        <datalist id="planner-film-options-b"></datalist>
+        <p class="field-hint" id="planner-film-b-hint"></p>
+      </form>
+    </div>
+
+    <main id="planner-results" aria-live="polite">
+      <p class="status">Loading showtimes…</p>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p>
+      LDN Screens is an unofficial, fan-made project — not affiliated with any cinema. Always book
+      via the official site.
+    </p>
+    <p>
+      Built by Angela Lei with Claude Code — still in active development, expect rough edges —
+      <a href="mailto:angelaleiwm@gmail.com">angelaleiwm@gmail.com</a>
+      ·
+      <a href="https://linkedin.com/in/weng-man-lei-angela" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </p>
+    <p class="version-tag">v1</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+  <script type="module">
+    import { initPlanner } from "./planner.mjs";
+
+    const viewTabs = document.querySelectorAll("#top-view-tabs .view-tab");
+    const views = {
+      planner: document.getElementById("planner-view"),
+      browse: document.getElementById("browse-view"),
+    };
+    let plannerStarted = false;
+
+    viewTabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        viewTabs.forEach((t) => t.classList.remove("active"));
+        tab.classList.add("active");
+        const target = tab.dataset.view;
+        Object.entries(views).forEach(([name, el]) => (el.hidden = name !== target));
+        if (target === "planner" && !plannerStarted) {
+          plannerStarted = true;
+          initPlanner();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
