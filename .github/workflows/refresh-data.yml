@@ -1,0 +1,45 @@
+name: Refresh showtimes data
+
+# Runs daily so the live site (served from docs/) doesn't quietly go stale.
+# 04:00 UTC ≈ 4-5am UK time (depending on BST/GMT) — before people are
+# checking the site for the day. Can also be triggered manually from the
+# Actions tab (workflow_dispatch) for testing or an on-demand refresh.
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm install
+
+      # Only prince-charles.mjs and vue-westfield-stratford.mjs (the two
+      # Playwright-based fetchers in the regular FETCHERS list) need this —
+      # cheaper than installing every Playwright browser.
+      - run: npx playwright install --with-deps chromium
+
+      - run: node combine.mjs
+
+      # combine.mjs already refuses to write a suspiciously-thin result
+      # (see wouldRegressData in combine.mjs), so if docs/data/combined.json
+      # didn't change, there's nothing to commit — that's expected, not
+      # an error.
+      - name: Commit updated data, if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/combined.json docs/data/combined.json
+          git diff --staged --quiet && echo "No data changes to commit." && exit 0
+          git commit -m "Refresh showtimes data"
+          git push

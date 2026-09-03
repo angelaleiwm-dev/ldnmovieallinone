@@ -22,7 +22,7 @@ const API_BASE = "/api/microservice/showings";
 const BOOKING_ORIGIN = "https://www.myvue.com";
 
 const USER_AGENT =
-  "ldnmovieallinone-fetcher/0.1 (personal showtimes aggregator; contact: angellei88@gmail.com)";
+  "ldnmovieallinone-fetcher/0.1 (personal showtimes aggregator; contact: angelaleiwm@gmail.com)";
 
 // Session attributes worth showing as "format" (screen tech, accessibility,
 // non-English language) vs. attributes we skip (movie-level tags like

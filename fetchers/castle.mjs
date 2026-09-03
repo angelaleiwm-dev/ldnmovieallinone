@@ -19,7 +19,7 @@ const SITE_ORIGIN = "https://thecastlecinema.com";
 const LISTINGS_URL = `${SITE_ORIGIN}/listings/`;
 
 const USER_AGENT =
-  "ldnmovieallinone-fetcher/0.1 (personal showtimes aggregator; contact: angellei88@gmail.com)";
+  "ldnmovieallinone-fetcher/0.1 (personal showtimes aggregator; contact: angelaleiwm@gmail.com)";
 
 async function fetchHtml(url) {
   const res = await fetch(url, { headers: { "User-Agent": USER_AGENT } });

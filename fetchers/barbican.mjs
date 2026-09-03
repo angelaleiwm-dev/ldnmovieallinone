@@ -11,7 +11,7 @@ const LISTING_URL = "https://www.barbican.org.uk/whats-on/cinema";
 const DAYS_AHEAD = 21;
 
 const USER_AGENT =
-  "ldnmovieallinone-fetcher/0.1 (personal showtimes aggregator; contact: angellei88@gmail.com)";
+  "ldnmovieallinone-fetcher/0.1 (personal showtimes aggregator; contact: angelaleiwm@gmail.com)";
 
 function isoDate(date) {
   return date.toISOString().slice(0, 10);

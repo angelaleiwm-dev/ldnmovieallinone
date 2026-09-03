@@ -22,7 +22,7 @@ const DAYS_AHEAD = 21;
 // A descriptive User-Agent so Cineworld's server logs show a real,
 // identifiable, low-volume client rather than an anonymous scraper.
 const USER_AGENT =
-  "ldnmovieallinone-fetcher/0.1 (personal showtimes aggregator; contact: angellei88@gmail.com)";
+  "ldnmovieallinone-fetcher/0.1 (personal showtimes aggregator; contact: angelaleiwm@gmail.com)";
 
 // Attribute tags that describe the *format* of a screening (screen tech,
 // subtitles, audio description, etc.) as opposed to genre, age rating,

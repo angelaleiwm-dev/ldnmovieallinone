@@ -31,7 +31,7 @@ const LISTING_URL = `${SITE_ORIGIN}/Rio.dll/WhatsOn`;
 const SCOPED_LIST_SELECTOR = ".is-hidden-tablet.is-hidden-desktop li.performance";
 
 const USER_AGENT =
-  "ldnmovieallinone-fetcher/0.1 (personal showtimes aggregator; contact: angellei88@gmail.com)";
+  "ldnmovieallinone-fetcher/0.1 (personal showtimes aggregator; contact: angelaleiwm@gmail.com)";
 
 async function fetchHtml(url) {
   const res = await fetch(url, { headers: { "User-Agent": USER_AGENT } });

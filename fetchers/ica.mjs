@@ -25,7 +25,7 @@ const SITE_ORIGIN = "https://www.ica.art";
 const FILM_INDEX_URL = `${SITE_ORIGIN}/films`;
 
 const USER_AGENT =
-  "ldnmovieallinone-fetcher/0.1 (personal showtimes aggregator; contact: angellei88@gmail.com)";
+  "ldnmovieallinone-fetcher/0.1 (personal showtimes aggregator; contact: angelaleiwm@gmail.com)";
 
 // ICA bakes premiere badges straight into their own <title> tag, e.g.
 // "ICA | UK PREMIERE The Visitor" or even "UK PREMIEREIn-I In Motion"

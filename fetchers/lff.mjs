@@ -70,7 +70,7 @@ async function saveDayCache(day, items) {
 }
 
 const USER_AGENT =
-  "ldnmovieallinone-fetcher/0.1 (personal showtimes aggregator; contact: angellei88@gmail.com)";
+  "ldnmovieallinone-fetcher/0.1 (personal showtimes aggregator; contact: angelaleiwm@gmail.com)";
 
 // A few different cinemas literally share the LFF programme with our
 // regular venues; keep the LFF venue names in the same style as those so
@@ -78,14 +78,39 @@ const USER_AGENT =
 // text arrives as e.g. "ICA, Screen 1" or "BFI Southbank, Screen NFT1" —
 // strip a trailing ", Screen ..." segment, and fold BFI's own two
 // inconsistent spellings of the Royal Festival Hall into one name.
+// Screen/auditorium labels here aren't consistently named "Screen
+// something" — BFI Southbank alone shows up as "Screen NFT1" in some
+// listings and bare "NFT4" in others, and Vue West End uses "EPIC 1" /
+// "EPIC 2" with no "Screen" word at all. Matching known venue name
+// prefixes is more robust than guessing at label patterns, with a
+// generic "strip the last comma segment" fallback for anything new.
+const KNOWN_VENUE_PREFIXES = [
+  "BFI Southbank",
+  "BFI IMAX",
+  "Curzon Soho Cinema",
+  "Curzon Mayfair",
+  "Curzon Bloomsbury",
+  "ICA",
+  "Prince Charles Cinema",
+  "Vue West End",
+  "Picturehouse Central",
+  "Barbican Cinema",
+  "Genesis Cinema",
+  "The Castle Cinema",
+  "Rio Cinema",
+];
+
 function normalizeVenue(raw) {
   if (/royal festival hall/i.test(raw)) {
     return "Southbank Centre – Royal Festival Hall";
   }
-  const parts = raw.split(",").map((s) => s.trim());
-  if (parts.length > 1 && /screen/i.test(parts[parts.length - 1])) {
-    return parts.slice(0, -1).join(", ");
+
+  for (const prefix of KNOWN_VENUE_PREFIXES) {
+    if (raw.toLowerCase().startsWith(prefix.toLowerCase())) return prefix;
   }
+
+  const parts = raw.split(",").map((s) => s.trim());
+  if (parts.length > 1) return parts.slice(0, -1).join(", ");
   return raw;
 }
 
@@ -123,13 +148,12 @@ async function getRuntimeMinutes(page, infoUrl, cache) {
   const key = extractArticleId(infoUrl);
   if (cache.has(key)) return cache.get(key);
 
-  let minutes = null;
   const ok = await retryGoto(page, infoUrl);
-  if (ok) {
-    const text = await page.evaluate(() => document.body.innerText);
-    const match = text.match(/(\d+)\s*min\b/i);
-    minutes = match ? parseInt(match[1], 10) : null;
-  }
+  if (!ok) return null; // don't cache — a blocked request should be retried next run, not frozen out forever
+
+  const text = await page.evaluate(() => document.body.innerText);
+  const match = text.match(/(\d+)\s*min\b/i);
+  const minutes = match ? parseInt(match[1], 10) : null;
   cache.set(key, minutes);
   return minutes;
 }

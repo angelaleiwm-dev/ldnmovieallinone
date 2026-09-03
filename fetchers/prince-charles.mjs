@@ -16,7 +16,7 @@ const WHATS_ON_URL = "https://princecharlescinema.com/whats-on/";
 // A descriptive User-Agent so the cinema's server logs show a real,
 // identifiable, low-volume client rather than an anonymous scraper.
 const USER_AGENT =
-  "ldnmovieallinone-fetcher/0.1 (personal showtimes aggregator; contact: angellei88@gmail.com)";
+  "ldnmovieallinone-fetcher/0.1 (personal showtimes aggregator; contact: angelaleiwm@gmail.com)";
 
 export async function fetchPrinceCharles() {
   const browser = await chromium.launch();

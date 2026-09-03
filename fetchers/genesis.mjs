@@ -17,7 +17,7 @@ const CINEMA_NAME = "Genesis Cinema";
 const LISTING_URL = "https://www.genesiscinema.co.uk/whatson/all";
 
 const USER_AGENT =
-  "ldnmovieallinone-fetcher/0.1 (personal showtimes aggregator; contact: angellei88@gmail.com)";
+  "ldnmovieallinone-fetcher/0.1 (personal showtimes aggregator; contact: angelaleiwm@gmail.com)";
 
 function parseRuntime(text) {
   const match = text.match(/(\d+)\s*mins/i);

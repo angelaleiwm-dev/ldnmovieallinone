@@ -20,7 +20,7 @@ const BOOKING_URL_TEMPLATE = (cinemaId, sessionId) =>
   `https://web.picturehouses.com/order/showtimes/${cinemaId}-${sessionId}/seats`;
 
 const USER_AGENT =
-  "ldnmovieallinone-fetcher/0.1 (personal showtimes aggregator; contact: angellei88@gmail.com)";
+  "ldnmovieallinone-fetcher/0.1 (personal showtimes aggregator; contact: angelaleiwm@gmail.com)";
 
 function parseCookies(setCookieHeaders) {
   const jar = {};

@@ -9,7 +9,8 @@
 // The date/time normalization itself lives in normalize.mjs, shared with
 // combine-lff.mjs (the festival section's own combine step).
 
-import { writeFile, mkdir } from "node:fs/promises";
+import { writeFile, mkdir, readFile } from "node:fs/promises";
+import { existsSync } from "node:fs";
 import { normalizeShowings } from "./normalize.mjs";
 import { fetchPrinceCharles } from "./fetchers/prince-charles.mjs";
 import { fetchCineworldO2Greenwich } from "./fetchers/cineworld-o2-greenwich.mjs";
@@ -36,6 +37,27 @@ const FETCHERS = [
 ];
 
 const OUTPUT_PATH = "data/combined.json";
+// The deployed site (GitHub Pages, served from docs/) reads its own copy —
+// there's no server-side step to pull from data/ at deploy time, so this
+// combine step is what keeps the live site's data current.
+const SITE_OUTPUT_PATH = "docs/data/combined.json";
+
+// This runs unattended (daily, via GitHub Actions) — if most fetchers fail
+// in one run (a site's layout changed, a network blip, a cinema's site
+// down), don't let that silently replace good data with a thin/empty
+// result. Only refuses to write when there was a healthy prior file to
+// protect; a genuinely first-ever run still writes normally.
+async function wouldRegressData(newCount) {
+  if (!existsSync(OUTPUT_PATH)) return false;
+  try {
+    const previous = JSON.parse(await readFile(OUTPUT_PATH, "utf-8"));
+    const previousCount = previous.showings?.length ?? 0;
+    if (previousCount === 0) return false;
+    return newCount < previousCount * 0.5;
+  } catch {
+    return false; // unreadable/corrupt previous file — fine to overwrite
+  }
+}
 
 async function main() {
   const referenceDate = new Date();
@@ -55,13 +77,28 @@ async function main() {
 
   combined.sort((a, b) => a.dateTime.localeCompare(b.dateTime));
 
-  await mkdir("data", { recursive: true });
-  await writeFile(
-    OUTPUT_PATH,
-    JSON.stringify({ generatedAt: new Date().toISOString(), showings: combined, errors }, null, 2)
+  if (await wouldRegressData(combined.length)) {
+    console.log(
+      `\nGot only ${combined.length} showings, far fewer than last time — likely one or more ` +
+        `cinema sites were down or blocking us. Keeping the existing data as-is rather than ` +
+        `overwriting it with a bad result. Re-run this later once things are responding normally.`
+    );
+    return;
+  }
+
+  const payload = JSON.stringify(
+    { generatedAt: new Date().toISOString(), showings: combined, errors },
+    null,
+    2
   );
 
-  console.log(`\nWrote ${combined.length} showings to ${OUTPUT_PATH}`);
+  await mkdir("data", { recursive: true });
+  await writeFile(OUTPUT_PATH, payload);
+
+  await mkdir("docs/data", { recursive: true });
+  await writeFile(SITE_OUTPUT_PATH, payload);
+
+  console.log(`\nWrote ${combined.length} showings to ${OUTPUT_PATH} and ${SITE_OUTPUT_PATH}`);
   if (errors.length) {
     console.log(`${errors.length} showings/fetchers had problems — see "errors" in the output file.`);
   }
