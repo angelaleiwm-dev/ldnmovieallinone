@@ -1,908 +1,6 @@
 {
-  "generatedAt": "2026-09-03T05:38:31.914Z",
+  "generatedAt": "2026-09-04T04:20:19.310Z",
   "showings": [
-    {
-      "cinema": "The Castle Cinema",
-      "film": "I Want Your Sex",
-      "date": "2026-09-03",
-      "time": "11:00",
-      "dateTime": "2026-09-03T11:00:00",
-      "runtimeMinutes": 100,
-      "endDateTime": "2026-09-03T12:40:00",
-      "format": "S1",
-      "bookingUrl": "https://thecastlecinema.com/interstitial/parent-baby/17654/show"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "Teenage Sex and Death at Camp Miasma",
-      "date": "2026-09-03",
-      "time": "11:15",
-      "dateTime": "2026-09-03T11:15:00",
-      "runtimeMinutes": 112,
-      "endDateTime": "2026-09-03T13:07:00",
-      "format": "S2",
-      "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/17655/show"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "2001 : A Space Odyssey",
-      "date": "2026-09-03",
-      "time": "11:55",
-      "dateTime": "2026-09-03T11:55:00",
-      "runtimeMinutes": 160,
-      "endDateTime": "2026-09-03T14:35:00",
-      "format": "70mm",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627163"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Stop! That! Train!",
-      "date": "2026-09-03",
-      "time": "12:00",
-      "dateTime": "2026-09-03T12:00:00",
-      "runtimeMinutes": 92,
-      "endDateTime": "2026-09-03T13:32:00",
-      "format": "2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121495/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "The Dog Stars",
-      "date": "2026-09-03",
-      "time": "12:00",
-      "dateTime": "2026-09-03T12:00:00",
-      "runtimeMinutes": 119,
-      "endDateTime": "2026-09-03T13:59:00",
-      "format": "2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121487/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Coyote vs. Acme",
-      "date": "2026-09-03",
-      "time": "12:10",
-      "dateTime": "2026-09-03T12:10:00",
-      "runtimeMinutes": 103,
-      "endDateTime": "2026-09-03T13:53:00",
-      "format": "2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121489/seats"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "Falling Down",
-      "date": "2026-09-03",
-      "time": "12:15",
-      "dateTime": "2026-09-03T12:15:00",
-      "runtimeMinutes": 113,
-      "endDateTime": "2026-09-03T14:08:00",
-      "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627164"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Hanging By A Wire",
-      "date": "2026-09-03",
-      "time": "12:15",
-      "dateTime": "2026-09-03T12:15:00",
-      "runtimeMinutes": 77,
-      "endDateTime": "2026-09-03T13:32:00",
-      "format": "2D, Picture Do",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121491/seats"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "Songs of Forgotten Trees",
-      "date": "2026-09-03",
-      "time": "12:15",
-      "dateTime": "2026-09-03T12:15:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 1",
-      "bookingUrl": "https://www.ica.art/films/songs-of-forgotten-trees"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "I Want Your Sex + Recorded Q&A",
-      "date": "2026-09-03",
-      "time": "12:30",
-      "dateTime": "2026-09-03T12:30:00",
-      "runtimeMinutes": 97,
-      "endDateTime": "2026-09-03T14:07:00",
-      "format": "2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121486/seats"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "The Day She Returns",
-      "date": "2026-09-03",
-      "time": "12:30",
-      "dateTime": "2026-09-03T12:30:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 2",
-      "bookingUrl": "https://www.ica.art/films/the-day-she-returns"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Spider-Man: Brand New Day",
-      "date": "2026-09-03",
-      "time": "13:00",
-      "dateTime": "2026-09-03T13:00:00",
-      "runtimeMinutes": 140,
-      "endDateTime": "2026-09-03T15:20:00",
-      "format": "HOHSub, 2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121522/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "The Odyssey (70mm)",
-      "date": "2026-09-03",
-      "time": "13:30",
-      "dateTime": "2026-09-03T13:30:00",
-      "runtimeMinutes": 172,
-      "endDateTime": "2026-09-03T16:22:00",
-      "format": "70mm, 2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121353/seats"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "Bitter Christmas",
-      "date": "2026-09-03",
-      "time": "13:45",
-      "dateTime": "2026-09-03T13:45:00",
-      "runtimeMinutes": 111,
-      "endDateTime": "2026-09-03T15:36:00",
-      "format": "S2",
-      "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/17656/show"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Teenage Sex and Death at Camp Miasma",
-      "date": "2026-09-03",
-      "time": "14:15",
-      "dateTime": "2026-09-03T14:15:00",
-      "runtimeMinutes": 112,
-      "endDateTime": "2026-09-03T16:07:00",
-      "format": "2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121484/seats"
-    },
-    {
-      "cinema": "BFI Southbank",
-      "film": "Bitter Christmas",
-      "date": "2026-09-03",
-      "time": "14:15",
-      "dateTime": "2026-09-03T14:15:00",
-      "runtimeMinutes": 111,
-      "endDateTime": "2026-09-03T16:06:00",
-      "format": "Screen NFT2",
-      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3DBF3A77BD-700E-4B0E-8E0D-1222AF7ACFFF%26from_cinemas%3Dtrue&from_cinemas=true"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "I Want Your Sex",
-      "date": "2026-09-03",
-      "time": "14:15",
-      "dateTime": "2026-09-03T14:15:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 1",
-      "bookingUrl": "https://www.ica.art/films/i-want-your-sex"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "I Want Your Sex",
-      "date": "2026-09-03",
-      "time": "14:15",
-      "dateTime": "2026-09-03T14:15:00",
-      "runtimeMinutes": 100,
-      "endDateTime": "2026-09-03T15:55:00",
-      "format": "S1",
-      "bookingUrl": "https://thecastlecinema.com/bookings/17657/"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Tony",
-      "date": "2026-09-03",
-      "time": "14:20",
-      "dateTime": "2026-09-03T14:20:00",
-      "runtimeMinutes": 106,
-      "endDateTime": "2026-09-03T16:06:00",
-      "format": "2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121485/seats"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "Bouchra",
-      "date": "2026-09-03",
-      "time": "14:30",
-      "dateTime": "2026-09-03T14:30:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 2",
-      "bookingUrl": "https://www.ica.art/films/tape-collective-bouchra"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "The Dog Stars",
-      "date": "2026-09-03",
-      "time": "14:30",
-      "dateTime": "2026-09-03T14:30:00",
-      "runtimeMinutes": 118,
-      "endDateTime": "2026-09-03T16:28:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=12943"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Lady",
-      "date": "2026-09-03",
-      "time": "14:35",
-      "dateTime": "2026-09-03T14:35:00",
-      "runtimeMinutes": 95,
-      "endDateTime": "2026-09-03T16:10:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121483/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "The Dog Stars",
-      "date": "2026-09-03",
-      "time": "14:50",
-      "dateTime": "2026-09-03T14:50:00",
-      "runtimeMinutes": 119,
-      "endDateTime": "2026-09-03T16:49:00",
-      "format": "2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121497/seats"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "The French Connection",
-      "date": "2026-09-03",
-      "time": "15:00",
-      "dateTime": "2026-09-03T15:00:00",
-      "runtimeMinutes": 104,
-      "endDateTime": "2026-09-03T16:44:00",
-      "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627165"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "I Want Your Sex + Recorded Q&A",
-      "date": "2026-09-03",
-      "time": "15:00",
-      "dateTime": "2026-09-03T15:00:00",
-      "runtimeMinutes": 97,
-      "endDateTime": "2026-09-03T16:37:00",
-      "format": "2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121494/seats"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "Tony",
-      "date": "2026-09-03",
-      "time": "15:15",
-      "dateTime": "2026-09-03T15:15:00",
-      "runtimeMinutes": 106,
-      "endDateTime": "2026-09-03T17:01:00",
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3698202"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "Angel's Egg",
-      "date": "2026-09-03",
-      "time": "15:20",
-      "dateTime": "2026-09-03T15:20:00",
-      "runtimeMinutes": 71,
-      "endDateTime": "2026-09-03T16:31:00",
-      "format": "4k sub",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627162"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "Bitter Christmas",
-      "date": "2026-09-03",
-      "time": "15:20",
-      "dateTime": "2026-09-03T15:20:00",
-      "runtimeMinutes": 111,
-      "endDateTime": "2026-09-03T17:11:00",
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3702001"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Coyote vs Acme",
-      "date": "2026-09-03",
-      "time": "15:50",
-      "dateTime": "2026-09-03T15:50:00",
-      "runtimeMinutes": 101,
-      "endDateTime": "2026-09-03T17:31:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13086"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "I Want Your Sex",
-      "date": "2026-09-03",
-      "time": "15:50",
-      "dateTime": "2026-09-03T15:50:00",
-      "runtimeMinutes": 90,
-      "endDateTime": "2026-09-03T17:20:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=12936"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Teenage Sex and Death at Camp Miasma",
-      "date": "2026-09-03",
-      "time": "16:05",
-      "dateTime": "2026-09-03T16:05:00",
-      "runtimeMinutes": 112,
-      "endDateTime": "2026-09-03T17:57:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=12937"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "Tony",
-      "date": "2026-09-03",
-      "time": "16:10",
-      "dateTime": "2026-09-03T16:10:00",
-      "runtimeMinutes": 106,
-      "endDateTime": "2026-09-03T17:56:00",
-      "format": "S2",
-      "bookingUrl": "https://thecastlecinema.com/bookings/17658/"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "The Visitor",
-      "date": "2026-09-03",
-      "time": "16:15",
-      "dateTime": "2026-09-03T16:15:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 1",
-      "bookingUrl": "https://www.ica.art/films/off-circuit-the-visitor"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Tony",
-      "date": "2026-09-03",
-      "time": "16:20",
-      "dateTime": "2026-09-03T16:20:00",
-      "runtimeMinutes": 106,
-      "endDateTime": "2026-09-03T18:06:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121506/seats"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "Bitter Christmas",
-      "date": "2026-09-03",
-      "time": "16:20",
-      "dateTime": "2026-09-03T16:20:00",
-      "runtimeMinutes": 111,
-      "endDateTime": "2026-09-03T18:11:00",
-      "format": "S1",
-      "bookingUrl": "https://thecastlecinema.com/bookings/17659/"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "Ish",
-      "date": "2026-09-03",
-      "time": "16:30",
-      "dateTime": "2026-09-03T16:30:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 2",
-      "bookingUrl": "https://www.ica.art/films/ish"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "De Gaulle: Resistance",
-      "date": "2026-09-03",
-      "time": "17:00",
-      "dateTime": "2026-09-03T17:00:00",
-      "runtimeMinutes": 158,
-      "endDateTime": "2026-09-03T19:38:00",
-      "format": "Sub Cinema, 2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121488/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Spider-Man: Brand New Day",
-      "date": "2026-09-03",
-      "time": "17:00",
-      "dateTime": "2026-09-03T17:00:00",
-      "runtimeMinutes": 140,
-      "endDateTime": "2026-09-03T19:20:00",
-      "format": "2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121493/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Bitter Christmas",
-      "date": "2026-09-03",
-      "time": "17:20",
-      "dateTime": "2026-09-03T17:20:00",
-      "runtimeMinutes": 111,
-      "endDateTime": "2026-09-03T19:11:00",
-      "format": "Sub Cinema, 2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121354/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "I Want Your Sex + Recorded Q&A",
-      "date": "2026-09-03",
-      "time": "17:30",
-      "dateTime": "2026-09-03T17:30:00",
-      "runtimeMinutes": 97,
-      "endDateTime": "2026-09-03T19:07:00",
-      "format": "2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121498/seats"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "Tony",
-      "date": "2026-09-03",
-      "time": "17:40",
-      "dateTime": "2026-09-03T17:40:00",
-      "runtimeMinutes": 106,
-      "endDateTime": "2026-09-03T19:26:00",
-      "format": "CAP, AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3701601"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Leviticus",
-      "date": "2026-09-03",
-      "time": "17:50",
-      "dateTime": "2026-09-03T17:50:00",
-      "runtimeMinutes": 88,
-      "endDateTime": "2026-09-03T19:18:00",
-      "format": "2D, Preview",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121520/seats"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Spider-Man: Brand New Day",
-      "date": "2026-09-03",
-      "time": "17:50",
-      "dateTime": "2026-09-03T17:50:00",
-      "runtimeMinutes": 140,
-      "endDateTime": "2026-09-03T20:10:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=12939"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "Big Shark with Tommy Wiseau live on stage",
-      "date": "2026-09-03",
-      "time": "18:00",
-      "dateTime": "2026-09-03T18:00:00",
-      "runtimeMinutes": 104,
-      "endDateTime": "2026-09-03T19:44:00",
-      "format": "q-a",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626259"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Green Screen with UKELA Presents 2040 + Panel",
-      "date": "2026-09-03",
-      "time": "18:00",
-      "dateTime": "2026-09-03T18:00:00",
-      "runtimeMinutes": 135,
-      "endDateTime": "2026-09-03T20:15:00",
-      "format": "2D, ad-trailer",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-120434/seats"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "I Want Your Sex",
-      "date": "2026-09-03",
-      "time": "18:00",
-      "dateTime": "2026-09-03T18:00:00",
-      "runtimeMinutes": 90,
-      "endDateTime": "2026-09-03T19:30:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=12941"
-    },
-    {
-      "cinema": "BFI Southbank",
-      "film": "Bitter Christmas",
-      "date": "2026-09-03",
-      "time": "18:10",
-      "dateTime": "2026-09-03T18:10:00",
-      "runtimeMinutes": 111,
-      "endDateTime": "2026-09-03T20:01:00",
-      "format": "Screen NFT2",
-      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D192647EA-0048-4535-9511-C7069D1F740E%26from_cinemas%3Dtrue&from_cinemas=true"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "Bitter Christmas",
-      "date": "2026-09-03",
-      "time": "18:10",
-      "dateTime": "2026-09-03T18:10:00",
-      "runtimeMinutes": 111,
-      "endDateTime": "2026-09-03T20:01:00",
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3642001"
-    },
-    {
-      "cinema": "BFI Southbank",
-      "film": "Sarah Maldoror Herself",
-      "date": "2026-09-03",
-      "time": "18:20",
-      "dateTime": "2026-09-03T18:20:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Screen NFT3",
-      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3DD432F241-A0CA-4FEB-88DE-D4AFD3BB3624%26from_cinemas%3Dtrue&from_cinemas=true"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "Kiki's Delivery Service",
-      "date": "2026-09-03",
-      "time": "18:20",
-      "dateTime": "2026-09-03T18:20:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 2",
-      "bookingUrl": "https://www.ica.art/films/kiki-s-delivery-service"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Teenage Sex and Death at Camp Miasma",
-      "date": "2026-09-03",
-      "time": "18:20",
-      "dateTime": "2026-09-03T18:20:00",
-      "runtimeMinutes": 112,
-      "endDateTime": "2026-09-03T20:12:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=12975"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "I Want Your Sex",
-      "date": "2026-09-03",
-      "time": "18:30",
-      "dateTime": "2026-09-03T18:30:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 1",
-      "bookingUrl": "https://www.ica.art/films/i-want-your-sex"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "I Want Your Sex",
-      "date": "2026-09-03",
-      "time": "18:30",
-      "dateTime": "2026-09-03T18:30:00",
-      "runtimeMinutes": 100,
-      "endDateTime": "2026-09-03T20:10:00",
-      "format": "S2",
-      "bookingUrl": "https://thecastlecinema.com/bookings/17660/"
-    },
-    {
-      "cinema": "Rio Cinema",
-      "film": "Kino Polonia: IDA",
-      "date": "2026-09-03",
-      "time": "18:30",
-      "dateTime": "2026-09-03T18:30:00",
-      "runtimeMinutes": 82,
-      "endDateTime": "2026-09-03T19:52:00",
-      "format": null,
-      "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2650256.TcsSection_936"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "LEVITICUS",
-      "date": "2026-09-03",
-      "time": "18:45",
-      "dateTime": "2026-09-03T18:45:00",
-      "runtimeMinutes": 85,
-      "endDateTime": "2026-09-03T20:10:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=12970"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "THE MISCONCEIVED presented by Jellied Reels",
-      "date": "2026-09-03",
-      "time": "18:45",
-      "dateTime": "2026-09-03T18:45:00",
-      "runtimeMinutes": 88,
-      "endDateTime": "2026-09-03T20:13:00",
-      "format": "S1",
-      "bookingUrl": "https://thecastlecinema.com/bookings/17461/"
-    },
-    {
-      "cinema": "Rio Cinema",
-      "film": "I WANT YOUR SEX",
-      "date": "2026-09-03",
-      "time": "18:45",
-      "dateTime": "2026-09-03T18:45:00",
-      "runtimeMinutes": 90,
-      "endDateTime": "2026-09-03T20:15:00",
-      "format": null,
-      "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2795123.TcsSection_1299"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Poetry Slam",
-      "date": "2026-09-03",
-      "time": "19:30",
-      "dateTime": "2026-09-03T19:30:00",
-      "runtimeMinutes": 150,
-      "endDateTime": "2026-09-03T22:00:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=12539"
-    },
-    {
-      "cinema": "Rio Cinema",
-      "film": "Pink Palace: Fassbinder – Fox and His Friends",
-      "date": "2026-09-03",
-      "time": "19:30",
-      "dateTime": "2026-09-03T19:30:00",
-      "runtimeMinutes": 123,
-      "endDateTime": "2026-09-03T21:33:00",
-      "format": null,
-      "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2761428.TcsSection_94575"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "The Odyssey [35mm]",
-      "date": "2026-09-03",
-      "time": "19:55",
-      "dateTime": "2026-09-03T19:55:00",
-      "runtimeMinutes": 172,
-      "endDateTime": "2026-09-03T22:47:00",
-      "format": null,
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3699715"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Big Screen Karaoke",
-      "date": "2026-09-03",
-      "time": "20:00",
-      "dateTime": "2026-09-03T20:00:00",
-      "runtimeMinutes": 120,
-      "endDateTime": "2026-09-03T22:00:00",
-      "format": "2D, ad-trailer",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121057/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "The Death of Robin Hood",
-      "date": "2026-09-03",
-      "time": "20:00",
-      "dateTime": "2026-09-03T20:00:00",
-      "runtimeMinutes": 120,
-      "endDateTime": "2026-09-03T22:00:00",
-      "format": "2D, Preview",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121521/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Bitter Christmas",
-      "date": "2026-09-03",
-      "time": "20:10",
-      "dateTime": "2026-09-03T20:10:00",
-      "runtimeMinutes": 111,
-      "endDateTime": "2026-09-03T22:01:00",
-      "format": "Sub Cinema, 2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121355/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "The Dog Stars",
-      "date": "2026-09-03",
-      "time": "20:10",
-      "dateTime": "2026-09-03T20:10:00",
-      "runtimeMinutes": 119,
-      "endDateTime": "2026-09-03T22:09:00",
-      "format": "2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121499/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Teenage Sex and Death at Camp Miasma",
-      "date": "2026-09-03",
-      "time": "20:15",
-      "dateTime": "2026-09-03T20:15:00",
-      "runtimeMinutes": 112,
-      "endDateTime": "2026-09-03T22:07:00",
-      "format": "2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121503/seats"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "The Odyssey",
-      "date": "2026-09-03",
-      "time": "20:15",
-      "dateTime": "2026-09-03T20:15:00",
-      "runtimeMinutes": 174,
-      "endDateTime": "2026-09-03T23:09:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=12942"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Colony",
-      "date": "2026-09-03",
-      "time": "20:20",
-      "dateTime": "2026-09-03T20:20:00",
-      "runtimeMinutes": 123,
-      "endDateTime": "2026-09-03T22:23:00",
-      "format": "Sub Cinema, 2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121501/seats"
-    },
-    {
-      "cinema": "BFI Southbank",
-      "film": "All to Mexico!",
-      "date": "2026-09-03",
-      "time": "20:30",
-      "dateTime": "2026-09-03T20:30:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Screen NFT3",
-      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D3FB89FC0-8675-47E6-893F-E1E6FFF60899%26from_cinemas%3Dtrue&from_cinemas=true"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "Matador",
-      "date": "2026-09-03",
-      "time": "20:30",
-      "dateTime": "2026-09-03T20:30:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 1",
-      "bookingUrl": "https://www.ica.art/films/matador"
-    },
-    {
-      "cinema": "BFI Southbank",
-      "film": "Bitter Christmas",
-      "date": "2026-09-03",
-      "time": "20:40",
-      "dateTime": "2026-09-03T20:40:00",
-      "runtimeMinutes": 111,
-      "endDateTime": "2026-09-03T22:31:00",
-      "format": "Screen NFT2",
-      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3DF830B858-532D-41F6-9C5A-19B2E7A22400%26from_cinemas%3Dtrue&from_cinemas=true"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "Bitter Christmas",
-      "date": "2026-09-03",
-      "time": "20:40",
-      "dateTime": "2026-09-03T20:40:00",
-      "runtimeMinutes": 111,
-      "endDateTime": "2026-09-03T22:31:00",
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3642201"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "Teenage Sex and Death at Camp Miasma",
-      "date": "2026-09-03",
-      "time": "20:40",
-      "dateTime": "2026-09-03T20:40:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 2",
-      "bookingUrl": "https://www.ica.art/films/teenage-sex-and-death-at-camp-miasma"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "Teenage Sex and Death at Camp Miasma",
-      "date": "2026-09-03",
-      "time": "20:45",
-      "dateTime": "2026-09-03T20:45:00",
-      "runtimeMinutes": 112,
-      "endDateTime": "2026-09-03T22:37:00",
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3698404"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "Teenage Sex and Death at Camp Miasma",
-      "date": "2026-09-03",
-      "time": "20:45",
-      "dateTime": "2026-09-03T20:45:00",
-      "runtimeMinutes": 112,
-      "endDateTime": "2026-09-03T22:37:00",
-      "format": "S2",
-      "bookingUrl": "https://thecastlecinema.com/bookings/17661/"
-    },
-    {
-      "cinema": "Rio Cinema",
-      "film": "TEENAGE SEX AND DEATH AT CAMP MIASMA",
-      "date": "2026-09-03",
-      "time": "20:45",
-      "dateTime": "2026-09-03T20:45:00",
-      "runtimeMinutes": 111,
-      "endDateTime": "2026-09-03T22:36:00",
-      "format": null,
-      "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2816767.TcsSection_936"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "LEVITICUS",
-      "date": "2026-09-03",
-      "time": "20:50",
-      "dateTime": "2026-09-03T20:50:00",
-      "runtimeMinutes": 85,
-      "endDateTime": "2026-09-03T22:15:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=12935"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Spider-Man: Brand New Day",
-      "date": "2026-09-03",
-      "time": "20:55",
-      "dateTime": "2026-09-03T20:55:00",
-      "runtimeMinutes": 140,
-      "endDateTime": "2026-09-03T23:15:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=12940"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Teenage Sex and Death at Camp Miasma",
-      "date": "2026-09-03",
-      "time": "20:55",
-      "dateTime": "2026-09-03T20:55:00",
-      "runtimeMinutes": 112,
-      "endDateTime": "2026-09-03T22:47:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=12938"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "Big Shark with Tommy Wiseau live on stage",
-      "date": "2026-09-03",
-      "time": "21:00",
-      "dateTime": "2026-09-03T21:00:00",
-      "runtimeMinutes": 104,
-      "endDateTime": "2026-09-03T22:44:00",
-      "format": "q-a",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626267"
-    },
-    {
-      "cinema": "BFI Southbank",
-      "film": "Le Beau Serge",
-      "date": "2026-09-03",
-      "time": "21:00",
-      "dateTime": "2026-09-03T21:00:00",
-      "runtimeMinutes": 97,
-      "endDateTime": "2026-09-03T22:37:00",
-      "format": "35mm, Screen NFT1",
-      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D2B047C55-C39D-42D9-825D-3EB5149DBDA3%26from_cinemas%3Dtrue&from_cinemas=true"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "The Dog Stars",
-      "date": "2026-09-03",
-      "time": "21:00",
-      "dateTime": "2026-09-03T21:00:00",
-      "runtimeMinutes": 118,
-      "endDateTime": "2026-09-03T22:58:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=12933"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "Bitter Christmas",
-      "date": "2026-09-03",
-      "time": "21:00",
-      "dateTime": "2026-09-03T21:00:00",
-      "runtimeMinutes": 111,
-      "endDateTime": "2026-09-03T22:51:00",
-      "format": "S1",
-      "bookingUrl": "https://thecastlecinema.com/bookings/17662/"
-    },
     {
       "cinema": "The Castle Cinema",
       "film": "Teenage Sex and Death at Camp Miasma",
@@ -1122,17 +220,6 @@
       "endDateTime": "2026-09-04T16:29:00",
       "format": "2D, Audio D",
       "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121651/seats"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "Terminator 2 : Judgment Day",
-      "date": "2026-09-04",
-      "time": "14:45",
-      "dateTime": "2026-09-04T14:45:00",
-      "runtimeMinutes": 137,
-      "endDateTime": "2026-09-04T17:02:00",
-      "format": "35mm",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627249"
     },
     {
       "cinema": "Picturehouse Central",
@@ -1927,17 +1014,6 @@
       "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121622/seats"
     },
     {
-      "cinema": "Barbican Cinema",
-      "film": "Parent & Baby Screening: Bitter Christmas",
-      "date": "2026-09-05",
-      "time": "11:15",
-      "dateTime": "2026-09-05T11:15:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "CAP",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3680801"
-    },
-    {
       "cinema": "The Castle Cinema",
       "film": "Late Fame",
       "date": "2026-09-05",
@@ -2048,17 +1124,6 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627059"
     },
     {
-      "cinema": "ICA Cinema",
-      "film": "Ish",
-      "date": "2026-09-05",
-      "time": "12:15",
-      "dateTime": "2026-09-05T12:15:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 2",
-      "bookingUrl": "https://www.ica.art/films/ish"
-    },
-    {
       "cinema": "BFI Southbank",
       "film": "Night at the Museum",
       "date": "2026-09-05",
@@ -2147,17 +1212,6 @@
       "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2816832.TcsSection_1299"
     },
     {
-      "cinema": "Barbican Cinema",
-      "film": "Tony",
-      "date": "2026-09-05",
-      "time": "13:45",
-      "dateTime": "2026-09-05T13:45:00",
-      "runtimeMinutes": 106,
-      "endDateTime": "2026-09-05T15:31:00",
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3714201"
-    },
-    {
       "cinema": "The Castle Cinema",
       "film": "Bitter Christmas",
       "date": "2026-09-05",
@@ -2167,28 +1221,6 @@
       "endDateTime": "2026-09-05T15:36:00",
       "format": "S2",
       "bookingUrl": "https://thecastlecinema.com/bookings/17687/"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "The Incomer",
-      "date": "2026-09-05",
-      "time": "13:55",
-      "dateTime": "2026-09-05T13:55:00",
-      "runtimeMinutes": 102,
-      "endDateTime": "2026-09-05T15:37:00",
-      "format": "CAP, AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3713802"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "Ambiguous Encounters: HAVANA: The Tricontinental Conference",
-      "date": "2026-09-05",
-      "time": "14:00",
-      "dateTime": "2026-09-05T14:00:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": null,
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3498801"
     },
     {
       "cinema": "ICA Cinema",
@@ -2400,28 +1432,6 @@
       "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=12983"
     },
     {
-      "cinema": "Barbican Cinema",
-      "film": "Ambiguous Encounters: DAKAR: The First World Festival...",
-      "date": "2026-09-05",
-      "time": "16:00",
-      "dateTime": "2026-09-05T16:00:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": null,
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3498402"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "Lady",
-      "date": "2026-09-05",
-      "time": "16:00",
-      "dateTime": "2026-09-05T16:00:00",
-      "runtimeMinutes": 95,
-      "endDateTime": "2026-09-05T17:35:00",
-      "format": null,
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3715404"
-    },
-    {
       "cinema": "ICA Cinema",
       "film": "Diary of a Shinjuku Thief",
       "date": "2026-09-05",
@@ -2453,17 +1463,6 @@
       "endDateTime": "2026-09-05T17:43:00",
       "format": null,
       "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2803007.TcsSection_1299"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "The Invite",
-      "date": "2026-09-05",
-      "time": "16:10",
-      "dateTime": "2026-09-05T16:10:00",
-      "runtimeMinutes": 108,
-      "endDateTime": "2026-09-05T17:58:00",
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3717001"
     },
     {
       "cinema": "The Castle Cinema",
@@ -2642,28 +1641,6 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626271"
     },
     {
-      "cinema": "Barbican Cinema",
-      "film": "Tony",
-      "date": "2026-09-05",
-      "time": "18:15",
-      "dateTime": "2026-09-05T18:15:00",
-      "runtimeMinutes": 106,
-      "endDateTime": "2026-09-05T20:01:00",
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3713201"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "Bitter Christmas",
-      "date": "2026-09-05",
-      "time": "18:15",
-      "dateTime": "2026-09-05T18:15:00",
-      "runtimeMinutes": 111,
-      "endDateTime": "2026-09-05T20:06:00",
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3715202"
-    },
-    {
       "cinema": "BFI Southbank",
       "film": "The Third Lover",
       "date": "2026-09-05",
@@ -2695,17 +1672,6 @@
       "endDateTime": "2026-09-05T20:01:00",
       "format": "S1",
       "bookingUrl": "https://thecastlecinema.com/bookings/17689/"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "Late Fame",
-      "date": "2026-09-05",
-      "time": "18:25",
-      "dateTime": "2026-09-05T18:25:00",
-      "runtimeMinutes": 96,
-      "endDateTime": "2026-09-05T20:01:00",
-      "format": null,
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3715803"
     },
     {
       "cinema": "Genesis Cinema",
@@ -2895,17 +1861,6 @@
       "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D19572DC9-E80B-496E-B0BE-71250A327AC0%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
-      "cinema": "Barbican Cinema",
-      "film": "The Incomer",
-      "date": "2026-09-05",
-      "time": "20:40",
-      "dateTime": "2026-09-05T20:40:00",
-      "runtimeMinutes": 102,
-      "endDateTime": "2026-09-05T22:22:00",
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3713202"
-    },
-    {
       "cinema": "ICA Cinema",
       "film": "Matador",
       "date": "2026-09-05",
@@ -2937,17 +1892,6 @@
       "endDateTime": "2026-09-05T22:05:00",
       "format": "S1",
       "bookingUrl": "https://thecastlecinema.com/bookings/17684/"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "Leviticus",
-      "date": "2026-09-05",
-      "time": "20:45",
-      "dateTime": "2026-09-05T20:45:00",
-      "runtimeMinutes": 88,
-      "endDateTime": "2026-09-05T22:13:00",
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3716601"
     },
     {
       "cinema": "Genesis Cinema",
@@ -4997,17 +3941,6 @@
     },
     {
       "cinema": "Genesis Cinema",
-      "film": "I Want Your Sex",
-      "date": "2026-09-07",
-      "time": "20:50",
-      "dateTime": "2026-09-07T20:50:00",
-      "runtimeMinutes": 90,
-      "endDateTime": "2026-09-07T22:20:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13041"
-    },
-    {
-      "cinema": "Genesis Cinema",
       "film": "The Invite",
       "date": "2026-09-07",
       "time": "20:50",
@@ -5016,6 +3949,17 @@
       "endDateTime": "2026-09-07T22:37:00",
       "format": null,
       "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13036"
+    },
+    {
+      "cinema": "Genesis Cinema",
+      "film": "I Want Your Sex",
+      "date": "2026-09-07",
+      "time": "20:50",
+      "dateTime": "2026-09-07T20:50:00",
+      "runtimeMinutes": 90,
+      "endDateTime": "2026-09-07T22:20:00",
+      "format": null,
+      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13041"
     },
     {
       "cinema": "The Castle Cinema",
@@ -5140,14 +4084,14 @@
     },
     {
       "cinema": "ICA Cinema",
-      "film": "The Visitor",
+      "film": "Ish",
       "date": "2026-09-08",
       "time": "12:10",
       "dateTime": "2026-09-08T12:10:00",
       "runtimeMinutes": null,
       "endDateTime": null,
       "format": "Cinema 2",
-      "bookingUrl": "https://www.ica.art/films/off-circuit-the-visitor"
+      "bookingUrl": "https://www.ica.art/films/ish"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -6779,17 +5723,6 @@
     },
     {
       "cinema": "Barbican Cinema",
-      "film": "Bitter Christmas",
-      "date": "2026-09-09",
-      "time": "20:35",
-      "dateTime": "2026-09-09T20:35:00",
-      "runtimeMinutes": 111,
-      "endDateTime": "2026-09-09T22:26:00",
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3715401"
-    },
-    {
-      "cinema": "Barbican Cinema",
       "film": "Leviticus",
       "date": "2026-09-09",
       "time": "20:35",
@@ -6798,6 +5731,17 @@
       "endDateTime": "2026-09-09T22:03:00",
       "format": "AD",
       "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3716204"
+    },
+    {
+      "cinema": "Barbican Cinema",
+      "film": "Bitter Christmas",
+      "date": "2026-09-09",
+      "time": "20:35",
+      "dateTime": "2026-09-09T20:35:00",
+      "runtimeMinutes": 111,
+      "endDateTime": "2026-09-09T22:26:00",
+      "format": "AD",
+      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3715401"
     },
     {
       "cinema": "Picturehouse Central",
@@ -9726,6 +8670,17 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627347"
     },
     {
+      "cinema": "ICA Cinema",
+      "film": "Queen at Sea",
+      "date": "2026-09-18",
+      "time": "16:00",
+      "dateTime": "2026-09-18T16:00:00",
+      "runtimeMinutes": null,
+      "endDateTime": null,
+      "format": "Cinema 1",
+      "bookingUrl": "https://www.ica.art/films/queen-at-sea"
+    },
+    {
       "cinema": "Prince Charles Cinema",
       "film": "We Are Fugazi From Washington, DC",
       "date": "2026-09-18",
@@ -9779,6 +8734,17 @@
       "endDateTime": "2026-09-18T20:07:00",
       "format": null,
       "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=12676"
+    },
+    {
+      "cinema": "ICA Cinema",
+      "film": "Queen at Sea",
+      "date": "2026-09-18",
+      "time": "18:30",
+      "dateTime": "2026-09-18T18:30:00",
+      "runtimeMinutes": null,
+      "endDateTime": null,
+      "format": "Cinema 2",
+      "bookingUrl": "https://www.ica.art/films/queen-at-sea"
     },
     {
       "cinema": "Genesis Cinema",
@@ -9968,6 +8934,17 @@
       "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2795163.TcsSection_936"
     },
     {
+      "cinema": "ICA Cinema",
+      "film": "Queen at Sea",
+      "date": "2026-09-19",
+      "time": "13:40",
+      "dateTime": "2026-09-19T13:40:00",
+      "runtimeMinutes": null,
+      "endDateTime": null,
+      "format": "Cinema 2",
+      "bookingUrl": "https://www.ica.art/films/queen-at-sea"
+    },
+    {
       "cinema": "Genesis Cinema",
       "film": "Resident Evil",
       "date": "2026-09-19",
@@ -10153,6 +9130,17 @@
       "endDateTime": "2026-09-19T22:41:00",
       "format": "Screen NFT2",
       "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D7D6A8984-A469-4729-9BB8-04C976DBEF34%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
+      "cinema": "ICA Cinema",
+      "film": "Queen at Sea",
+      "date": "2026-09-19",
+      "time": "20:40",
+      "dateTime": "2026-09-19T20:40:00",
+      "runtimeMinutes": null,
+      "endDateTime": null,
+      "format": "Cinema 1",
+      "bookingUrl": "https://www.ica.art/films/queen-at-sea"
     },
     {
       "cinema": "BFI Southbank",
@@ -10373,6 +9361,17 @@
       "endDateTime": "2026-09-20T19:05:00",
       "format": "4k",
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627822"
+    },
+    {
+      "cinema": "ICA Cinema",
+      "film": "Queen at Sea",
+      "date": "2026-09-20",
+      "time": "17:40",
+      "dateTime": "2026-09-20T17:40:00",
+      "runtimeMinutes": null,
+      "endDateTime": null,
+      "format": "Cinema 2",
+      "bookingUrl": "https://www.ica.art/films/queen-at-sea"
     },
     {
       "cinema": "BFI Southbank",
@@ -10738,6 +9737,17 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627383"
     },
     {
+      "cinema": "ICA Cinema",
+      "film": "Queen at Sea",
+      "date": "2026-09-22",
+      "time": "14:00",
+      "dateTime": "2026-09-22T14:00:00",
+      "runtimeMinutes": null,
+      "endDateTime": null,
+      "format": "Cinema 1",
+      "bookingUrl": "https://www.ica.art/films/queen-at-sea"
+    },
+    {
       "cinema": "BFI Southbank",
       "film": "Queen at Sea",
       "date": "2026-09-22",
@@ -10903,6 +9913,17 @@
       "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3DEAA7AEDF-EB50-408A-A455-108F46620346%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
+      "cinema": "ICA Cinema",
+      "film": "Queen at Sea",
+      "date": "2026-09-22",
+      "time": "20:50",
+      "dateTime": "2026-09-22T20:50:00",
+      "runtimeMinutes": null,
+      "endDateTime": null,
+      "format": "Cinema 2",
+      "bookingUrl": "https://www.ica.art/films/queen-at-sea"
+    },
+    {
       "cinema": "The Castle Cinema",
       "film": "Pitchblack Playback: John Coltrane 'Highlights 1957-1964'",
       "date": "2026-09-22",
@@ -10934,6 +9955,17 @@
       "endDateTime": "2026-09-23T13:51:00",
       "format": null,
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627747"
+    },
+    {
+      "cinema": "ICA Cinema",
+      "film": "Queen at Sea",
+      "date": "2026-09-23",
+      "time": "14:00",
+      "dateTime": "2026-09-23T14:00:00",
+      "runtimeMinutes": null,
+      "endDateTime": null,
+      "format": "Cinema 1",
+      "bookingUrl": "https://www.ica.art/films/queen-at-sea"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -11112,6 +10144,17 @@
       "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3DB8E77235-45C1-489A-9244-3915B636B6C7%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
+      "cinema": "ICA Cinema",
+      "film": "Queen at Sea",
+      "date": "2026-09-23",
+      "time": "20:40",
+      "dateTime": "2026-09-23T20:40:00",
+      "runtimeMinutes": null,
+      "endDateTime": null,
+      "format": "Cinema 1",
+      "bookingUrl": "https://www.ica.art/films/queen-at-sea"
+    },
+    {
       "cinema": "Prince Charles Cinema",
       "film": "April X",
       "date": "2026-09-23",
@@ -11165,6 +10208,17 @@
       "endDateTime": "2026-09-24T13:43:00",
       "format": null,
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627407"
+    },
+    {
+      "cinema": "ICA Cinema",
+      "film": "Queen at Sea",
+      "date": "2026-09-24",
+      "time": "14:00",
+      "dateTime": "2026-09-24T14:00:00",
+      "runtimeMinutes": null,
+      "endDateTime": null,
+      "format": "Cinema 1",
+      "bookingUrl": "https://www.ica.art/films/queen-at-sea"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -11288,6 +10342,17 @@
       "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2702698.TcsSection_936"
     },
     {
+      "cinema": "Barbican Cinema",
+      "film": "Lawrence Abu Hamdan: The Last Responders + Blow Out",
+      "date": "2026-09-24",
+      "time": "19:00",
+      "dateTime": "2026-09-24T19:00:00",
+      "runtimeMinutes": null,
+      "endDateTime": null,
+      "format": null,
+      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3602402"
+    },
+    {
       "cinema": "The Castle Cinema",
       "film": "Cine-Real presents: The Big Sleep",
       "date": "2026-09-24",
@@ -11319,6 +10384,17 @@
       "endDateTime": "2026-09-24T22:36:00",
       "format": "Screen NFT3",
       "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D0A9624AF-FA34-4620-B458-6F2BAD545911%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
+      "cinema": "ICA Cinema",
+      "film": "Queen at Sea",
+      "date": "2026-09-24",
+      "time": "20:40",
+      "dateTime": "2026-09-24T20:40:00",
+      "runtimeMinutes": null,
+      "endDateTime": null,
+      "format": "Cinema 2",
+      "bookingUrl": "https://www.ica.art/films/queen-at-sea"
     },
     {
       "cinema": "BFI Southbank",
@@ -11381,8 +10457,8 @@
       "date": "2026-09-25",
       "time": "13:00",
       "dateTime": "2026-09-25T13:00:00",
-      "runtimeMinutes": 150,
-      "endDateTime": "2026-09-25T15:30:00",
+      "runtimeMinutes": 106,
+      "endDateTime": "2026-09-25T14:46:00",
       "format": "2D, Screen Art",
       "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-119084/seats"
     },
@@ -12234,6 +11310,17 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627439"
     },
     {
+      "cinema": "Genesis Cinema",
+      "film": "I�m Still Here (2024) + Q&A - Women Resist",
+      "date": "2026-09-28",
+      "time": "17:50",
+      "dateTime": "2026-09-28T17:50:00",
+      "runtimeMinutes": 135,
+      "endDateTime": "2026-09-28T20:05:00",
+      "format": null,
+      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=12672"
+    },
+    {
       "cinema": "Prince Charles Cinema",
       "film": "Kill Bill: The Whole Bloody Affair",
       "date": "2026-09-28",
@@ -12488,7 +11575,7 @@
     },
     {
       "cinema": "Picturehouse Central",
-      "film": "Lumière! The Adventure Begins",
+      "film": "Lumière! The Adventure Begins + Thierry Frémaux In Conversation",
       "date": "2026-09-29",
       "time": "18:30",
       "dateTime": "2026-09-29T18:30:00",
@@ -13455,6 +12542,17 @@
       "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3DE134939B-162B-4F9C-A37B-DA7CBFC25F68%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
+      "cinema": "ICA Cinema",
+      "film": "Listen with your Eyes 6: Experimental Films for Families",
+      "date": "2026-10-04",
+      "time": "11:00",
+      "dateTime": "2026-10-04T11:00:00",
+      "runtimeMinutes": null,
+      "endDateTime": null,
+      "format": "Cinema 1",
+      "bookingUrl": "https://www.ica.art/films/listen-with-your-eyes-6-experimental-films-for-families"
+    },
+    {
       "cinema": "Prince Charles Cinema",
       "film": "Young Frankenstein",
       "date": "2026-10-04",
@@ -14197,8 +13295,8 @@
       "date": "2026-10-08",
       "time": "19:00",
       "dateTime": "2026-10-08T19:00:00",
-      "runtimeMinutes": 150,
-      "endDateTime": "2026-10-08T21:30:00",
+      "runtimeMinutes": 106,
+      "endDateTime": "2026-10-08T20:46:00",
       "format": "2D, Screen Art",
       "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-119085/seats"
     },
@@ -15924,8 +15022,8 @@
       "date": "2026-10-26",
       "time": "19:30",
       "dateTime": "2026-10-26T19:30:00",
-      "runtimeMinutes": 30,
-      "endDateTime": "2026-10-26T20:00:00",
+      "runtimeMinutes": 147,
+      "endDateTime": "2026-10-26T21:57:00",
       "format": "2D, ad-trailer, Q+A",
       "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-121829/seats"
     },
@@ -16305,17 +15403,6 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "Sing-A-Long-A Rocky Horror Picture Show",
-      "date": "2026-10-30",
-      "time": "20:30",
-      "dateTime": "2026-10-30T20:30:00",
-      "runtimeMinutes": 100,
-      "endDateTime": "2026-10-30T22:10:00",
-      "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625928"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
       "film": "The Texas Chain Saw Massacre",
       "date": "2026-10-30",
       "time": "20:50",
@@ -16412,17 +15499,6 @@
       "endDateTime": "2026-10-31T19:19:00",
       "format": "live-score",
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626012"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "Sing-A-Long-A Rocky Horror Picture Show",
-      "date": "2026-10-31",
-      "time": "20:30",
-      "dateTime": "2026-10-31T20:30:00",
-      "runtimeMinutes": 100,
-      "endDateTime": "2026-10-31T22:10:00",
-      "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625927"
     },
     {
       "cinema": "Genesis Cinema",
@@ -16661,8 +15737,8 @@
       "date": "2026-11-09",
       "time": "14:00",
       "dateTime": "2026-11-09T14:00:00",
-      "runtimeMinutes": 150,
-      "endDateTime": "2026-11-09T16:30:00",
+      "runtimeMinutes": 106,
+      "endDateTime": "2026-11-09T15:46:00",
       "format": "2D, Screen Art",
       "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-119086/seats"
     },
@@ -16863,17 +15939,6 @@
       "endDateTime": "2026-11-19T13:34:00",
       "format": null,
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627818"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "We Are the Night",
-      "date": "2026-11-19",
-      "time": "18:00",
-      "dateTime": "2026-11-19T18:00:00",
-      "runtimeMinutes": 100,
-      "endDateTime": "2026-11-19T19:40:00",
-      "format": "intro",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627846"
     },
     {
       "cinema": "Picturehouse Central",
@@ -17499,7 +16564,7 @@
       "dateTime": "2026-11-30T20:30:00",
       "runtimeMinutes": 109,
       "endDateTime": "2026-11-30T22:19:00",
-      "format": null,
+      "format": "35mm",
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627936"
     },
     {
@@ -17581,14 +16646,14 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "Scrooged",
+      "film": "Phantom Thread",
       "date": "2026-12-01",
       "time": "20:45",
       "dateTime": "2026-12-01T20:45:00",
-      "runtimeMinutes": 102,
-      "endDateTime": "2026-12-01T22:27:00",
-      "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627948"
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-01T22:55:00",
+      "format": "35mm",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628199"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -18373,6 +17438,50 @@
     },
     {
       "cinema": "Prince Charles Cinema",
+      "film": "Tokyo Godfathers",
+      "date": "2026-12-11",
+      "time": "12:30",
+      "dateTime": "2026-12-11T12:30:00",
+      "runtimeMinutes": 88,
+      "endDateTime": "2026-12-11T13:58:00",
+      "format": "sub",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628073"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-11",
+      "time": "12:45",
+      "dateTime": "2026-12-11T12:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-11T14:14:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628072"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Holdovers",
+      "date": "2026-12-11",
+      "time": "14:45",
+      "dateTime": "2026-12-11T14:45:00",
+      "runtimeMinutes": 134,
+      "endDateTime": "2026-12-11T16:59:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628074"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-11",
+      "time": "15:00",
+      "dateTime": "2026-12-11T15:00:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-11T17:10:00",
+      "format": "hoh",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628076"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
       "film": "It's A Wonderful Life",
       "date": "2026-12-11",
       "time": "17:45",
@@ -18381,6 +17490,28 @@
       "endDateTime": "2026-12-11T19:55:00",
       "format": "4k",
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627522"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-11",
+      "time": "18:00",
+      "dateTime": "2026-12-11T18:00:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-11T19:29:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628075"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Love Actually",
+      "date": "2026-12-11",
+      "time": "20:30",
+      "dateTime": "2026-12-11T20:30:00",
+      "runtimeMinutes": 135,
+      "endDateTime": "2026-12-11T22:45:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628077"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -18395,6 +17526,94 @@
     },
     {
       "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-12",
+      "time": "11:45",
+      "dateTime": "2026-12-12T11:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-12T13:14:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628081"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-12",
+      "time": "12:00",
+      "dateTime": "2026-12-12T12:00:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-12T14:10:00",
+      "format": "4k",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628111"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-12",
+      "time": "14:45",
+      "dateTime": "2026-12-12T14:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-12T16:14:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628082"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Elf",
+      "date": "2026-12-12",
+      "time": "15:00",
+      "dateTime": "2026-12-12T15:00:00",
+      "runtimeMinutes": 97,
+      "endDateTime": "2026-12-12T16:37:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628089"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-12",
+      "time": "17:20",
+      "dateTime": "2026-12-12T17:20:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-12T19:30:00",
+      "format": "4k hoh",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628087"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-12",
+      "time": "17:40",
+      "dateTime": "2026-12-12T17:40:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-12T19:09:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628088"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Home Alone",
+      "date": "2026-12-12",
+      "time": "20:20",
+      "dateTime": "2026-12-12T20:20:00",
+      "runtimeMinutes": 103,
+      "endDateTime": "2026-12-12T22:03:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628086"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-12",
+      "time": "20:35",
+      "dateTime": "2026-12-12T20:35:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-12T22:04:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628085"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
       "film": "The Lord of the Rings Trilogy [Theatrical Editions]",
       "date": "2026-12-12",
       "time": "23:30",
@@ -18406,6 +17625,435 @@
     },
     {
       "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-13",
+      "time": "11:30",
+      "dateTime": "2026-12-13T11:30:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-13T12:59:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628094"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Home Alone",
+      "date": "2026-12-13",
+      "time": "11:55",
+      "dateTime": "2026-12-13T11:55:00",
+      "runtimeMinutes": 103,
+      "endDateTime": "2026-12-13T13:38:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628110"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-13",
+      "time": "14:15",
+      "dateTime": "2026-12-13T14:15:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-13T15:44:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628093"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-13",
+      "time": "14:35",
+      "dateTime": "2026-12-13T14:35:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-13T16:45:00",
+      "format": "hoh",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628096"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-13",
+      "time": "17:10",
+      "dateTime": "2026-12-13T17:10:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-13T18:39:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628092"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-13",
+      "time": "17:30",
+      "dateTime": "2026-12-13T17:30:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-13T19:40:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628097"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Love Actually",
+      "date": "2026-12-13",
+      "time": "20:05",
+      "dateTime": "2026-12-13T20:05:00",
+      "runtimeMinutes": 135,
+      "endDateTime": "2026-12-13T22:20:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628090"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Die Hard [is a Christmas Movie]",
+      "date": "2026-12-13",
+      "time": "20:20",
+      "dateTime": "2026-12-13T20:20:00",
+      "runtimeMinutes": 131,
+      "endDateTime": "2026-12-13T22:31:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628091"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-14",
+      "time": "12:00",
+      "dateTime": "2026-12-14T12:00:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-14T14:10:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628098"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "In The Mood For Love",
+      "date": "2026-12-14",
+      "time": "12:15",
+      "dateTime": "2026-12-14T12:15:00",
+      "runtimeMinutes": 98,
+      "endDateTime": "2026-12-14T13:53:00",
+      "format": "35mm",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628100"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Love Actually",
+      "date": "2026-12-14",
+      "time": "14:35",
+      "dateTime": "2026-12-14T14:35:00",
+      "runtimeMinutes": 135,
+      "endDateTime": "2026-12-14T16:50:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628108"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Goodfellas",
+      "date": "2026-12-14",
+      "time": "14:50",
+      "dateTime": "2026-12-14T14:50:00",
+      "runtimeMinutes": 145,
+      "endDateTime": "2026-12-14T17:15:00",
+      "format": "35mm",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628109"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-14",
+      "time": "17:45",
+      "dateTime": "2026-12-14T17:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-14T19:14:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628105"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Nightmare Before Christmas",
+      "date": "2026-12-14",
+      "time": "18:15",
+      "dateTime": "2026-12-14T18:15:00",
+      "runtimeMinutes": 73,
+      "endDateTime": "2026-12-14T19:28:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628102"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-14",
+      "time": "20:25",
+      "dateTime": "2026-12-14T20:25:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-14T22:35:00",
+      "format": "hoh",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628099"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Die Hard [is a Christmas Movie]",
+      "date": "2026-12-14",
+      "time": "20:45",
+      "dateTime": "2026-12-14T20:45:00",
+      "runtimeMinutes": 131,
+      "endDateTime": "2026-12-14T22:56:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628112"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Eyes Wide Shut",
+      "date": "2026-12-15",
+      "time": "12:00",
+      "dateTime": "2026-12-15T12:00:00",
+      "runtimeMinutes": 159,
+      "endDateTime": "2026-12-15T14:39:00",
+      "format": "35mm",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628119"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Elf",
+      "date": "2026-12-15",
+      "time": "12:20",
+      "dateTime": "2026-12-15T12:20:00",
+      "runtimeMinutes": 97,
+      "endDateTime": "2026-12-15T13:57:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628120"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-15",
+      "time": "15:05",
+      "dateTime": "2026-12-15T15:05:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-15T17:15:00",
+      "format": "hoh",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628121"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Phantom Thread",
+      "date": "2026-12-15",
+      "time": "15:25",
+      "dateTime": "2026-12-15T15:25:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-15T17:35:00",
+      "format": "35mm",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628118"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-15",
+      "time": "18:00",
+      "dateTime": "2026-12-15T18:00:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-15T20:10:00",
+      "format": "hoh",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628113"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Tokyo Godfathers",
+      "date": "2026-12-15",
+      "time": "18:20",
+      "dateTime": "2026-12-15T18:20:00",
+      "runtimeMinutes": 88,
+      "endDateTime": "2026-12-15T19:48:00",
+      "format": "sub",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628116"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-15",
+      "time": "20:45",
+      "dateTime": "2026-12-15T20:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-15T22:14:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628115"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "American Psycho",
+      "date": "2026-12-15",
+      "time": "21:00",
+      "dateTime": "2026-12-15T21:00:00",
+      "runtimeMinutes": 101,
+      "endDateTime": "2026-12-15T22:41:00",
+      "format": "35mm",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628117"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "La Haine",
+      "date": "2026-12-16",
+      "time": "12:00",
+      "dateTime": "2026-12-16T12:00:00",
+      "runtimeMinutes": 98,
+      "endDateTime": "2026-12-16T13:38:00",
+      "format": "4k",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628123"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-16",
+      "time": "12:20",
+      "dateTime": "2026-12-16T12:20:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-16T14:30:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628122"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Die Hard [is a Christmas Movie]",
+      "date": "2026-12-16",
+      "time": "14:30",
+      "dateTime": "2026-12-16T14:30:00",
+      "runtimeMinutes": 131,
+      "endDateTime": "2026-12-16T16:41:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628124"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "A Very Harold & Kumar Christmas",
+      "date": "2026-12-16",
+      "time": "15:30",
+      "dateTime": "2026-12-16T15:30:00",
+      "runtimeMinutes": 90,
+      "endDateTime": "2026-12-16T17:00:00",
+      "format": "1-mem",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628125"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-16",
+      "time": "17:30",
+      "dateTime": "2026-12-16T17:30:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-16T18:59:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628127"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-16",
+      "time": "18:00",
+      "dateTime": "2026-12-16T18:00:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-16T20:10:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628126"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Eyes Wide Shut",
+      "date": "2026-12-16",
+      "time": "20:30",
+      "dateTime": "2026-12-16T20:30:00",
+      "runtimeMinutes": 159,
+      "endDateTime": "2026-12-16T23:09:00",
+      "format": "35mm",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628128"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Holdovers",
+      "date": "2026-12-16",
+      "time": "20:50",
+      "dateTime": "2026-12-16T20:50:00",
+      "runtimeMinutes": 134,
+      "endDateTime": "2026-12-16T23:04:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628129"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Home Alone",
+      "date": "2026-12-17",
+      "time": "12:25",
+      "dateTime": "2026-12-17T12:25:00",
+      "runtimeMinutes": 103,
+      "endDateTime": "2026-12-17T14:08:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628135"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Apartment",
+      "date": "2026-12-17",
+      "time": "12:40",
+      "dateTime": "2026-12-17T12:40:00",
+      "runtimeMinutes": 125,
+      "endDateTime": "2026-12-17T14:45:00",
+      "format": "35mm",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628138"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-17",
+      "time": "15:00",
+      "dateTime": "2026-12-17T15:00:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-17T17:10:00",
+      "format": "hoh",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628136"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Angel's Egg",
+      "date": "2026-12-17",
+      "time": "15:30",
+      "dateTime": "2026-12-17T15:30:00",
+      "runtimeMinutes": 71,
+      "endDateTime": "2026-12-17T16:41:00",
+      "format": "4k sub",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628137"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-17",
+      "time": "17:45",
+      "dateTime": "2026-12-17T17:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-17T19:14:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628134"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Elf",
+      "date": "2026-12-17",
+      "time": "18:05",
+      "dateTime": "2026-12-17T18:05:00",
+      "runtimeMinutes": 97,
+      "endDateTime": "2026-12-17T19:42:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628131"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-17",
+      "time": "20:25",
+      "dateTime": "2026-12-17T20:25:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-17T22:35:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628130"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
       "film": "Solve Along A Murder She Wrote",
       "date": "2026-12-17",
       "time": "20:45",
@@ -18414,6 +18062,600 @@
       "endDateTime": "2026-12-17T22:45:00",
       "format": null,
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627230"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Home Alone",
+      "date": "2026-12-18",
+      "time": "12:15",
+      "dateTime": "2026-12-18T12:15:00",
+      "runtimeMinutes": 103,
+      "endDateTime": "2026-12-18T13:58:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628149"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Nightmare Before Christmas",
+      "date": "2026-12-18",
+      "time": "12:35",
+      "dateTime": "2026-12-18T12:35:00",
+      "runtimeMinutes": 73,
+      "endDateTime": "2026-12-18T13:48:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628148"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-18",
+      "time": "14:45",
+      "dateTime": "2026-12-18T14:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-18T16:14:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628147"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-18",
+      "time": "15:00",
+      "dateTime": "2026-12-18T15:00:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-18T17:10:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628146"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-18",
+      "time": "17:45",
+      "dateTime": "2026-12-18T17:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-18T19:14:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628145"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-18",
+      "time": "18:00",
+      "dateTime": "2026-12-18T18:00:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-18T20:10:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628141"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Die Hard [is a Christmas Movie]",
+      "date": "2026-12-18",
+      "time": "20:35",
+      "dateTime": "2026-12-18T20:35:00",
+      "runtimeMinutes": 131,
+      "endDateTime": "2026-12-18T22:46:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628151"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Love Actually",
+      "date": "2026-12-18",
+      "time": "20:55",
+      "dateTime": "2026-12-18T20:55:00",
+      "runtimeMinutes": 135,
+      "endDateTime": "2026-12-18T23:10:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628152"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-19",
+      "time": "11:45",
+      "dateTime": "2026-12-19T11:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-19T13:14:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628153"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-19",
+      "time": "12:05",
+      "dateTime": "2026-12-19T12:05:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-19T14:15:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628142"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-19",
+      "time": "14:45",
+      "dateTime": "2026-12-19T14:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-19T16:14:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628154"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Home Alone",
+      "date": "2026-12-19",
+      "time": "15:00",
+      "dateTime": "2026-12-19T15:00:00",
+      "runtimeMinutes": 103,
+      "endDateTime": "2026-12-19T16:43:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628150"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-19",
+      "time": "17:25",
+      "dateTime": "2026-12-19T17:25:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-19T19:35:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628143"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-19",
+      "time": "17:45",
+      "dateTime": "2026-12-19T17:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-19T19:14:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628155"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Love Actually",
+      "date": "2026-12-19",
+      "time": "20:20",
+      "dateTime": "2026-12-19T20:20:00",
+      "runtimeMinutes": 135,
+      "endDateTime": "2026-12-19T22:35:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628157"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-19",
+      "time": "20:45",
+      "dateTime": "2026-12-19T20:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-19T22:14:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628156"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-20",
+      "time": "11:45",
+      "dateTime": "2026-12-20T11:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-20T13:14:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628158"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Elf",
+      "date": "2026-12-20",
+      "time": "12:05",
+      "dateTime": "2026-12-20T12:05:00",
+      "runtimeMinutes": 97,
+      "endDateTime": "2026-12-20T13:42:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628166"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-20",
+      "time": "14:25",
+      "dateTime": "2026-12-20T14:25:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-20T16:35:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628164"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-20",
+      "time": "14:45",
+      "dateTime": "2026-12-20T14:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-20T16:14:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628160"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Home Alone",
+      "date": "2026-12-20",
+      "time": "17:25",
+      "dateTime": "2026-12-20T17:25:00",
+      "runtimeMinutes": 103,
+      "endDateTime": "2026-12-20T19:08:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628165"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-20",
+      "time": "17:45",
+      "dateTime": "2026-12-20T17:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-20T19:14:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628161"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-20",
+      "time": "20:05",
+      "dateTime": "2026-12-20T20:05:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-20T22:15:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628163"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-20",
+      "time": "20:45",
+      "dateTime": "2026-12-20T20:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-20T22:14:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628162"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-21",
+      "time": "12:00",
+      "dateTime": "2026-12-21T12:00:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-21T13:29:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628167"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "In The Mood For Love",
+      "date": "2026-12-21",
+      "time": "12:20",
+      "dateTime": "2026-12-21T12:20:00",
+      "runtimeMinutes": 98,
+      "endDateTime": "2026-12-21T13:58:00",
+      "format": "35mm",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628184"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-21",
+      "time": "14:45",
+      "dateTime": "2026-12-21T14:45:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-21T16:55:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628183"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Home Alone",
+      "date": "2026-12-21",
+      "time": "15:00",
+      "dateTime": "2026-12-21T15:00:00",
+      "runtimeMinutes": 103,
+      "endDateTime": "2026-12-21T16:43:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628185"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-21",
+      "time": "17:45",
+      "dateTime": "2026-12-21T17:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-21T19:14:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628168"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-21",
+      "time": "18:05",
+      "dateTime": "2026-12-21T18:05:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-21T20:15:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628182"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Die Hard [is a Christmas Movie]",
+      "date": "2026-12-21",
+      "time": "20:40",
+      "dateTime": "2026-12-21T20:40:00",
+      "runtimeMinutes": 131,
+      "endDateTime": "2026-12-21T22:51:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628191"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Carol",
+      "date": "2026-12-21",
+      "time": "21:00",
+      "dateTime": "2026-12-21T21:00:00",
+      "runtimeMinutes": 118,
+      "endDateTime": "2026-12-21T22:58:00",
+      "format": "35mm",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628190"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-22",
+      "time": "11:45",
+      "dateTime": "2026-12-22T11:45:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-22T13:55:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628180"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Home Alone",
+      "date": "2026-12-22",
+      "time": "12:20",
+      "dateTime": "2026-12-22T12:20:00",
+      "runtimeMinutes": 103,
+      "endDateTime": "2026-12-22T14:03:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628187"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-22",
+      "time": "14:45",
+      "dateTime": "2026-12-22T14:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-22T16:14:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628169"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Die Hard [is a Christmas Movie]",
+      "date": "2026-12-22",
+      "time": "15:05",
+      "dateTime": "2026-12-22T15:05:00",
+      "runtimeMinutes": 131,
+      "endDateTime": "2026-12-22T17:16:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628192"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-22",
+      "time": "17:45",
+      "dateTime": "2026-12-22T17:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-22T19:14:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628170"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-22",
+      "time": "18:00",
+      "dateTime": "2026-12-22T18:00:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-22T20:10:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628181"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Love Actually",
+      "date": "2026-12-22",
+      "time": "20:35",
+      "dateTime": "2026-12-22T20:35:00",
+      "runtimeMinutes": 135,
+      "endDateTime": "2026-12-22T22:50:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628196"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Holdovers",
+      "date": "2026-12-22",
+      "time": "20:50",
+      "dateTime": "2026-12-22T20:50:00",
+      "runtimeMinutes": 134,
+      "endDateTime": "2026-12-22T23:04:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628195"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-23",
+      "time": "11:45",
+      "dateTime": "2026-12-23T11:45:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-23T13:55:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628179"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Elf",
+      "date": "2026-12-23",
+      "time": "12:30",
+      "dateTime": "2026-12-23T12:30:00",
+      "runtimeMinutes": 97,
+      "endDateTime": "2026-12-23T14:07:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628197"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-23",
+      "time": "14:50",
+      "dateTime": "2026-12-23T14:50:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-23T16:19:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628171"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Home Alone",
+      "date": "2026-12-23",
+      "time": "15:10",
+      "dateTime": "2026-12-23T15:10:00",
+      "runtimeMinutes": 103,
+      "endDateTime": "2026-12-23T16:53:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628188"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-23",
+      "time": "17:35",
+      "dateTime": "2026-12-23T17:35:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-23T19:45:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628178"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-23",
+      "time": "17:50",
+      "dateTime": "2026-12-23T17:50:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-23T19:19:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628172"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Die Hard [is a Christmas Movie]",
+      "date": "2026-12-23",
+      "time": "20:30",
+      "dateTime": "2026-12-23T20:30:00",
+      "runtimeMinutes": 131,
+      "endDateTime": "2026-12-23T22:41:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628193"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-23",
+      "time": "20:45",
+      "dateTime": "2026-12-23T20:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-23T22:14:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628173"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-24",
+      "time": "12:00",
+      "dateTime": "2026-12-24T12:00:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-24T13:29:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628174"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Home Alone",
+      "date": "2026-12-24",
+      "time": "12:15",
+      "dateTime": "2026-12-24T12:15:00",
+      "runtimeMinutes": 103,
+      "endDateTime": "2026-12-24T13:58:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628189"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Die Hard [is a Christmas Movie]",
+      "date": "2026-12-24",
+      "time": "14:40",
+      "dateTime": "2026-12-24T14:40:00",
+      "runtimeMinutes": 131,
+      "endDateTime": "2026-12-24T16:51:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628194"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-24",
+      "time": "15:00",
+      "dateTime": "2026-12-24T15:00:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-24T16:29:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628175"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Muppet Christmas Carol",
+      "date": "2026-12-24",
+      "time": "17:45",
+      "dateTime": "2026-12-24T17:45:00",
+      "runtimeMinutes": 89,
+      "endDateTime": "2026-12-24T19:14:00",
+      "format": "sing-along",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628176"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "It's A Wonderful Life",
+      "date": "2026-12-24",
+      "time": "18:05",
+      "dateTime": "2026-12-24T18:05:00",
+      "runtimeMinutes": 130,
+      "endDateTime": "2026-12-24T20:15:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628177"
     },
     {
       "cinema": "Picturehouse Central",
@@ -18452,7 +18694,7 @@
   "errors": [
     {
       "fetcher": "fetchCineworldO2Greenwich",
-      "reason": "Cineworld API request failed (403): https://www.cineworld.co.uk/uk/data-api-service/v1/quickbook/10108/dates/in-cinema/077/until/2026-09-24?attr=&lang=en_GB"
+      "reason": "Cineworld API request failed (403): https://www.cineworld.co.uk/uk/data-api-service/v1/quickbook/10108/dates/in-cinema/077/until/2026-09-25?attr=&lang=en_GB"
     },
     {
       "fetcher": "fetchVueWestfieldStratford",
