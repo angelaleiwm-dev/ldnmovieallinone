@@ -9,8 +9,14 @@ const state = {
   showings: [],
   loaded: false,
   knownFilmKeys: new Set(),
+  allFilmTitles: [],
   double: { subMode: "date", date: null, filmA: null, filmB: null },
   triple: { subMode: "date", date: null, filmA: null, filmB: null, filmC: null },
+  // "Show more" state for Pick a Date, reset whenever that bill's date changes.
+  expanded: {
+    double: { same: false, cross: false },
+    triple: { same: false, cross: false },
+  },
 };
 
 function isKnownFilm(title) {
@@ -69,6 +75,10 @@ function uniqueFilmTitles(showings) {
   return [...byKey.values()]
     .map((counts) => [...counts.entries()].sort((a, b) => b[1] - a[1])[0][0])
     .sort((a, b) => a.localeCompare(b));
+}
+
+function datalistOptionsHtml(titles) {
+  return titles.map((title) => `<option value="${escapeHtml(title)}"></option>`).join("");
 }
 
 function filmBlockHtml(label, s) {
@@ -140,11 +150,23 @@ function singleFilmFallbackHtml(dayShowings, dateLabel) {
   `;
 }
 
-function columnHtml(title, cards) {
+function columnHtml(title, allItems, renderCard, cap, billKey, expandKey) {
+  const expanded = state.expanded[billKey][expandKey];
+  const shown = expanded ? allItems : allItems.slice(0, cap);
+  const remaining = allItems.length - shown.length;
   return `
     <section class="surprise-column">
       <h3 class="surprise-column-heading">${escapeHtml(title)}</h3>
-      ${cards.length ? cards.join("") : `<p class="status status--compact">None available for this date.</p>`}
+      ${
+        allItems.length
+          ? shown.map(renderCard).join("")
+          : `<p class="status status--compact">None available for this date.</p>`
+      }
+      ${
+        remaining > 0
+          ? `<button type="button" class="show-more-btn" data-bill="${billKey}" data-expand="${expandKey}">Show ${remaining} more</button>`
+          : ""
+      }
     </section>
   `;
 }
@@ -174,23 +196,14 @@ function renderDoubleByDate(resultsEl) {
 
   const sameCinema = allPairs.filter((p) => p.sameCinema);
   const crossCinema = allPairs.filter((p) => !p.sameCinema);
-  let sameShown, crossShown;
-  if (sameCinema.length === 0) {
-    sameShown = [];
-    crossShown = crossCinema.slice(0, MAX_SUGGESTIONS * 2);
-  } else if (crossCinema.length === 0) {
-    sameShown = sameCinema.slice(0, MAX_SUGGESTIONS * 2);
-    crossShown = [];
-  } else {
-    sameShown = sameCinema.slice(0, MAX_SUGGESTIONS);
-    crossShown = crossCinema.slice(0, MAX_SUGGESTIONS);
-  }
+  const sameCap = crossCinema.length === 0 ? MAX_SUGGESTIONS * 2 : MAX_SUGGESTIONS;
+  const crossCap = sameCinema.length === 0 ? MAX_SUGGESTIONS * 2 : MAX_SUGGESTIONS;
 
   resultsEl.innerHTML = `
     <h2 class="day-heading">${dateLabel}</h2>
     <div class="surprise-columns">
-      ${columnHtml("Same Cinema", sameShown.map(doublePairCardHtml))}
-      ${columnHtml("Different Cinemas", crossShown.map(doublePairCardHtml))}
+      ${columnHtml("Same Cinema", sameCinema, doublePairCardHtml, sameCap, "double", "same")}
+      ${columnHtml("Different Cinemas", crossCinema, doublePairCardHtml, crossCap, "double", "cross")}
     </div>
   `;
 }
@@ -242,23 +255,14 @@ function renderTripleByDate(resultsEl) {
 
   const sameCinema = allTriples.filter((t) => t.allSameCinema);
   const crossCinema = allTriples.filter((t) => !t.allSameCinema);
-  let sameShown, crossShown;
-  if (sameCinema.length === 0) {
-    sameShown = [];
-    crossShown = crossCinema.slice(0, MAX_SUGGESTIONS * 2);
-  } else if (crossCinema.length === 0) {
-    sameShown = sameCinema.slice(0, MAX_SUGGESTIONS * 2);
-    crossShown = [];
-  } else {
-    sameShown = sameCinema.slice(0, MAX_SUGGESTIONS);
-    crossShown = crossCinema.slice(0, MAX_SUGGESTIONS);
-  }
+  const sameCap = crossCinema.length === 0 ? MAX_SUGGESTIONS * 2 : MAX_SUGGESTIONS;
+  const crossCap = sameCinema.length === 0 ? MAX_SUGGESTIONS * 2 : MAX_SUGGESTIONS;
 
   resultsEl.innerHTML = `
     <h2 class="day-heading">${dateLabel}</h2>
     <div class="surprise-columns">
-      ${columnHtml("Same Cinema", sameShown.map(triplePairCardHtml))}
-      ${columnHtml("Different Cinemas", crossShown.map(triplePairCardHtml))}
+      ${columnHtml("Same Cinema", sameCinema, triplePairCardHtml, sameCap, "triple", "same")}
+      ${columnHtml("Different Cinemas", crossCinema, triplePairCardHtml, crossCap, "triple", "cross")}
     </div>
   `;
 }
@@ -331,15 +335,80 @@ function updateSecondFilmOptions({
   }
 }
 
+// Bidirectional: either box can be filled first — same reasoning as the
+// regular site's planner.mjs. findPairs with only filmA set returns every
+// valid "what could follow this" pairing; with only filmB set, every
+// valid "what could precede this" pairing. Only double bill works this
+// way (not triple — chaining three mutually-constraining fields both
+// directions is a lot more complex for not much added benefit).
+function updateOtherDoubleFilmOptions(editedRole, els) {
+  const isA = editedRole === "A";
+  const sourceValue = isA ? state.double.filmA : state.double.filmB;
+  const otherInput = isA ? els.filmBInput : els.filmAInput;
+  const otherOptions = isA ? els.filmBOptions : els.filmAOptions;
+  const otherHint = isA ? els.filmBHint : els.filmAHint;
+  const otherFieldKey = isA ? "filmB" : "filmA";
+  const relationWord = isA ? "after" : "before";
+
+  if (!isKnownFilm(sourceValue)) {
+    otherOptions.innerHTML = datalistOptionsHtml(state.allFilmTitles);
+    otherInput.disabled = false;
+    otherInput.placeholder = "Type a film title…";
+    otherHint.textContent = "";
+    return;
+  }
+
+  const pairs = findPairs(
+    state.showings,
+    lffMinGap,
+    isA ? { filmA: sourceValue } : { filmB: sourceValue }
+  );
+  const validTitles = uniqueFilmTitles(pairs.map((p) => (isA ? p.filmB : p.filmA)));
+
+  if (validTitles.length === 0) {
+    otherOptions.innerHTML = "";
+    otherInput.disabled = true;
+    otherInput.placeholder = "No films pair with this one";
+    otherHint.textContent = `No film currently pairs with "${sourceValue}" ${relationWord} it on any festival day — try a different film.`;
+    if (state.double[otherFieldKey]) {
+      state.double[otherFieldKey] = null;
+      otherInput.value = "";
+    }
+    return;
+  }
+
+  otherInput.disabled = false;
+  otherInput.placeholder = "Type a film title…";
+  otherOptions.innerHTML = datalistOptionsHtml(validTitles);
+  otherHint.textContent = `${validTitles.length} film${
+    validTitles.length === 1 ? "" : "s"
+  } could go ${relationWord} "${sourceValue}".`;
+
+  const stillValid =
+    state.double[otherFieldKey] &&
+    validTitles.some(
+      (t) => normalizeTitleForGrouping(t) === normalizeTitleForGrouping(state.double[otherFieldKey])
+    );
+  if (state.double[otherFieldKey] && !stillValid) {
+    state.double[otherFieldKey] = null;
+    otherInput.value = "";
+  }
+}
+
 function initDouble() {
   const modeTabs = document.querySelectorAll(".lff-double-mode-tab");
   const dateRow = document.querySelector(".lff-double-date-row");
   const pickForm = document.getElementById("lff-double-pick-form");
   const dateInput = document.getElementById("lff-double-date");
-  const filmAInput = document.getElementById("lff-double-film-a");
-  const filmBInput = document.getElementById("lff-double-film-b");
-  const filmBOptions = document.getElementById("lff-double-film-b-options");
-  const filmBHint = document.getElementById("lff-double-film-b-hint");
+  const resultsEl = document.getElementById("lff-double-results");
+  const els = {
+    filmAInput: document.getElementById("lff-double-film-a"),
+    filmBInput: document.getElementById("lff-double-film-b"),
+    filmAOptions: document.getElementById("lff-double-film-a-options"),
+    filmBOptions: document.getElementById("lff-double-film-b-options"),
+    filmAHint: document.getElementById("lff-double-film-a-hint"),
+    filmBHint: document.getElementById("lff-double-film-b-hint"),
+  };
 
   modeTabs.forEach((tab) => {
     tab.addEventListener("click", () => {
@@ -355,30 +424,31 @@ function initDouble() {
   dateInput.addEventListener("change", () => {
     if (dateInput.value) {
       state.double.date = dateInput.value;
+      state.expanded.double = { same: false, cross: false };
       renderDouble();
     }
   });
 
-  pickForm.addEventListener("submit", (e) => e.preventDefault());
-
-  filmAInput.addEventListener("input", () => {
-    state.double.filmA = filmAInput.value || null;
-    updateSecondFilmOptions({
-      billKey: "double",
-      fieldKey: "filmB",
-      optionsEl: filmBOptions,
-      inputEl: filmBInput,
-      hintEl: filmBHint,
-      computeValidTitles: () => {
-        if (!isKnownFilm(state.double.filmA)) return null;
-        const pairs = findPairs(state.showings, lffMinGap, { filmA: state.double.filmA });
-        return uniqueFilmTitles(pairs.map((p) => p.filmB));
-      },
-    });
+  // Event delegation for "Show more" — results are rewritten wholesale on
+  // every render, so a listener on the button itself would be lost each
+  // time; one listener on the container survives.
+  resultsEl.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-expand]");
+    if (!btn) return;
+    state.expanded.double[btn.dataset.expand] = true;
     renderDouble();
   });
-  filmBInput.addEventListener("input", () => {
-    state.double.filmB = filmBInput.value || null;
+
+  pickForm.addEventListener("submit", (e) => e.preventDefault());
+
+  els.filmAInput.addEventListener("input", () => {
+    state.double.filmA = els.filmAInput.value || null;
+    updateOtherDoubleFilmOptions("A", els);
+    renderDouble();
+  });
+  els.filmBInput.addEventListener("input", () => {
+    state.double.filmB = els.filmBInput.value || null;
+    updateOtherDoubleFilmOptions("B", els);
     renderDouble();
   });
 }
@@ -388,6 +458,7 @@ function initTriple() {
   const dateRow = document.querySelector(".lff-triple-date-row");
   const pickForm = document.getElementById("lff-triple-pick-form");
   const dateInput = document.getElementById("lff-triple-date");
+  const resultsEl = document.getElementById("lff-triple-results");
   const filmAInput = document.getElementById("lff-triple-film-a");
   const filmBInput = document.getElementById("lff-triple-film-b");
   const filmCInput = document.getElementById("lff-triple-film-c");
@@ -410,8 +481,16 @@ function initTriple() {
   dateInput.addEventListener("change", () => {
     if (dateInput.value) {
       state.triple.date = dateInput.value;
+      state.expanded.triple = { same: false, cross: false };
       renderTriple();
     }
+  });
+
+  resultsEl.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-expand]");
+    if (!btn) return;
+    state.expanded.triple[btn.dataset.expand] = true;
+    renderTriple();
   });
 
   pickForm.addEventListener("submit", (e) => e.preventDefault());
@@ -483,12 +562,15 @@ export async function initLffPlanner() {
 
     const titles = uniqueFilmTitles(state.showings);
     state.knownFilmKeys = new Set(titles.map(normalizeTitleForGrouping));
+    state.allFilmTitles = titles;
 
-    const optionsA1 = document.getElementById("lff-double-film-a-options");
-    const optionsA2 = document.getElementById("lff-triple-film-a-options");
-    const optionsHtml = titles.map((t) => `<option value="${escapeHtml(t)}"></option>`).join("");
-    if (optionsA1) optionsA1.innerHTML = optionsHtml;
-    if (optionsA2) optionsA2.innerHTML = optionsHtml;
+    const optionsHtml = datalistOptionsHtml(titles);
+    // Double bill is bidirectional, so both its inputs start with the
+    // full list. Triple bill's film-a is still the only one prefilled —
+    // film-b/film-c stay one-directional, populated once film-a is set.
+    document.getElementById("lff-double-film-a-options").innerHTML = optionsHtml;
+    document.getElementById("lff-double-film-b-options").innerHTML = optionsHtml;
+    document.getElementById("lff-triple-film-a-options").innerHTML = optionsHtml;
 
     const defaultDate = todayFallbackDate();
     state.double.date = defaultDate;

@@ -31,6 +31,8 @@
       </div>
 
       <form id="lff-double-pick-form" class="planner-pick-form" hidden>
+        <p class="field-hint">Fill in either film first — the other one narrows to match.</p>
+
         <label for="lff-double-film-a">First film</label>
         <input
           list="lff-double-film-a-options"
@@ -39,14 +41,14 @@
           placeholder="Type a film title…"
         />
         <datalist id="lff-double-film-a-options"></datalist>
+        <p class="field-hint" id="lff-double-film-a-hint"></p>
 
         <label for="lff-double-film-b">Second film</label>
         <input
           list="lff-double-film-b-options"
           id="lff-double-film-b"
           class="search-box"
-          placeholder="Pick a first film above"
-          disabled
+          placeholder="Type a film title…"
         />
         <datalist id="lff-double-film-b-options"></datalist>
         <p class="field-hint" id="lff-double-film-b-hint"></p>

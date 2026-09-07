@@ -12,6 +12,8 @@ const state = {
   filmA: null,
   filmB: null,
   knownFilmKeys: new Set(), // populated once data loads
+  allFilmTitles: [],
+  expanded: { same: false, cross: false }, // "show more" state for Pick a Date, reset per date
 };
 
 // Since results now update on every keystroke, typing "A Confu..." partway
@@ -28,6 +30,7 @@ const els = {
   pickForm: document.getElementById("planner-pick-form"),
   filmAInput: document.getElementById("planner-film-a"),
   filmBInput: document.getElementById("planner-film-b"),
+  filmAHint: document.getElementById("planner-film-a-hint"),
   filmBHint: document.getElementById("planner-film-b-hint"),
   filmOptionsA: document.getElementById("planner-film-options-a"),
   filmOptionsB: document.getElementById("planner-film-options-b"),
@@ -168,36 +171,34 @@ function renderSurprise() {
   const sameCinemaPairs = allPairs.filter((p) => p.sameCinema);
   const crossCinemaPairs = allPairs.filter((p) => !p.sameCinema);
 
-  let sameCinemaShown;
-  let crossCinemaShown;
-  if (sameCinemaPairs.length === 0) {
-    sameCinemaShown = [];
-    crossCinemaShown = crossCinemaPairs.slice(0, MAX_SUGGESTIONS * 2);
-  } else if (crossCinemaPairs.length === 0) {
-    sameCinemaShown = sameCinemaPairs.slice(0, MAX_SUGGESTIONS * 2);
-    crossCinemaShown = [];
-  } else {
-    sameCinemaShown = sameCinemaPairs.slice(0, MAX_SUGGESTIONS);
-    crossCinemaShown = crossCinemaPairs.slice(0, MAX_SUGGESTIONS);
-  }
+  const sameCap = crossCinemaPairs.length === 0 ? MAX_SUGGESTIONS * 2 : MAX_SUGGESTIONS;
+  const crossCap = sameCinemaPairs.length === 0 ? MAX_SUGGESTIONS * 2 : MAX_SUGGESTIONS;
 
   els.results.innerHTML = `
     <h2 class="day-heading">${dateLabel}</h2>
     <div class="surprise-columns">
-      ${surpriseColumnHtml("Same Cinema", sameCinemaShown)}
-      ${surpriseColumnHtml("Different Cinemas", crossCinemaShown)}
+      ${surpriseColumnHtml("Same Cinema", sameCinemaPairs, sameCap, "same")}
+      ${surpriseColumnHtml("Different Cinemas", crossCinemaPairs, crossCap, "cross")}
     </div>
   `;
 }
 
-function surpriseColumnHtml(title, pairs) {
+function surpriseColumnHtml(title, pairs, cap, expandKey) {
+  const expanded = state.expanded[expandKey];
+  const shown = expanded ? pairs : pairs.slice(0, cap);
+  const remaining = pairs.length - shown.length;
   return `
     <section class="surprise-column">
       <h3 class="surprise-column-heading">${escapeHtml(title)}</h3>
       ${
         pairs.length
-          ? pairs.map(pairCardHtml).join("")
+          ? shown.map(pairCardHtml).join("")
           : `<p class="status status--compact">None available for this date.</p>`
+      }
+      ${
+        remaining > 0
+          ? `<button type="button" class="show-more-btn" data-expand="${expandKey}">Show ${remaining} more</button>`
+          : ""
       }
     </section>
   `;
@@ -249,63 +250,90 @@ function initDateInput() {
   els.dateInput.addEventListener("change", () => {
     if (els.dateInput.value) {
       state.date = els.dateInput.value;
+      state.expanded = { same: false, cross: false };
       render();
     }
   });
 }
 
-// The second dropdown should only ever offer films that can actually
-// follow the chosen first film somewhere in the data — otherwise you can
-// pick a pairing that was never going to work and only find out after
-// hitting "no results". findPairs with just filmA set (no filmB) already
-// returns every valid pairing for that film in one pass, so we don't need
-// to check candidates one at a time.
-function updateFilmBOptions() {
-  if (!isKnownFilm(state.filmA)) {
-    els.filmOptionsB.innerHTML = "";
-    els.filmBInput.disabled = true;
-    els.filmBInput.placeholder = state.filmA
-      ? "Finish typing or pick from the list above"
-      : "Pick a first film above";
-    els.filmBHint.textContent = "";
+// Event delegation for "Show more" — the results list is rewritten
+// wholesale on every render, so a listener attached directly to the
+// button would be lost each time; one listener on the container survives.
+function initShowMore() {
+  els.results.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-expand]");
+    if (!btn) return;
+    state.expanded[btn.dataset.expand] = true;
+    render();
+  });
+}
+
+// Bidirectional: either box can be filled first. Editing one box always
+// refines the *other* box's suggestion list — findPairs with only filmA
+// set returns every valid "what could follow this" pairing, and with
+// only filmB set returns every valid "what could precede this" pairing,
+// so the same primitive drives both directions; only which side of the
+// pair we pull titles from differs.
+function updateOtherFilmOptions(editedRole) {
+  const isA = editedRole === "A";
+  const sourceValue = isA ? state.filmA : state.filmB;
+  const otherInput = isA ? els.filmBInput : els.filmAInput;
+  const otherOptions = isA ? els.filmOptionsB : els.filmOptionsA;
+  const otherHint = isA ? els.filmBHint : els.filmAHint;
+  const otherStateKey = isA ? "filmB" : "filmA";
+  const relationWord = isA ? "after" : "before";
+
+  if (!isKnownFilm(sourceValue)) {
+    // Nothing chosen on this side (yet) — don't constrain the other box,
+    // just offer every film so either box can be filled first.
+    otherOptions.innerHTML = optionsHtml(state.allFilmTitles);
+    otherInput.disabled = false;
+    otherInput.placeholder = "Type a film title…";
+    otherHint.textContent = "";
     return;
   }
 
-  const candidatePairs = findPairs(state.showings, minGapMinutes, { filmA: state.filmA });
-  const validSecondFilms = uniqueFilmTitles(candidatePairs.map((p) => p.filmB));
+  const candidatePairs = findPairs(
+    state.showings,
+    minGapMinutes,
+    isA ? { filmA: sourceValue } : { filmB: sourceValue }
+  );
+  const validTitles = uniqueFilmTitles(candidatePairs.map((p) => (isA ? p.filmB : p.filmA)));
 
-  if (validSecondFilms.length === 0) {
-    els.filmOptionsB.innerHTML = "";
-    els.filmBInput.disabled = true;
-    els.filmBInput.placeholder = "No films pair with this one";
-    els.filmBHint.textContent = `No film currently pairs with "${state.filmA}" on any day in your cinema list — try a different first film.`;
-    if (state.filmB) {
-      state.filmB = null;
-      els.filmBInput.value = "";
+  if (validTitles.length === 0) {
+    otherOptions.innerHTML = "";
+    otherInput.disabled = true;
+    otherInput.placeholder = "No films pair with this one";
+    otherHint.textContent = `No film currently pairs with "${sourceValue}" ${relationWord} it on any day in your cinema list — try a different film.`;
+    if (state[otherStateKey]) {
+      state[otherStateKey] = null;
+      otherInput.value = "";
     }
     return;
   }
 
-  els.filmBInput.disabled = false;
-  els.filmBInput.placeholder = "Type a film title…";
-  els.filmOptionsB.innerHTML = validSecondFilms
-    .map((title) => `<option value="${escapeHtml(title)}"></option>`)
-    .join("");
-  els.filmBHint.textContent = `${validSecondFilms.length} film${
-    validSecondFilms.length === 1 ? "" : "s"
-  } pair well with "${state.filmA}".`;
+  otherInput.disabled = false;
+  otherInput.placeholder = "Type a film title…";
+  otherOptions.innerHTML = optionsHtml(validTitles);
+  otherHint.textContent = `${validTitles.length} film${
+    validTitles.length === 1 ? "" : "s"
+  } could go ${relationWord} "${sourceValue}".`;
 
-  // If the previously chosen second film is no longer valid for this
-  // first film, clear it rather than silently keep an invalid selection.
+  // If the previously chosen film on the other side is no longer valid
+  // for this one, clear it rather than silently keep an invalid selection.
   const stillValid =
-    state.filmB &&
-    validSecondFilms.some(
-      (t) => normalizeTitleForGrouping(t) === normalizeTitleForGrouping(state.filmB)
+    state[otherStateKey] &&
+    validTitles.some(
+      (t) => normalizeTitleForGrouping(t) === normalizeTitleForGrouping(state[otherStateKey])
     );
-  if (state.filmB && !stillValid) {
-    state.filmB = null;
-    els.filmBInput.value = "";
+  if (state[otherStateKey] && !stillValid) {
+    state[otherStateKey] = null;
+    otherInput.value = "";
   }
+}
+
+function optionsHtml(titles) {
+  return titles.map((title) => `<option value="${escapeHtml(title)}"></option>`).join("");
 }
 
 function initPickForm() {
@@ -320,20 +348,21 @@ function initPickForm() {
   // visibly happened until you clicked elsewhere.
   els.filmAInput.addEventListener("input", () => {
     state.filmA = els.filmAInput.value || null;
-    updateFilmBOptions();
+    updateOtherFilmOptions("A");
     render();
   });
   els.filmBInput.addEventListener("input", () => {
     state.filmB = els.filmBInput.value || null;
+    updateOtherFilmOptions("B");
     render();
   });
-  updateFilmBOptions(); // set the initial disabled state
 }
 
 export async function initPlanner() {
   initModeTabs();
   initDateInput();
   initPickForm();
+  initShowMore();
 
   try {
     const res = await fetch(DATA_URL);
@@ -343,9 +372,9 @@ export async function initPlanner() {
 
     const filmTitles = uniqueFilmTitles(state.showings);
     state.knownFilmKeys = new Set(filmTitles.map(normalizeTitleForGrouping));
-    els.filmOptionsA.innerHTML = filmTitles
-      .map((title) => `<option value="${escapeHtml(title)}"></option>`)
-      .join("");
+    state.allFilmTitles = filmTitles;
+    els.filmOptionsA.innerHTML = optionsHtml(filmTitles);
+    els.filmOptionsB.innerHTML = optionsHtml(filmTitles);
 
     render();
   } catch (err) {

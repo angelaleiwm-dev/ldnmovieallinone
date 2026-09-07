@@ -64,6 +64,8 @@
       </div>
 
       <form id="planner-pick-form" class="planner-pick-form" hidden>
+        <p class="field-hint">Fill in either film first — the other one narrows to match.</p>
+
         <label for="planner-film-a">First film</label>
         <input
           list="planner-film-options-a"
@@ -72,14 +74,14 @@
           placeholder="Type a film title…"
         />
         <datalist id="planner-film-options-a"></datalist>
+        <p class="field-hint" id="planner-film-a-hint"></p>
 
         <label for="planner-film-b">Second film</label>
         <input
           list="planner-film-options-b"
           id="planner-film-b"
           class="search-box"
-          placeholder="Pick a first film above"
-          disabled
+          placeholder="Type a film title…"
         />
         <datalist id="planner-film-options-b"></datalist>
         <p class="field-hint" id="planner-film-b-hint"></p>
