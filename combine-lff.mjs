@@ -16,6 +16,9 @@ import { normalizeShowings } from "./normalize.mjs";
 import { fetchLff } from "./fetchers/lff.mjs";
 
 const OUTPUT_PATH = "data/lff-combined.json";
+// The deployed LFF site (docs/lff/) reads its own copy, same reasoning as
+// combine.mjs's SITE_OUTPUT_PATH.
+const SITE_OUTPUT_PATH = "docs/lff/data/lff-combined.json";
 
 // If BFI's site is down/blocking hard when this runs, don't let a bad
 // run silently replace yesterday's good data with an empty (or
@@ -60,13 +63,19 @@ async function main() {
     return;
   }
 
-  await mkdir("data", { recursive: true });
-  await writeFile(
-    OUTPUT_PATH,
-    JSON.stringify({ generatedAt: new Date().toISOString(), showings: combined, errors }, null, 2)
+  const payload = JSON.stringify(
+    { generatedAt: new Date().toISOString(), showings: combined, errors },
+    null,
+    2
   );
 
-  console.log(`\nWrote ${combined.length} showings to ${OUTPUT_PATH}`);
+  await mkdir("data", { recursive: true });
+  await writeFile(OUTPUT_PATH, payload);
+
+  await mkdir("docs/lff/data", { recursive: true });
+  await writeFile(SITE_OUTPUT_PATH, payload);
+
+  console.log(`\nWrote ${combined.length} showings to ${OUTPUT_PATH} and ${SITE_OUTPUT_PATH}`);
   if (errors.length) {
     console.log(`${errors.length} showings had problems — see "errors" in the output file.`);
   }

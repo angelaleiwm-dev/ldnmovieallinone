@@ -1,6 +1,6 @@
-import { normalizeTitleForGrouping } from "./title-utils.mjs";
+import { normalizeTitleForGrouping } from "../title-utils.mjs";
 
-const DATA_URL = "/data/lff-combined.json";
+const DATA_URL = "data/lff-combined.json";
 const AUTO_EXPAND_THRESHOLD = 2;
 
 const state = {

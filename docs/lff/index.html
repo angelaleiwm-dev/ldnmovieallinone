@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BFI LFF 2026 — Double &amp; Triple Bill Planner | LDN Screens</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>BFI London Film Festival 2026</h1>
+    <p class="subtitle">Plan your festival double and triple bills — 7–18 October</p>
+  </header>
+
+  <div class="view-tabs" id="top-view-tabs" role="tablist" aria-label="Section">
+    <button class="view-tab active" data-view="double">Double Bill</button>
+    <button class="view-tab" data-view="triple">Triple Bill</button>
+    <button class="view-tab" data-view="browse">Browse</button>
+  </div>
+
+  <div id="lff-double-view" class="view">
+    <div class="controls">
+      <div class="filter-tabs" role="tablist" aria-label="Double bill mode">
+        <button class="filter-tab lff-double-mode-tab active" data-mode="date">Pick a Date</button>
+        <button class="filter-tab lff-double-mode-tab" data-mode="films">Pick Two Films</button>
+      </div>
+
+      <div class="planner-date-row lff-double-date-row">
+        <label for="lff-double-date">Date</label>
+        <input type="date" id="lff-double-date" class="search-box" />
+      </div>
+
+      <form id="lff-double-pick-form" class="planner-pick-form" hidden>
+        <label for="lff-double-film-a">First film — the one you'll watch first</label>
+        <input
+          list="lff-double-film-a-options"
+          id="lff-double-film-a"
+          class="search-box"
+          placeholder="Type a film title…"
+        />
+        <datalist id="lff-double-film-a-options"></datalist>
+
+        <label for="lff-double-film-b">Second film — only shows films that can actually follow it</label>
+        <input
+          list="lff-double-film-b-options"
+          id="lff-double-film-b"
+          class="search-box"
+          placeholder="Pick a first film above"
+          disabled
+        />
+        <datalist id="lff-double-film-b-options"></datalist>
+        <p class="field-hint" id="lff-double-film-b-hint"></p>
+      </form>
+    </div>
+
+    <main id="lff-double-results" aria-live="polite">
+      <p class="status">Loading festival showtimes…</p>
+    </main>
+  </div>
+
+  <div id="lff-triple-view" class="view" hidden>
+    <div class="controls">
+      <div class="filter-tabs" role="tablist" aria-label="Triple bill mode">
+        <button class="filter-tab lff-triple-mode-tab active" data-mode="date">Pick a Date</button>
+        <button class="filter-tab lff-triple-mode-tab" data-mode="films">Pick Three Films</button>
+      </div>
+
+      <div class="planner-date-row lff-triple-date-row">
+        <label for="lff-triple-date">Date</label>
+        <input type="date" id="lff-triple-date" class="search-box" />
+      </div>
+
+      <form id="lff-triple-pick-form" class="planner-pick-form" hidden>
+        <label for="lff-triple-film-a">First film — the one you'll watch first</label>
+        <input
+          list="lff-triple-film-a-options"
+          id="lff-triple-film-a"
+          class="search-box"
+          placeholder="Type a film title…"
+        />
+        <datalist id="lff-triple-film-a-options"></datalist>
+
+        <label for="lff-triple-film-b">Second film — only shows films that can actually follow it</label>
+        <input
+          list="lff-triple-film-b-options"
+          id="lff-triple-film-b"
+          class="search-box"
+          placeholder="Pick a first film above"
+          disabled
+        />
+        <datalist id="lff-triple-film-b-options"></datalist>
+        <p class="field-hint" id="lff-triple-film-b-hint"></p>
+
+        <label for="lff-triple-film-c">Third film — only shows films that can follow the first two</label>
+        <input
+          list="lff-triple-film-c-options"
+          id="lff-triple-film-c"
+          class="search-box"
+          placeholder="Pick the first two films above"
+          disabled
+        />
+        <datalist id="lff-triple-film-c-options"></datalist>
+        <p class="field-hint" id="lff-triple-film-c-hint"></p>
+      </form>
+    </div>
+
+    <main id="lff-triple-results" aria-live="polite">
+      <p class="status">Loading festival showtimes…</p>
+    </main>
+  </div>
+
+  <div id="lff-browse-view" class="view" hidden>
+    <div class="controls">
+      <input
+        class="search-box"
+        type="search"
+        id="lff-browse-search"
+        placeholder="Search by film title…"
+        aria-label="Search by film title"
+      />
+    </div>
+
+    <main id="lff-browse-results" aria-live="polite">
+      <p class="status">Loading festival showtimes…</p>
+    </main>
+
+    <footer class="app-footer">
+      <p id="lff-browse-updated"></p>
+    </footer>
+  </div>
+
+  <footer class="site-footer">
+    <p>
+      This is an unofficial, fan-made planning tool — not affiliated with the BFI or the London Film
+      Festival. Always book via the official BFI site.
+    </p>
+    <p>
+      Part of <a href="../index.html">LDN Screens</a> — built by Angela Lei with Claude Code — still in
+      active development, expect rough edges —
+      <a href="mailto:angelaleiwm@gmail.com">angelaleiwm@gmail.com</a>
+      ·
+      <a href="https://linkedin.com/in/weng-man-lei-angela" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </p>
+    <p class="version-tag">v1</p>
+  </footer>
+
+  <script type="module">
+    import { initLffPlanner } from "./lff-planner.mjs";
+    import { initLffBrowse } from "./lff-browse.mjs";
+
+    const viewTabs = document.querySelectorAll("#top-view-tabs .view-tab");
+    const views = {
+      double: document.getElementById("lff-double-view"),
+      triple: document.getElementById("lff-triple-view"),
+      browse: document.getElementById("lff-browse-view"),
+    };
+
+    viewTabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        viewTabs.forEach((t) => t.classList.remove("active"));
+        tab.classList.add("active");
+        const target = tab.dataset.view;
+        Object.entries(views).forEach(([name, el]) => (el.hidden = name !== target));
+      });
+    });
+
+    initLffPlanner();
+    initLffBrowse();
+  </script>
+</body>
+</html>

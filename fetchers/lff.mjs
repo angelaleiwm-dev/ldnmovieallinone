@@ -226,6 +226,13 @@ export async function fetchLff() {
       raw.push(...validItems);
     }
 
+    // Opening/Closing Night Gala "fundraising ticket" listings are a
+    // separate, premium-priced ticket type for the same film that's
+    // already listed as its own regular screening elsewhere on the same
+    // day — deliberately excluded from the site rather than shown as a
+    // confusing near-duplicate.
+    const filteredRaw = raw.filter((item) => !/\(fundraising ticket\)/i.test(item.film));
+
     if (daysStillMissing > 0) {
       console.error(
         `${daysStillMissing} day(s) still couldn't be fetched this run — already-cached days were reused, ` +
@@ -236,7 +243,7 @@ export async function fetchLff() {
     // "Wednesday 07 October 2026 17:30" -> date "07 October 2026", time "17:30"
     const results = [];
     let sinceLastSave = 0;
-    for (const item of raw) {
+    for (const item of filteredRaw) {
       const match = item.startDateText.match(/(\d{1,2}\s+\w+\s+\d{4})\s+(\d{2}:\d{2})/);
       if (!match) continue;
       const [, date, time] = match;

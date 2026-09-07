@@ -1,0 +1,344 @@
+[
+  {
+    "film": "Iron Boy",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=73D026E9-FAC6-4A23-A889-884DECBCAFB8&BOparam::WScontent::loadArticle::context_id=D470C5D4-18B9-4299-8033-6C9AC9650D25",
+    "startDateText": "Sunday 11 October 2026 10:15",
+    "venueText": "BFI Southbank, Screen NFT1"
+  },
+  {
+    "film": "A Girl Unknown",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=41C3CC34-67B4-42FD-92B1-CD5F1BA3D265&BOparam::WScontent::loadArticle::context_id=EAA29AD1-E1B7-411B-8215-9A9A5B3A1ABF",
+    "startDateText": "Sunday 11 October 2026 10:40",
+    "venueText": "BFI Southbank, Screen NFT2"
+  },
+  {
+    "film": "Paper Tiger",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=3AD3D9E6-E125-4B88-9B96-7A264DA0B7B4&BOparam::WScontent::loadArticle::context_id=FF9B1531-3B13-4459-8543-9B84BE34D2C0",
+    "startDateText": "Sunday 11 October 2026 10:45",
+    "venueText": "Southbank Centre, Royal Festival Hall"
+  },
+  {
+    "film": "LFF for Free: Declare Independence: Film Publishing Beyond the Mainstream",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=00E46746-63B7-408A-8815-19DB445151E0&BOparam::WScontent::loadArticle::context_id=8D1B5A7F-CBBA-4272-8769-BC7790C513DE",
+    "startDateText": "Sunday 11 October 2026 11:00",
+    "venueText": "BFI Southbank, BFI Reuben Library"
+  },
+  {
+    "film": "Our Share of Sand",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=FAD5C41E-16E5-487B-9906-961F6792DFEC&BOparam::WScontent::loadArticle::context_id=2FBFDB36-A0D4-4E1D-8ACA-9ED9F775124E",
+    "startDateText": "Sunday 11 October 2026 11:45",
+    "venueText": "Curzon Soho Cinema, Screen 2"
+  },
+  {
+    "film": "Our Share of Sand",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=FAD5C41E-16E5-487B-9906-961F6792DFEC&BOparam::WScontent::loadArticle::context_id=5408CF87-7A64-43E2-95BA-DB7A21BCC116",
+    "startDateText": "Sunday 11 October 2026 12:00",
+    "venueText": "Curzon Soho Cinema, Screen 3"
+  },
+  {
+    "film": "LFF for Free: We Are Family",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=CC904C5B-971E-484D-A48D-26D067C72E0D&BOparam::WScontent::loadArticle::context_id=DEE25F0E-FBEC-4526-9797-DD7DEF79F5F3",
+    "startDateText": "Sunday 11 October 2026 12:00",
+    "venueText": "BFI Southbank, Screen NFT4"
+  },
+  {
+    "film": "LFF for Free: Into the Woods: Wildwood Mask Making",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=DDB540B4-B005-42E3-A860-032F0F210349&BOparam::WScontent::loadArticle::context_id=5E78E076-B4B4-4407-BA8F-4F9014168173",
+    "startDateText": "Sunday 11 October 2026 12:15",
+    "venueText": "BFI Southbank, Main Foyer"
+  },
+  {
+    "film": "Screen Talk: James Gray",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=248FF1B2-528C-472A-969A-AB366664860C&BOparam::WScontent::loadArticle::context_id=B906A1F5-2DD0-4A9D-8025-2F8158BAB842",
+    "startDateText": "Sunday 11 October 2026 12:30",
+    "venueText": "Curzon Soho Cinema, Screen 1"
+  },
+  {
+    "film": "The Friend's House Is Here",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=54B9D0AC-64D5-4148-8288-6161588CF24C&BOparam::WScontent::loadArticle::context_id=A5A841E4-9435-4943-B5B6-D401B0C77F88",
+    "startDateText": "Sunday 11 October 2026 12:30",
+    "venueText": "Vue West End, EPIC 2"
+  },
+  {
+    "film": "Call Your Bluff",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=D7B4B487-9914-409B-89D5-BE77F907DE24&BOparam::WScontent::loadArticle::context_id=C0FB3FC2-5CA9-4750-8841-937E93E426D0",
+    "startDateText": "Sunday 11 October 2026 12:45",
+    "venueText": "BFI Southbank, Screen NFT3"
+  },
+  {
+    "film": "The Fox",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=308FB5B8-4993-4AAF-899A-516B6A2EC778&BOparam::WScontent::loadArticle::context_id=9F3EADEA-BD1F-4D02-B7FF-B1C964979071",
+    "startDateText": "Sunday 11 October 2026 12:45",
+    "venueText": "Prince Charles Cinema, Downstairs Screen"
+  },
+  {
+    "film": "Chronovisor",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=84BE22B3-E56A-41E4-A079-459B15D89436&BOparam::WScontent::loadArticle::context_id=33A33086-5510-4AA8-9BD6-E78EC4205FE2",
+    "startDateText": "Sunday 11 October 2026 12:50",
+    "venueText": "ICA, Screen 1"
+  },
+  {
+    "film": "Screen Talk: John Malkovich",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=708D686B-2FE7-4222-8286-50D09F8259BA&BOparam::WScontent::loadArticle::context_id=E02F6073-BBDA-4F0E-98C5-A17B0C3ABF7E",
+    "startDateText": "Sunday 11 October 2026 12:50",
+    "venueText": "BFI Southbank, Screen NFT1"
+  },
+  {
+    "film": "LFF for Free: The Edges of Cinema",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C30FABB2-9B69-4119-8A43-0D242EC51BC7&BOparam::WScontent::loadArticle::context_id=A3B15F8D-1A5E-402D-9C03-6E3110EB7C4C",
+    "startDateText": "Sunday 11 October 2026 13:00",
+    "venueText": "BFI Southbank, BFI Reuben Library"
+  },
+  {
+    "film": "Furies",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=8FB77D68-EABA-47DF-8BAE-036F3FB4B743&BOparam::WScontent::loadArticle::context_id=D964B9D7-1A13-4552-9FFA-A2A8D7E0FF18",
+    "startDateText": "Sunday 11 October 2026 13:30",
+    "venueText": "BFI Southbank, Screen NFT2"
+  },
+  {
+    "film": "Wildwood",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=033AC18C-7586-4A4C-9A08-70EAC8905078&BOparam::WScontent::loadArticle::context_id=53BF44F6-ED68-415E-AE44-51C1F4E4628E",
+    "startDateText": "Sunday 11 October 2026 13:45",
+    "venueText": "Southbank Centre, Royal Festival Hall"
+  },
+  {
+    "film": "The Beloved",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=72B432C4-10B4-4390-ACD8-BCEB492DBADF&BOparam::WScontent::loadArticle::context_id=75DCBAD6-CE30-4277-BCCF-05D26DEAC7C3",
+    "startDateText": "Sunday 11 October 2026 14:00",
+    "venueText": "BFI IMAX"
+  },
+  {
+    "film": "LFF for Free: Editing the Auteur",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=8591675F-A4BC-4D9D-B5A0-111A97F69870&BOparam::WScontent::loadArticle::context_id=227E1F30-DB0F-4AA0-8AEC-475883D046B1",
+    "startDateText": "Sunday 11 October 2026 14:00",
+    "venueText": "BFI Southbank, Screen NFT4"
+  },
+  {
+    "film": "A Man of His Time",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=525F01A6-DA4E-4315-9123-808E8DE6CE32&BOparam::WScontent::loadArticle::context_id=9B125E8B-2A0E-4058-838E-13F6E185BED8",
+    "startDateText": "Sunday 11 October 2026 14:05",
+    "venueText": "Curzon Soho Cinema, Screen 2"
+  },
+  {
+    "film": "A Man of His Time",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=525F01A6-DA4E-4315-9123-808E8DE6CE32&BOparam::WScontent::loadArticle::context_id=7DC3F705-80CA-4A8C-9DD7-8B278A088F2D",
+    "startDateText": "Sunday 11 October 2026 14:20",
+    "venueText": "Curzon Soho Cinema, Screen 3"
+  },
+  {
+    "film": "The Dreamed Adventure",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=D96486A1-44B1-4458-9052-8903F3508CA4&BOparam::WScontent::loadArticle::context_id=D3F3A66E-FD77-4116-89FB-8FA83B980059",
+    "startDateText": "Sunday 11 October 2026 14:35",
+    "venueText": "Curzon Soho Cinema, Screen 1"
+  },
+  {
+    "film": "Imperium",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=5261B442-ECE7-41B5-B4D0-087234E4960B&BOparam::WScontent::loadArticle::context_id=AF0DA2E2-376B-4815-8193-3F317927BAA6",
+    "startDateText": "Sunday 11 October 2026 14:35",
+    "venueText": "BFI Southbank, Screen NFT1"
+  },
+  {
+    "film": "LFF for Free: The Triumphs and Travesties of Book to Film Adaptation",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=F80A8652-DE98-4B19-B368-4D59BC8399EE&BOparam::WScontent::loadArticle::context_id=4B8FC8BD-E419-42C7-A3B7-E10944E1545E",
+    "startDateText": "Sunday 11 October 2026 15:00",
+    "venueText": "BFI Southbank, BFI Reuben Library"
+  },
+  {
+    "film": "Wild Horse Nine",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=2ED23CFF-23C4-416C-833E-9482A7FC9735&BOparam::WScontent::loadArticle::context_id=11533158-848A-44B2-B6DB-241DC2291EFF",
+    "startDateText": "Sunday 11 October 2026 15:00",
+    "venueText": "Prince Charles Cinema, Downstairs Screen"
+  },
+  {
+    "film": "Zero Intention of Living Quietly",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=0313437E-562A-4BEC-99FE-9D38F639FD8D&BOparam::WScontent::loadArticle::context_id=BDB81146-3543-45B6-B4D1-9C45D761640C",
+    "startDateText": "Sunday 11 October 2026 15:00",
+    "venueText": "Vue West End, EPIC 2"
+  },
+  {
+    "film": "La Gradiva",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=17BAD131-E791-47C8-8E36-02EB8DF76E97&BOparam::WScontent::loadArticle::context_id=7A7C19CC-13DE-4F7F-9222-AC327F6EF833",
+    "startDateText": "Sunday 11 October 2026 15:05",
+    "venueText": "BFI Southbank, Screen NFT3"
+  },
+  {
+    "film": "9 Temples to Heaven",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=0BA58AB4-3CFD-418F-86A3-683557D6A7B8&BOparam::WScontent::loadArticle::context_id=940698D8-3F65-4A68-BB6B-BD58137B60C3",
+    "startDateText": "Sunday 11 October 2026 15:15",
+    "venueText": "ICA, Screen 1"
+  },
+  {
+    "film": "Dependence",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=2F24F2B3-29A0-41CB-9C60-8FF7B69EE332&BOparam::WScontent::loadArticle::context_id=84C7A7A2-E865-4457-A5F9-678767E219DB",
+    "startDateText": "Sunday 11 October 2026 15:30",
+    "venueText": "Vue West End, EPIC 1"
+  },
+  {
+    "film": "LFF for Free: Reality Check: True Crime and our Obsession with Real Stories",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=F437BC8D-B5D1-401B-BE03-CA7D9B4D312A&BOparam::WScontent::loadArticle::context_id=EAB3DAB9-0F88-459C-AA18-A6D29E1E9866",
+    "startDateText": "Sunday 11 October 2026 16:00",
+    "venueText": "BFI Southbank, Screen NFT4"
+  },
+  {
+    "film": "I Plant My Hand in The Garden",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=D2CC8B77-230A-4D45-8AA3-17524A1C0E4A&BOparam::WScontent::loadArticle::context_id=0EB69072-3C18-4F5B-8764-9585343F0DFC",
+    "startDateText": "Sunday 11 October 2026 16:25",
+    "venueText": "BFI Southbank, Screen NFT2"
+  },
+  {
+    "film": "LFF for Free: The Evolution of Horror",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=9643C6B5-6DCE-4FE7-B376-FC8010015AD4&BOparam::WScontent::loadArticle::context_id=E7C687C1-EC52-48BE-B70F-58921245FFA4",
+    "startDateText": "Sunday 11 October 2026 17:00",
+    "venueText": "BFI Southbank, BFI Reuben Library"
+  },
+  {
+    "film": "Possible Love",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=22499F34-3C19-4B8A-8E47-A273155FC405&BOparam::WScontent::loadArticle::context_id=9BAED9D5-014A-4576-87F1-2C1A1995117C",
+    "startDateText": "Sunday 11 October 2026 17:15",
+    "venueText": "Southbank Centre, Royal Festival Hall"
+  },
+  {
+    "film": "Ivan & Hadoum",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=D9131B99-5D9F-45FE-9652-93D941177EB5&BOparam::WScontent::loadArticle::context_id=E42A0C5B-9A35-4251-A24D-CC98763F8500",
+    "startDateText": "Sunday 11 October 2026 17:30",
+    "venueText": "Curzon Soho Cinema, Screen 2"
+  },
+  {
+    "film": "The Liberation",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=7852A65B-6814-4EF3-AD31-76492AB1BD55&BOparam::WScontent::loadArticle::context_id=EC13F763-0700-4CBF-9E85-3FC57431325C",
+    "startDateText": "Sunday 11 October 2026 17:45",
+    "venueText": "Prince Charles Cinema, Downstairs Screen"
+  },
+  {
+    "film": "Ivan & Hadoum",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=D9131B99-5D9F-45FE-9652-93D941177EB5&BOparam::WScontent::loadArticle::context_id=70C48238-42F3-4C52-A163-9E81FD837EC9",
+    "startDateText": "Sunday 11 October 2026 17:45",
+    "venueText": "Curzon Soho Cinema, Screen 3"
+  },
+  {
+    "film": "Queer Edward II",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=A6E0A089-7EDE-4681-9DDC-6AE06638B13D&BOparam::WScontent::loadArticle::context_id=EE57025E-C399-4B9E-BA02-544DD7EB6277",
+    "startDateText": "Sunday 11 October 2026 18:00",
+    "venueText": "Vue West End, EPIC 1"
+  },
+  {
+    "film": "The Story of Documentary Film (The 1990s)",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1922F5D9-C8F1-490F-8506-C5C63591F848&BOparam::WScontent::loadArticle::context_id=7327A969-6B90-41DD-96B2-4BFCDDDFA31B",
+    "startDateText": "Sunday 11 October 2026 18:00",
+    "venueText": "Curzon Soho Cinema, Screen 1"
+  },
+  {
+    "film": "Once Upon a Time in Harlem",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=80BAACFA-8564-419D-AB46-D9C7FA7CE80D&BOparam::WScontent::loadArticle::context_id=ECB24FC2-A8F1-4A11-9AEB-08E5540D5CA8",
+    "startDateText": "Sunday 11 October 2026 18:15",
+    "venueText": "BFI Southbank, Screen NFT3"
+  },
+  {
+    "film": "At Night",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=0726906F-C7DD-4BCE-B939-B1B560D72339&BOparam::WScontent::loadArticle::context_id=0760DCFF-1ADB-4256-9081-2534AC32D612",
+    "startDateText": "Sunday 11 October 2026 18:20",
+    "venueText": "ICA, Screen 1"
+  },
+  {
+    "film": "ANIMOL",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=8E543CD5-7683-4E7B-9666-C5875900CD2C&BOparam::WScontent::loadArticle::context_id=951163B9-4002-407B-AA8B-1A813C5BC137",
+    "startDateText": "Sunday 11 October 2026 18:25",
+    "venueText": "BFI Southbank, Screen NFT1"
+  },
+  {
+    "film": "Isabel",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=68B52C3C-2901-4345-8F04-1FC4E00923B4&BOparam::WScontent::loadArticle::context_id=4146A070-6AF1-44AF-AC71-C10659BC182C",
+    "startDateText": "Sunday 11 October 2026 18:40",
+    "venueText": "BFI Southbank, Screen NFT2"
+  },
+  {
+    "film": "Flies",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=4DB1F145-382F-466D-B9DD-D9D6D014FBC9&BOparam::WScontent::loadArticle::context_id=7138D49A-8B5D-4564-91B5-595CBEE01EA6",
+    "startDateText": "Sunday 11 October 2026 20:00",
+    "venueText": "Vue West End, EPIC 2"
+  },
+  {
+    "film": "Ha-Chan, Shake Your Booty!",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=0B78BEDB-D17D-4172-ABA3-2C86BD8A0E0C&BOparam::WScontent::loadArticle::context_id=3B90B1F8-60A7-47BF-9955-4F03E4D7003F",
+    "startDateText": "Sunday 11 October 2026 20:10",
+    "venueText": "Prince Charles Cinema, Downstairs Screen"
+  },
+  {
+    "film": "Masc",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=0690FAAA-7D3E-442C-9921-95A4E7F171E5&BOparam::WScontent::loadArticle::context_id=70CF0EF0-74FE-4FB5-A6C1-B2EA19D385DF",
+    "startDateText": "Sunday 11 October 2026 20:15",
+    "venueText": "Curzon Soho Cinema, Screen 2"
+  },
+  {
+    "film": "Congo Boy",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=175609B2-BD09-4696-85CE-A88A67D2B76B&BOparam::WScontent::loadArticle::context_id=FE693463-D038-4AC7-BACE-B4B0574DD38B",
+    "startDateText": "Sunday 11 October 2026 20:30",
+    "venueText": "Vue West End, EPIC 1"
+  },
+  {
+    "film": "Masc",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=0690FAAA-7D3E-442C-9921-95A4E7F171E5&BOparam::WScontent::loadArticle::context_id=F2426A49-6B7D-403C-BAA2-A5113EDC452A",
+    "startDateText": "Sunday 11 October 2026 20:30",
+    "venueText": "Curzon Soho Cinema, Screen 3"
+  },
+  {
+    "film": "Concrete Turned to Sand",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=622B738A-5C41-4CAD-8174-1494DECDC4E9&BOparam::WScontent::loadArticle::context_id=49F04A3A-A444-4A6D-8663-2DF714632958",
+    "startDateText": "Sunday 11 October 2026 20:35",
+    "venueText": "ICA, Screen 1"
+  },
+  {
+    "film": "The Whisper of Sunlight",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=F73320C8-B5C4-4A68-8902-CFC8AC4BCAE2&BOparam::WScontent::loadArticle::context_id=32E91BBA-90E5-4754-87DC-AC2D45C91696",
+    "startDateText": "Sunday 11 October 2026 20:40",
+    "venueText": "BFI Southbank, Screen NFT3"
+  },
+  {
+    "film": "Marie Madeleine",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=5B73E3BB-2D67-4F0F-AECE-3236C5CAB87B&BOparam::WScontent::loadArticle::context_id=6288ADD9-D79E-4526-9A21-C35CFF318B87",
+    "startDateText": "Sunday 11 October 2026 20:45",
+    "venueText": "BFI Southbank, Screen NFT2"
+  },
+  {
+    "film": "A Common Story",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=D39085DC-4FF4-409F-B613-4E5315ED9FA7&BOparam::WScontent::loadArticle::context_id=AA919F32-99BC-4438-83F3-90AB34DF3161",
+    "startDateText": "Sunday 11 October 2026 20:45",
+    "venueText": "Curzon Soho Cinema, Screen 1"
+  },
+  {
+    "film": "The Difficult Bride",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E1250A9B-0ACE-4436-9ED7-FB7EF1F2F6B3&BOparam::WScontent::loadArticle::context_id=BBD6364F-CDE1-47A1-9605-71A3B94EE253",
+    "startDateText": "Sunday 11 October 2026 21:00",
+    "venueText": "BFI Southbank, Screen NFT1"
+  },
+  {
+    "film": "Screen Talk: Javier Bardem",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B7B98DFE-3FA0-4FF2-A0B6-7C888AA79280&BOparam::WScontent::loadArticle::context_id=07CC6881-0DBD-4771-B0A7-658E9D24F294",
+    "startDateText": "Sunday 11 October 2026 10:30",
+    "venueText": "Curzon Soho Cinema, Screen 1"
+  },
+  {
+    "film": "Joy of Joys",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=A27F51E2-95D4-4920-819F-781041EA52A9&BOparam::WScontent::loadArticle::context_id=04A1D2BF-4FFB-4343-AE78-4C4AD15FEA85",
+    "startDateText": "Sunday 11 October 2026 13:45",
+    "venueText": "Vue West End, EPIC 1"
+  },
+  {
+    "film": "Screen Talk: Robert Eggers",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=4922A457-6133-4A83-B91A-C0A8DE207BED&BOparam::WScontent::loadArticle::context_id=4BE91DE0-53D9-4603-A74B-CD20B19CE769",
+    "startDateText": "Sunday 11 October 2026 17:30",
+    "venueText": "Vue West End, EPIC 2"
+  },
+  {
+    "film": "Primetime",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=4EAE8F98-4924-444C-AD53-5BFB567C3F01&BOparam::WScontent::loadArticle::context_id=E7CF0FD4-526A-4D38-9718-C2CD38D1E313",
+    "startDateText": "Sunday 11 October 2026 18:00",
+    "venueText": "BFI IMAX"
+  },
+  {
+    "film": "Artificial",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B2206237-2D6B-4038-8754-98B9F9645541&BOparam::WScontent::loadArticle::context_id=2193BF0B-EBB6-428D-8BC1-43EF032648C1",
+    "startDateText": "Sunday 11 October 2026 21:00",
+    "venueText": "Southbank Centre, Royal Festival Hall"
+  }
+]

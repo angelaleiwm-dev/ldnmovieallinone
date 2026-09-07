@@ -1,0 +1,242 @@
+[
+  {
+    "film": "Rogue Trooper",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=4F17E45B-9309-4E11-9684-B89DF082F695&BOparam::WScontent::loadArticle::context_id=293D2FC6-06BF-4CAF-B682-39B535E0B315",
+    "startDateText": "Friday 16 October 2026 12:00",
+    "venueText": "Curzon Soho Cinema, Screen 1"
+  },
+  {
+    "film": "Too Many Beasts",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=8374FFDF-8557-4EC1-A7DB-1C2D5FFA4F47&BOparam::WScontent::loadArticle::context_id=E6095650-DB7E-4CC5-BEB9-F09546EBE333",
+    "startDateText": "Friday 16 October 2026 12:25",
+    "venueText": "Prince Charles Cinema, Downstairs Screen"
+  },
+  {
+    "film": "Life / Drawing",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=9B0CA9C3-DC3D-4857-ACCD-4D62A6A3E1A7&BOparam::WScontent::loadArticle::context_id=A7A1F640-6145-468A-B9DD-53859415A2A1",
+    "startDateText": "Friday 16 October 2026 12:30",
+    "venueText": "Vue West End, EPIC 1"
+  },
+  {
+    "film": "Elsinore",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=978B4D3E-B2FB-45AC-B970-81488544C295&BOparam::WScontent::loadArticle::context_id=861546D4-18F8-4364-990E-8819E66E2504",
+    "startDateText": "Friday 16 October 2026 12:30",
+    "venueText": "BFI Southbank, Screen NFT1"
+  },
+  {
+    "film": "Look Back",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=16502BF8-16E5-47A9-B9C3-2926A0E722BF&BOparam::WScontent::loadArticle::context_id=D1EE8E9B-8089-4F63-80E7-ECC048689E09",
+    "startDateText": "Friday 16 October 2026 12:55",
+    "venueText": "Vue West End, EPIC 2"
+  },
+  {
+    "film": "14th",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=4864C03F-E110-4590-9C1E-F41EF05CC79A&BOparam::WScontent::loadArticle::context_id=099CE9FD-AEAF-4BAD-AA9D-8C2F1AEA3382",
+    "startDateText": "Friday 16 October 2026 13:25",
+    "venueText": "BFI Southbank, Screen NFT3"
+  },
+  {
+    "film": "Iron Boy",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=73D026E9-FAC6-4A23-A889-884DECBCAFB8&BOparam::WScontent::loadArticle::context_id=360E1D15-7E9C-4863-9CE4-315251030D99",
+    "startDateText": "Friday 16 October 2026 13:35",
+    "venueText": "BFI Southbank, Screen NFT2"
+  },
+  {
+    "film": "Mouse",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=FB6E59BA-9180-46E1-BEFD-DBF4E701006B&BOparam::WScontent::loadArticle::context_id=12726782-77E5-4393-9621-246DE551D240",
+    "startDateText": "Friday 16 October 2026 14:30",
+    "venueText": "Prince Charles Cinema, Downstairs Screen"
+  },
+  {
+    "film": "In the Shadows",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B76C3CC4-329E-4E69-B36F-1714DC6907CC&BOparam::WScontent::loadArticle::context_id=5C3483D8-C979-4127-843E-0ABBEE032DD0",
+    "startDateText": "Friday 16 October 2026 14:45",
+    "venueText": "Curzon Soho Cinema, Screen 1"
+  },
+  {
+    "film": "Klara and the Sun",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=2084DC0D-E60B-4F10-BC22-054FC10EC097&BOparam::WScontent::loadArticle::context_id=4E2ABD23-7013-41E6-A7BB-8883A1F24592",
+    "startDateText": "Friday 16 October 2026 14:45",
+    "venueText": "Southbank Centre, Royal Festival Hall"
+  },
+  {
+    "film": "Dao",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=6E89186A-BE14-469E-BD05-CAC48BB6F0B6&BOparam::WScontent::loadArticle::context_id=19C0C0F8-039D-4CBA-A62E-1DC89763CD9B",
+    "startDateText": "Friday 16 October 2026 14:50",
+    "venueText": "ICA, Screen 1"
+  },
+  {
+    "film": "Being Heumann",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1EA9539E-4E4D-4FA6-A89E-193446DA9068&BOparam::WScontent::loadArticle::context_id=F3273DB5-FB25-4185-A8B5-2BFD7F3731A5",
+    "startDateText": "Friday 16 October 2026 14:50",
+    "venueText": "Vue West End, EPIC 1"
+  },
+  {
+    "film": "It Will Happen Tonight",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C35312A4-391C-4AAD-8ED1-771CF4FF0B88&BOparam::WScontent::loadArticle::context_id=7E8DCFFF-9EE1-47E2-A90A-A92DE730BEDE",
+    "startDateText": "Friday 16 October 2026 15:15",
+    "venueText": "BFI Southbank, Screen NFT1"
+  },
+  {
+    "film": "Behemoth!",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=BD17B246-EA27-41B9-9CDC-F284E6002A87&BOparam::WScontent::loadArticle::context_id=29EF030D-8496-4BA1-ACAA-30CF5A8647F4",
+    "startDateText": "Friday 16 October 2026 15:20",
+    "venueText": "Vue West End, EPIC 2"
+  },
+  {
+    "film": "Moonglow",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=233FFBBA-C8AC-491B-B6E4-EBD516C6EC66&BOparam::WScontent::loadArticle::context_id=FD7297CE-5D5E-4C3C-B2EB-E315299B1AF2",
+    "startDateText": "Friday 16 October 2026 15:50",
+    "venueText": "BFI Southbank, Screen NFT2"
+  },
+  {
+    "film": "In a Whisper",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=F3927A7C-B37C-4DF6-8020-F8DD5751F71D&BOparam::WScontent::loadArticle::context_id=B3D9E256-D78C-4F80-98BD-34AA4AEDC61D",
+    "startDateText": "Friday 16 October 2026 16:00",
+    "venueText": "BFI Southbank, Screen NFT3"
+  },
+  {
+    "film": "Everytime",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C98607B9-8674-42FA-8097-E4A2F645E20F&BOparam::WScontent::loadArticle::context_id=78E0F7DF-AF2D-4407-8E18-E0C6E4E9E8A7",
+    "startDateText": "Friday 16 October 2026 17:30",
+    "venueText": "Curzon Soho Cinema, Screen 1"
+  },
+  {
+    "film": "Godzilla Minus Zero",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=9B2BD431-5519-483A-AEF9-D2CA4A701D81&BOparam::WScontent::loadArticle::context_id=BD8ADF0A-3FCB-4720-AEEE-E53DF6A279D6",
+    "startDateText": "Friday 16 October 2026 17:30",
+    "venueText": "Prince Charles Cinema, Downstairs Screen"
+  },
+  {
+    "film": "A Place to Heal",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=ABFBF3D3-D3CC-4058-99AF-5747EC910463&BOparam::WScontent::loadArticle::context_id=FF08EAB1-82AF-4F37-B8CA-2E0FD34414B1",
+    "startDateText": "Friday 16 October 2026 17:45",
+    "venueText": "Vue West End, EPIC 1"
+  },
+  {
+    "film": "Minotaur",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B811D4E7-561B-476B-967B-012ED9F0944D&BOparam::WScontent::loadArticle::context_id=91E3F006-E13C-4838-9279-70FB3D778DD5",
+    "startDateText": "Friday 16 October 2026 17:45",
+    "venueText": "Southbank Centre, Royal Festival Hall"
+  },
+  {
+    "film": "My Notes on Mars",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C4D6292C-D733-47B2-A10F-FE8D8BE745B0&BOparam::WScontent::loadArticle::context_id=04A40045-6857-40A5-8D19-7C024C057BA0",
+    "startDateText": "Friday 16 October 2026 18:00",
+    "venueText": "BFI Southbank, Screen NFT1"
+  },
+  {
+    "film": "Sumo: Spirit Weighs Nothing",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=4F7BD72C-1B61-4ED9-83D9-77FE4F547DF6&BOparam::WScontent::loadArticle::context_id=9995A35E-DB4B-4359-A5BD-D584AF4AAD76",
+    "startDateText": "Friday 16 October 2026 18:00",
+    "venueText": "Curzon Soho Cinema, Screen 2"
+  },
+  {
+    "film": "Sumo: Spirit Weighs Nothing",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=4F7BD72C-1B61-4ED9-83D9-77FE4F547DF6&BOparam::WScontent::loadArticle::context_id=4A669031-32DC-4E8A-AF1A-740B764C585D",
+    "startDateText": "Friday 16 October 2026 18:15",
+    "venueText": "Curzon Soho Cinema, Screen 3"
+  },
+  {
+    "film": "I See Myself",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=58B2D7B9-2556-41FE-B0CB-02A26704BB51&BOparam::WScontent::loadArticle::context_id=4D62A519-8FAF-41C2-8956-6A3AA08BABA3",
+    "startDateText": "Friday 16 October 2026 18:15",
+    "venueText": "Vue West End, EPIC 2"
+  },
+  {
+    "film": "Amazomania",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C469088E-19E3-45EA-BFFA-3B8CE6F57087&BOparam::WScontent::loadArticle::context_id=90E4B1DE-B02E-4AF3-9499-372EF836D764",
+    "startDateText": "Friday 16 October 2026 18:20",
+    "venueText": "BFI Southbank, Screen NFT2"
+  },
+  {
+    "film": "Panelstory, or How a Housing Development is Born",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=CAFF7908-9739-4DDF-A9E0-A9AADF2EFAB6&BOparam::WScontent::loadArticle::context_id=5312C0F7-A12D-4786-A3A8-FCB333ED568D",
+    "startDateText": "Friday 16 October 2026 18:35",
+    "venueText": "BFI Southbank, Screen NFT3"
+  },
+  {
+    "film": "Let Them Be Seen",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=A3588D54-7E42-4C86-BA50-FC984396B336&BOparam::WScontent::loadArticle::context_id=E450D2D6-CBB9-4B7C-A248-D6DD66B5411E",
+    "startDateText": "Friday 16 October 2026 18:40",
+    "venueText": "ICA, Screen 1"
+  },
+  {
+    "film": "Sweet Milk Lake",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=41E106D6-B2B8-42AE-BC01-91295DCB62E4&BOparam::WScontent::loadArticle::context_id=EFD6952D-4B77-4D51-BE54-4A389D68DF86",
+    "startDateText": "Friday 16 October 2026 20:15",
+    "venueText": "Curzon Soho Cinema, Screen 1"
+  },
+  {
+    "film": "A Good Little Soldier",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1FB3CFC4-39F3-47E0-A142-317E82B71BAD&BOparam::WScontent::loadArticle::context_id=FB0DFB0F-EE00-48EA-984D-0DBB5E13D134",
+    "startDateText": "Friday 16 October 2026 20:20",
+    "venueText": "Vue West End, EPIC 1"
+  },
+  {
+    "film": "Perfect Road",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E5547DD3-A7B4-4FBD-91A3-8A02E65A6952&BOparam::WScontent::loadArticle::context_id=5CCC0C77-BAB4-49C7-A66C-A7BC93115DF7",
+    "startDateText": "Friday 16 October 2026 20:30",
+    "venueText": "Curzon Soho Cinema, Screen 2"
+  },
+  {
+    "film": "The Idiot(s)",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C6DB9418-5B28-4863-BFDA-3B5BCB605B34&BOparam::WScontent::loadArticle::context_id=33C7F4DD-12A1-4E36-9A50-E052C30F5BAD",
+    "startDateText": "Friday 16 October 2026 20:30",
+    "venueText": "Prince Charles Cinema, Downstairs Screen"
+  },
+  {
+    "film": "I See Buildings Fall Like Lightning",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C431663D-B135-46D4-B376-D506B32C807B&BOparam::WScontent::loadArticle::context_id=D00BE5BE-DFDC-494B-9916-7F4E9C117436",
+    "startDateText": "Friday 16 October 2026 20:40",
+    "venueText": "BFI Southbank, Screen NFT1"
+  },
+  {
+    "film": "Hanabi",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C4E10862-6580-415D-9D0B-436089A7E64E&BOparam::WScontent::loadArticle::context_id=D794EF77-4980-49B5-8489-AACAABD24214",
+    "startDateText": "Friday 16 October 2026 20:40",
+    "venueText": "ICA, Screen 1"
+  },
+  {
+    "film": "Perfect Road",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E5547DD3-A7B4-4FBD-91A3-8A02E65A6952&BOparam::WScontent::loadArticle::context_id=0820516F-3A62-4EBC-BA1E-EC424B4B7B3C",
+    "startDateText": "Friday 16 October 2026 20:45",
+    "venueText": "Curzon Soho Cinema, Screen 3"
+  },
+  {
+    "film": "Atlantic Rhapsody",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=28C9D8FC-8508-4A57-B81D-F291EA8D58D0&BOparam::WScontent::loadArticle::context_id=AE9045B7-8406-4665-9B57-1D688875DA4F",
+    "startDateText": "Friday 16 October 2026 20:50",
+    "venueText": "BFI Southbank, Screen NFT2"
+  },
+  {
+    "film": "Prima Facie",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=DC0A9CAE-E2C5-4A8A-B071-7C514B686FE7&BOparam::WScontent::loadArticle::context_id=B482F2BA-298E-463A-8AC7-D4610B3A910D",
+    "startDateText": "Friday 16 October 2026 20:50",
+    "venueText": "Vue West End, EPIC 2"
+  },
+  {
+    "film": "Carl Sagan: We Are Made of Star Stuff",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=FD7C9EFB-E6EC-4AB0-AC3D-393E824CC4F2&BOparam::WScontent::loadArticle::context_id=8674F4C6-A815-41B8-A2AF-955D52255639",
+    "startDateText": "Friday 16 October 2026 21:00",
+    "venueText": "BFI Southbank, Screen NFT3"
+  },
+  {
+    "film": "LFF for Free: DJ Night: 7 Miles Out: Journey to The Hacienda",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=4F5B8648-4582-48D4-B529-6A262A110BE8&BOparam::WScontent::loadArticle::context_id=5451212F-00CF-4EE1-BA58-8173E5E40A97",
+    "startDateText": "Friday 16 October 2026 21:00",
+    "venueText": "BFI Southbank, BFI Bar"
+  },
+  {
+    "film": "Surprise Film",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=6876974C-8DE1-4941-8D2D-8C88284702D0&BOparam::WScontent::loadArticle::context_id=DD243B04-6564-4A37-AE4D-B1A53D250D74",
+    "startDateText": "Friday 16 October 2026 21:15",
+    "venueText": "Southbank Centre, Royal Festival Hall"
+  },
+  {
+    "film": "Artificial",
+    "infoHref": "default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B2206237-2D6B-4038-8754-98B9F9645541&BOparam::WScontent::loadArticle::context_id=97D6B12B-8D01-4A1E-A426-48C4804C3301",
+    "startDateText": "Friday 16 October 2026 11:30",
+    "venueText": "Southbank Centre, Royal Festival Hall"
+  }
+]

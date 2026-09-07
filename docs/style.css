@@ -49,6 +49,15 @@ body {
   font-size: 0.9rem;
 }
 
+.subtitle a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.subtitle a:hover {
+  text-decoration: underline;
+}
+
 .controls {
   position: sticky;
   top: 0;

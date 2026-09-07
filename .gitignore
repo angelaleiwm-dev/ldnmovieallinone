@@ -10,7 +10,18 @@ node_modules/
 # and aren't "source code"; we'll decide later whether any of this belongs
 # in the repo once the pipeline is running end-to-end.
 data/*.json
-data/lff-cache/
+
+# LFF's disk cache IS committed, unlike the rest of data/ — fetchLff()
+# depends on it to avoid re-hitting BFI's site, and GitHub Actions starts
+# from a fresh checkout every run with no persisted disk, so without this
+# committed the daily job would try to re-fetch all 12 days and every
+# film's runtime from scratch each time, hammering BFI and likely
+# re-triggering its Cloudflare block. day-*.json/runtime.json are the only
+# files fetchLff() actually reads; anything else in this folder is a
+# scratch file from manually backfilling data and isn't needed.
+data/lff-cache/*
+!data/lff-cache/day-*.json
+!data/lff-cache/runtime.json
 
 # OS/editor noise
 .DS_Store

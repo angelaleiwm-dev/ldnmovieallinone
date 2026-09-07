@@ -1,8 +1,8 @@
-import { findPairs, findTriples } from "./pairing.mjs";
+import { findPairs, findTriples } from "../pairing.mjs";
 import { lffMinGap } from "./lff-zones.mjs";
-import { normalizeTitleForGrouping } from "./title-utils.mjs";
+import { normalizeTitleForGrouping } from "../title-utils.mjs";
 
-const DATA_URL = "/data/lff-combined.json";
+const DATA_URL = "data/lff-combined.json";
 const MAX_SUGGESTIONS = 4;
 
 const state = {

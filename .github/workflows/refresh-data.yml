@@ -31,15 +31,23 @@ jobs:
 
       - run: node combine.mjs
 
-      # combine.mjs already refuses to write a suspiciously-thin result
-      # (see wouldRegressData in combine.mjs), so if docs/data/combined.json
-      # didn't change, there's nothing to commit — that's expected, not
-      # an error.
+      # LFF's fetcher only ever fetches a festival day or a film's runtime
+      # it hasn't already cached to disk (data/lff-cache/, committed —
+      # see .gitignore) — this run just double-checks nothing's still
+      # missing rather than re-discovering the whole festival. It does
+      # NOT pick up newly-announced screenings on days already cached;
+      # that needs an occasional manual re-check against BFI's site.
+      - run: node combine-lff.mjs
+
+      # Both combine scripts already refuse to write a suspiciously-thin
+      # result (see wouldRegressData in each), so if nothing actually
+      # changed there's nothing to commit here — that's expected, not an
+      # error.
       - name: Commit updated data, if any
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data/combined.json
+          git add docs/data/combined.json docs/lff/data/lff-combined.json data/lff-cache/
           git diff --staged --quiet && echo "No data changes to commit." && exit 0
           git commit -m "Refresh showtimes data"
           git push
