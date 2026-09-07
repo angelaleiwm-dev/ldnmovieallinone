@@ -126,25 +126,22 @@ A daily [GitHub Actions workflow](.github/workflows/refresh-data.yml) runs both 
 and `combine-lff.mjs` and commits the result if the data changed — the live site never fetches
 anything itself, it only ever reads the last committed JSON.
 
-## Cinema-by-cinema status
+## Cinemas integrated
 
 *The BFI LFF 2026 section is tracked separately — its own venues, not repeated here.*
 
-| Cinema | Status | Method |
-|---|---|---|
-| Prince Charles Cinema | ✅ Live | Playwright (DOM render) |
-| Cineworld O2 Greenwich | ✅ Live | Plain HTTP JSON API |
-| Vue Westfield Stratford City | ✅ Live | Playwright + JSON API |
-| Picturehouse Central | ✅ Live | HTTP + CSRF handshake |
-| BFI Southbank | ✅ Live | Server-rendered HTML |
-| Barbican Cinema | ✅ Live | Server-rendered HTML |
-| ICA Cinema | ✅ Live | Server-rendered HTML |
-| Genesis Cinema | ✅ Live | Server-rendered HTML |
-| The Castle Cinema | ✅ Live | Server-rendered HTML |
-| Rio Cinema | ✅ Live | HTML + JSON-LD |
-| Odeon (Haymarket & Greenwich) | ⛔ Blocked | Cloudflare challenge |
-| Curzon (Soho, Mayfair, Bloomsbury) | ⛔ Blocked | Cloudflare challenge |
-| BFI IMAX | ⛔ Blocked | Cloudflare challenge |
+| Cinema | Method |
+|---|---|
+| Prince Charles Cinema | Playwright (DOM render) |
+| Cineworld O2 Greenwich | Plain HTTP JSON API |
+| Vue Westfield Stratford City | Playwright + JSON API |
+| Picturehouse Central | HTTP + CSRF handshake |
+| BFI Southbank | Server-rendered HTML |
+| Barbican Cinema | Server-rendered HTML |
+| ICA Cinema | Server-rendered HTML |
+| Genesis Cinema | Server-rendered HTML |
+| The Castle Cinema | Server-rendered HTML |
+| Rio Cinema | HTML + JSON-LD |
 
 ## Tech stack
 
