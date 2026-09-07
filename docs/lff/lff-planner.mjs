@@ -38,6 +38,16 @@ function formatTime12h(time24) {
   return `${hour12}:${String(m).padStart(2, "0")}${period}`;
 }
 
+function formatDateShort(isoDate) {
+  const d = new Date(`${isoDate}T00:00:00Z`);
+  return d.toLocaleDateString("en-GB", {
+    weekday: "short",
+    day: "numeric",
+    month: "short",
+    timeZone: "UTC",
+  });
+}
+
 function formatDateLabel(isoDate) {
   const d = new Date(`${isoDate}T00:00:00Z`);
   return d.toLocaleDateString("en-GB", {
@@ -67,7 +77,7 @@ function filmBlockHtml(label, s) {
       <div class="pair-film-label">${escapeHtml(label)}</div>
       <div class="pair-film-title">${escapeHtml(s.film)}</div>
       <div class="pair-film-details">
-        ${escapeHtml(s.cinema)} · ${formatTime12h(s.time)}
+        ${escapeHtml(s.cinema)} · ${formatDateShort(s.date)} · ${formatTime12h(s.time)}
         ${s.runtimeMinutes ? ` · ${s.runtimeMinutes} min` : ""}
       </div>
       <a class="book-btn" href="${s.bookingUrl}" target="_blank" rel="noopener noreferrer">Info</a>
@@ -75,26 +85,35 @@ function filmBlockHtml(label, s) {
   `;
 }
 
+function gapDividerHtml(gapMinutes) {
+  return `<div class="pair-gap-divider">— ${gapMinutes} min gap —</div>`;
+}
+
 function doublePairCardHtml({ filmA, filmB, gapMinutes, sameCinema }) {
-  const note = sameCinema ? "Same cinema" : "Different cinemas — allow travel time";
+  const headerLabel = sameCinema
+    ? `Same cinema · ${filmA.cinema}`
+    : `Different cinemas · ${filmA.cinema} – ${filmB.cinema}`;
   return `
     <article class="pair-card">
-      <div class="pair-note">${note} · ${gapMinutes} min gap</div>
+      <div class="pair-note">${escapeHtml(headerLabel)}</div>
       ${filmBlockHtml("Watch First", filmA)}
+      ${gapDividerHtml(gapMinutes)}
       ${filmBlockHtml("Watch Then", filmB)}
     </article>
   `;
 }
 
 function triplePairCardHtml({ filmA, filmB, filmC, gapAB, gapBC, allSameCinema }) {
-  const note = allSameCinema
-    ? "Same cinema throughout"
-    : "Different cinemas — allow travel time";
+  const headerLabel = allSameCinema
+    ? `Same cinema throughout · ${filmA.cinema}`
+    : `Different cinemas · ${filmA.cinema} – ${filmB.cinema} – ${filmC.cinema}`;
   return `
     <article class="pair-card">
-      <div class="pair-note">${note} · ${gapAB} + ${gapBC} min gaps</div>
+      <div class="pair-note">${escapeHtml(headerLabel)}</div>
       ${filmBlockHtml("Watch First", filmA)}
+      ${gapDividerHtml(gapAB)}
       ${filmBlockHtml("Watch Second", filmB)}
+      ${gapDividerHtml(gapBC)}
       ${filmBlockHtml("Watch Last", filmC)}
     </article>
   `;
@@ -111,7 +130,7 @@ function singleFilmFallbackHtml(dayShowings, dateLabel) {
           (s) => `
         <div class="pair-film">
           <div class="pair-film-title">${escapeHtml(s.film)}</div>
-          <div class="pair-film-details">${escapeHtml(s.cinema)} · ${formatTime12h(s.time)}</div>
+          <div class="pair-film-details">${escapeHtml(s.cinema)} · ${formatDateShort(s.date)} · ${formatTime12h(s.time)}</div>
           <a class="book-btn" href="${s.bookingUrl}" target="_blank" rel="noopener noreferrer">Info</a>
         </div>
       `

@@ -51,6 +51,16 @@ function formatTime12h(time24) {
   return `${hour12}:${String(m).padStart(2, "0")}${period}`;
 }
 
+function formatDateShort(isoDate) {
+  const d = new Date(`${isoDate}T00:00:00Z`);
+  return d.toLocaleDateString("en-GB", {
+    weekday: "short",
+    day: "numeric",
+    month: "short",
+    timeZone: "UTC",
+  });
+}
+
 function formatDateLabel(isoDate) {
   const d = new Date(`${isoDate}T00:00:00Z`);
   const today = todayISO();
@@ -79,29 +89,31 @@ function uniqueFilmTitles(showings) {
     .sort((a, b) => a.localeCompare(b));
 }
 
+function filmBlockHtml(label, s) {
+  return `
+    <div class="pair-film">
+      <div class="pair-film-label">${escapeHtml(label)}</div>
+      <div class="pair-film-title">${escapeHtml(s.film)}</div>
+      <div class="pair-film-details">
+        ${escapeHtml(s.cinema)} · ${formatDateShort(s.date)} · ${formatTime12h(s.time)}
+        ${s.runtimeMinutes ? ` · ${s.runtimeMinutes} min` : ""}
+      </div>
+      <a class="book-btn" href="${s.bookingUrl}" target="_blank" rel="noopener noreferrer">View</a>
+    </div>
+  `;
+}
+
 function pairCardHtml({ filmA, filmB, gapMinutes, sameCinema }) {
-  const travelNote = sameCinema
-    ? "Same cinema"
-    : `Different cinemas — allow travel time`;
+  const headerLabel = sameCinema
+    ? `Same cinema · ${filmA.cinema}`
+    : `Different cinemas · ${filmA.cinema} – ${filmB.cinema}`;
 
   return `
     <article class="pair-card">
-      <div class="pair-note">${travelNote} · ${gapMinutes} min gap</div>
-      ${[filmA, filmB]
-        .map(
-          (s, i) => `
-        <div class="pair-film">
-          <div class="pair-film-label">${i === 0 ? "First" : "Then"}</div>
-          <div class="pair-film-title">${escapeHtml(s.film)}</div>
-          <div class="pair-film-details">
-            ${escapeHtml(s.cinema)} · ${formatTime12h(s.time)}
-            ${s.runtimeMinutes ? ` · ${s.runtimeMinutes} min` : ""}
-          </div>
-          <a class="book-btn" href="${s.bookingUrl}" target="_blank" rel="noopener noreferrer">View</a>
-        </div>
-      `
-        )
-        .join("")}
+      <div class="pair-note">${escapeHtml(headerLabel)}</div>
+      ${filmBlockHtml("First", filmA)}
+      <div class="pair-gap-divider">— ${gapMinutes} min gap —</div>
+      ${filmBlockHtml("Then", filmB)}
     </article>
   `;
 }
@@ -118,7 +130,7 @@ function renderSingleFilmFallback(dayShowings, dateLabel) {
           (s) => `
         <div class="pair-film">
           <div class="pair-film-title">${escapeHtml(s.film)}</div>
-          <div class="pair-film-details">${escapeHtml(s.cinema)} · ${formatTime12h(s.time)}</div>
+          <div class="pair-film-details">${escapeHtml(s.cinema)} · ${formatDateShort(s.date)} · ${formatTime12h(s.time)}</div>
           <a class="book-btn" href="${s.bookingUrl}" target="_blank" rel="noopener noreferrer">View</a>
         </div>
       `
