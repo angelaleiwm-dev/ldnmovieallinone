@@ -94,9 +94,9 @@ function filmBlockHtml(label, s) {
     <div class="pair-film">
       <div class="pair-film-label">${escapeHtml(label)}</div>
       <div class="pair-film-title">${escapeHtml(s.film)}</div>
-      <div class="pair-film-details">
-        ${escapeHtml(s.cinema)} · ${formatDateShort(s.date)} · ${formatTime12h(s.time)}
-        ${s.runtimeMinutes ? ` · ${s.runtimeMinutes} min` : ""}
+      <div class="pair-film-when">${formatDateShort(s.date)} · ${formatTime12h(s.time)}</div>
+      <div class="pair-film-where">
+        ${escapeHtml(s.cinema)}${s.runtimeMinutes ? ` · ${s.runtimeMinutes} min` : ""}
       </div>
       <a class="book-btn" href="${s.bookingUrl}" target="_blank" rel="noopener noreferrer">View</a>
     </div>
@@ -112,7 +112,7 @@ function pairCardHtml({ filmA, filmB, gapMinutes, sameCinema }) {
     <article class="pair-card">
       <div class="pair-note">${escapeHtml(headerLabel)}</div>
       ${filmBlockHtml("First", filmA)}
-      <div class="pair-gap-divider">— ${gapMinutes} min gap —</div>
+      <div class="pair-gap-divider">${gapMinutes} min gap</div>
       ${filmBlockHtml("Then", filmB)}
     </article>
   `;

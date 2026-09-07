@@ -76,9 +76,9 @@ function filmBlockHtml(label, s) {
     <div class="pair-film">
       <div class="pair-film-label">${escapeHtml(label)}</div>
       <div class="pair-film-title">${escapeHtml(s.film)}</div>
-      <div class="pair-film-details">
-        ${escapeHtml(s.cinema)} · ${formatDateShort(s.date)} · ${formatTime12h(s.time)}
-        ${s.runtimeMinutes ? ` · ${s.runtimeMinutes} min` : ""}
+      <div class="pair-film-when">${formatDateShort(s.date)} · ${formatTime12h(s.time)}</div>
+      <div class="pair-film-where">
+        ${escapeHtml(s.cinema)}${s.runtimeMinutes ? ` · ${s.runtimeMinutes} min` : ""}
       </div>
       <a class="book-btn" href="${s.bookingUrl}" target="_blank" rel="noopener noreferrer">Info</a>
     </div>
@@ -86,7 +86,7 @@ function filmBlockHtml(label, s) {
 }
 
 function gapDividerHtml(gapMinutes) {
-  return `<div class="pair-gap-divider">— ${gapMinutes} min gap —</div>`;
+  return `<div class="pair-gap-divider">${gapMinutes} min gap</div>`;
 }
 
 function doublePairCardHtml({ filmA, filmB, gapMinutes, sameCinema }) {
