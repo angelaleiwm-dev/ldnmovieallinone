@@ -2207,8 +2207,8 @@
       "date": "2026-10-12",
       "time": "18:00",
       "dateTime": "2026-10-12T18:00:00",
-      "runtimeMinutes": 100,
-      "endDateTime": "2026-10-12T19:40:00",
+      "runtimeMinutes": 107,
+      "endDateTime": "2026-10-12T19:47:00",
       "format": null,
       "bookingUrl": "https://whatson.bfi.org.uk/lff/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=4864C03F-E110-4590-9C1E-F41EF05CC79A&BOparam::WScontent::loadArticle::context_id=94037F02-1C2C-4104-8254-5862CA5F44FF"
     },
@@ -3659,8 +3659,8 @@
       "date": "2026-10-16",
       "time": "13:25",
       "dateTime": "2026-10-16T13:25:00",
-      "runtimeMinutes": 100,
-      "endDateTime": "2026-10-16T15:05:00",
+      "runtimeMinutes": 107,
+      "endDateTime": "2026-10-16T15:12:00",
       "format": null,
       "bookingUrl": "https://whatson.bfi.org.uk/lff/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=4864C03F-E110-4590-9C1E-F41EF05CC79A&BOparam::WScontent::loadArticle::context_id=099CE9FD-AEAF-4BAD-AA9D-8C2F1AEA3382"
     },
@@ -5166,8 +5166,8 @@
       "date": "2026-10-18",
       "time": "20:30",
       "dateTime": "2026-10-18T20:30:00",
-      "runtimeMinutes": 100,
-      "endDateTime": "2026-10-18T22:10:00",
+      "runtimeMinutes": 107,
+      "endDateTime": "2026-10-18T22:17:00",
       "format": null,
       "bookingUrl": "https://whatson.bfi.org.uk/lff/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=4864C03F-E110-4590-9C1E-F41EF05CC79A&BOparam::WScontent::loadArticle::context_id=34A7D883-B199-4764-A1CD-7BA594689172"
     },
