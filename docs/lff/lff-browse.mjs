@@ -1,4 +1,6 @@
 import { normalizeTitleForGrouping } from "../title-utils.mjs";
+import { addBillButtonHtml, wireResultsBillButtons } from "../bill-ui.mjs";
+import { billStore, refreshListsMenu } from "./lff-planner.mjs";
 
 const DATA_URL = "data/lff-combined.json";
 const AUTO_EXPAND_THRESHOLD = 2;
@@ -116,6 +118,7 @@ function filmCardHtml(filmGroup, dateKey) {
                   ${s.format ? `<div class="showing-format">${escapeHtml(s.format)}</div>` : ""}
                 </div>
                 <div class="showing-time">${formatTime12h(s.time)}</div>
+                ${addBillButtonHtml({ filmA: s }, billStore)}
                 <a class="book-btn" href="${s.bookingUrl}" target="_blank" rel="noopener noreferrer">Info</a>
               </div>
             `
@@ -171,6 +174,11 @@ export async function initLffBrowse() {
     if (state.expandedCards.has(key)) state.expandedCards.delete(key);
     else state.expandedCards.add(key);
     render();
+  });
+
+  wireResultsBillButtons(resultsEl, billStore, () => {
+    render();
+    refreshListsMenu();
   });
 
   try {

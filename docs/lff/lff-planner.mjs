@@ -8,9 +8,12 @@ import { initListsMenu } from "./lff-bill-ui.mjs";
 const DATA_URL = "data/lff-combined.json";
 const MAX_SUGGESTIONS = 4;
 
-const billStore = createBillStore("lff");
+// Exported so lff-browse.mjs's own "Add to Bill" buttons (single
+// screenings, not planner pairs) share this exact store and the same
+// menu instance rather than each view keeping its own disconnected copy.
+export const billStore = createBillStore("lff");
 let listsMenu = null;
-function refreshListsMenu() {
+export function refreshListsMenu() {
   listsMenu?.refresh();
 }
 
