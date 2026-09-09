@@ -1,6 +1,16 @@
 import { normalizeTitleForGrouping } from "./title-utils.mjs";
+import { createBillStore } from "./bill.mjs";
+import { initListsMenu } from "./bill-ui.mjs";
 
 const DATA_URL = "data/combined.json";
+
+// Shared with planner.mjs (imported from here) so both views' "Add to
+// Bill" buttons and the one header menu operate on the same saved lists.
+export const billStore = createBillStore("main");
+let listsMenu = null;
+export function refreshListsMenu() {
+  listsMenu?.refresh();
+}
 
 // A film card auto-expands once it has this many showings or fewer —
 // no point hiding 1-2 rows behind a click.
@@ -54,6 +64,16 @@ function formatTime12h(time24) {
   const period = h >= 12 ? "pm" : "am";
   const hour12 = h % 12 === 0 ? 12 : h % 12;
   return `${hour12}:${String(m).padStart(2, "0")}${period}`;
+}
+
+function formatDateShort(isoDate) {
+  const d = new Date(`${isoDate}T00:00:00Z`);
+  return d.toLocaleDateString("en-GB", {
+    weekday: "short",
+    day: "numeric",
+    month: "short",
+    timeZone: "UTC",
+  });
 }
 
 function getFilteredShowings() {
@@ -272,6 +292,12 @@ function populateFilterTabDates() {
 
 async function init() {
   populateFilterTabDates();
+  listsMenu = initListsMenu({
+    billStore,
+    getShowings: () => state.showings,
+    formatDateShort,
+    formatTime12h,
+  });
   try {
     const res = await fetch(DATA_URL);
     if (!res.ok) throw new Error(`Failed to load showtimes (${res.status})`);
@@ -286,6 +312,11 @@ async function init() {
 
     renderCinemaFilterChips();
     render();
+
+    const filmTitles = [...new Set(state.showings.map((s) => s.film))].sort((a, b) =>
+      a.localeCompare(b)
+    );
+    listsMenu.setFilmOptions(filmTitles);
   } catch (err) {
     statusEl.textContent = `Couldn't load showtimes: ${err.message}`;
   }

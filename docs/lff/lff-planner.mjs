@@ -1,9 +1,18 @@
 import { findPairs, findTriples } from "../pairing.mjs";
 import { lffMinGap } from "./lff-zones.mjs";
 import { normalizeTitleForGrouping } from "../title-utils.mjs";
+import { createBillStore } from "../bill.mjs";
+import { addBillButtonHtml, wireResultsBillButtons } from "../bill-ui.mjs";
+import { initListsMenu } from "./lff-bill-ui.mjs";
 
 const DATA_URL = "data/lff-combined.json";
 const MAX_SUGGESTIONS = 4;
+
+const billStore = createBillStore("lff");
+let listsMenu = null;
+function refreshListsMenu() {
+  listsMenu?.refresh();
+}
 
 const state = {
   showings: [],
@@ -105,7 +114,10 @@ function doublePairCardHtml({ filmA, filmB, gapMinutes, sameCinema }) {
     : `Different cinemas · ${filmA.cinema} – ${filmB.cinema}`;
   return `
     <article class="pair-card">
-      <div class="pair-note">${escapeHtml(headerLabel)}</div>
+      <div class="pair-note">
+        ${escapeHtml(headerLabel)}
+        ${addBillButtonHtml({ filmA, filmB }, billStore)}
+      </div>
       ${filmBlockHtml("Watch First", filmA)}
       ${gapDividerHtml(gapMinutes)}
       ${filmBlockHtml("Watch Then", filmB)}
@@ -119,7 +131,10 @@ function triplePairCardHtml({ filmA, filmB, filmC, gapAB, gapBC, allSameCinema }
     : `Different cinemas · ${filmA.cinema} – ${filmB.cinema} – ${filmC.cinema}`;
   return `
     <article class="pair-card">
-      <div class="pair-note">${escapeHtml(headerLabel)}</div>
+      <div class="pair-note">
+        ${escapeHtml(headerLabel)}
+        ${addBillButtonHtml({ filmA, filmB, filmC }, billStore)}
+      </div>
       ${filmBlockHtml("Watch First", filmA)}
       ${gapDividerHtml(gapAB)}
       ${filmBlockHtml("Watch Second", filmB)}
@@ -553,6 +568,22 @@ export async function initLffPlanner() {
   initDouble();
   initTriple();
 
+  wireResultsBillButtons(document.getElementById("lff-double-results"), billStore, () => {
+    renderDouble();
+    refreshListsMenu();
+  });
+  wireResultsBillButtons(document.getElementById("lff-triple-results"), billStore, () => {
+    renderTriple();
+    refreshListsMenu();
+  });
+
+  listsMenu = initListsMenu({
+    billStore,
+    getShowings: () => state.showings,
+    formatDateShort,
+    formatTime12h,
+  });
+
   try {
     const res = await fetch(DATA_URL);
     if (!res.ok) throw new Error(`Failed to load LFF showtimes (${res.status})`);
@@ -571,6 +602,7 @@ export async function initLffPlanner() {
     document.getElementById("lff-double-film-a-options").innerHTML = optionsHtml;
     document.getElementById("lff-double-film-b-options").innerHTML = optionsHtml;
     document.getElementById("lff-triple-film-a-options").innerHTML = optionsHtml;
+    listsMenu.setFilmOptions(titles);
 
     const defaultDate = todayFallbackDate();
     state.double.date = defaultDate;

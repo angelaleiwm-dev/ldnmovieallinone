@@ -33,7 +33,7 @@ body {
 }
 
 .app-header {
-  padding: 20px 16px 12px;
+  padding: 20px 110px 12px 16px;
 }
 
 .app-header h1 {
@@ -373,7 +373,7 @@ main {
 
 @media (min-width: 600px) {
   .app-header {
-    padding: 28px 24px 16px;
+    padding: 28px 130px 16px 24px;
   }
   .controls {
     padding: 8px 24px 16px;
@@ -482,6 +482,10 @@ main {
 }
 
 .pair-note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
   font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -554,4 +558,369 @@ main {
 .pair-gap-divider + .pair-film {
   border-top: none;
   padding-top: 0;
+}
+
+/* "Add to Bill" button on a planner result card */
+
+.add-bill-btn {
+  flex: 0 0 auto;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.add-bill-btn--saved {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
+/* "My Lists" menu button — sits top-right of the header */
+
+.app-header {
+  position: relative;
+}
+
+.lists-menu-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.lists-menu-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-text);
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+@media (min-width: 600px) {
+  .lists-menu-btn {
+    top: 24px;
+    right: 24px;
+  }
+}
+
+/* "My Lists" panel — Watchlist / My Bill */
+
+.lists-panel {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: var(--bg);
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.lists-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.lists-panel-tabs {
+  display: flex;
+  gap: 6px;
+}
+
+.lists-panel-tab {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lists-panel-tab.active {
+  background: var(--accent);
+  color: var(--accent-text);
+  border-color: var(--accent);
+}
+
+.lists-panel-close {
+  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.lists-panel-section {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.lists-panel-section .field-hint {
+  margin-bottom: 10px;
+}
+
+.lists-panel-section .search-box {
+  margin-bottom: 12px;
+}
+
+.lists-panel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.watchlist-item,
+.bill-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+}
+
+.watchlist-item-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.watchlist-item-toggle {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: var(--text);
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.watchlist-item-toggle:disabled {
+  cursor: default;
+}
+
+.watchlist-item-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.watchlist-item-showings {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.watchlist-showing-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.watchlist-showing-when {
+  flex: 0 0 auto;
+  font-size: 0.85rem;
+  font-weight: 700;
+  min-width: 108px;
+}
+
+.watchlist-showing-where {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.watchlist-item-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.planned-check {
+  margin-left: 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.watchlist-item-info {
+  margin-top: 4px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.bill-item {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.bill-item-warning {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.bill-item-clash {
+  color: #ff5c6c;
+}
+
+.bill-item-film {
+  padding: 6px 0;
+  border-top: 1px solid var(--border);
+}
+
+.bill-item-film:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.bill-item-film-title {
+  display: block;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.bill-item-film-details {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.list-remove-btn {
+  flex: 0 0 auto;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface-raised);
+  color: var(--text-muted);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.list-remove-btn--wide {
+  align-self: flex-start;
+  width: auto;
+  height: auto;
+  border-radius: 999px;
+  padding: 6px 14px;
+  margin-top: 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.bill-export-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 14px;
+  background: var(--accent);
+  border: none;
+  border-radius: var(--radius);
+  color: var(--accent-text);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* First-visit "what's new" callout */
+
+.whats-new-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.whats-new-card {
+  max-width: 420px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.whats-new-card h2 {
+  margin: 0 0 12px;
+  font-size: 1.15rem;
+}
+
+.whats-new-list {
+  margin: 0 0 12px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+.whats-new-list strong {
+  color: var(--accent);
+}
+
+.whats-new-card .field-hint {
+  margin-bottom: 16px;
+}
+
+.whats-new-dismiss-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: var(--accent);
+  border: none;
+  border-radius: var(--radius);
+  color: var(--accent-text);
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
 }

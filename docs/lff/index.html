@@ -8,9 +8,53 @@
 </head>
 <body>
   <header class="app-header">
+    <button type="button" id="lists-menu-btn" class="lists-menu-btn" aria-label="My Lists">
+      My Lists
+      <span id="lists-menu-badge" class="lists-menu-badge" hidden>0</span>
+    </button>
     <h1>BFI London Film Festival 2026</h1>
     <p class="subtitle">Plan your festival double and triple bills — 7–18 October</p>
   </header>
+
+  <div id="lists-panel" class="lists-panel" hidden>
+    <div class="lists-panel-header">
+      <div class="lists-panel-tabs">
+        <button type="button" class="lists-panel-tab active" data-panel="watchlist">Watchlist</button>
+        <button type="button" class="lists-panel-tab" data-panel="bill">My Bill</button>
+      </div>
+      <button type="button" id="lists-panel-close" class="lists-panel-close" aria-label="Close">×</button>
+    </div>
+
+    <div id="watchlist-panel" class="lists-panel-section">
+      <p class="field-hint">Add a film you're interested to watch during LFF.</p>
+      <input
+        list="watchlist-film-options"
+        id="watchlist-add-input"
+        class="search-box"
+        placeholder="Type a festival film title to add…"
+      />
+      <datalist id="watchlist-film-options"></datalist>
+      <div id="watchlist-list" class="lists-panel-list"></div>
+    </div>
+
+    <div id="bill-panel" class="lists-panel-section" hidden>
+      <div id="bill-list" class="lists-panel-list"></div>
+      <button type="button" id="bill-export-btn" class="bill-export-btn" hidden>Copy as text</button>
+    </div>
+  </div>
+
+  <div id="whats-new-modal" class="whats-new-overlay" hidden>
+    <div class="whats-new-card">
+      <h2>What's new</h2>
+      <ul class="whats-new-list">
+        <li><strong>Watchlist</strong> — save films you're interested in, expand any of them to see every showing, and add straight to My Bill from there.</li>
+        <li><strong>My Bill</strong> — save the double or triple bills you've decided on, with a warning if two saved bills clash in time.</li>
+        <li><strong>Copy as text</strong> — export your saved bill to share with friends.</li>
+      </ul>
+      <p class="field-hint">Find it all under the <strong>My Lists</strong> button, top right.</p>
+      <button type="button" id="whats-new-dismiss" class="whats-new-dismiss-btn">Got it</button>
+    </div>
+  </div>
 
   <div class="view-tabs" id="top-view-tabs" role="tablist" aria-label="Section">
     <button class="view-tab active" data-view="double">Double Bill</button>
@@ -145,12 +189,13 @@
       ·
       <a href="https://linkedin.com/in/weng-man-lei-angela" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </p>
-    <p class="version-tag">v1</p>
+    <p class="version-tag">v2</p>
   </footer>
 
   <script type="module">
     import { initLffPlanner } from "./lff-planner.mjs";
     import { initLffBrowse } from "./lff-browse.mjs";
+    import { initWhatsNew } from "./whats-new.mjs";
 
     const viewTabs = document.querySelectorAll("#top-view-tabs .view-tab");
     const views = {
@@ -170,6 +215,7 @@
 
     initLffPlanner();
     initLffBrowse();
+    initWhatsNew();
   </script>
 </body>
 </html>

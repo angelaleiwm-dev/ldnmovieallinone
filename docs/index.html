@@ -8,10 +8,41 @@
 </head>
 <body>
   <header class="app-header">
+    <button type="button" id="lists-menu-btn" class="lists-menu-btn" aria-label="My Lists">
+      My Lists
+      <span id="lists-menu-badge" class="lists-menu-badge" hidden>0</span>
+    </button>
     <h1>LDN Screens</h1>
     <p class="subtitle">Showtimes across your London cinemas</p>
     <p class="subtitle"><a href="lff/index.html">Planning for BFI London Film Festival 2026? Try the LFF planner →</a></p>
   </header>
+
+  <div id="lists-panel" class="lists-panel" hidden>
+    <div class="lists-panel-header">
+      <div class="lists-panel-tabs">
+        <button type="button" class="lists-panel-tab active" data-panel="watchlist">Watchlist</button>
+        <button type="button" class="lists-panel-tab" data-panel="bill">My Bill</button>
+      </div>
+      <button type="button" id="lists-panel-close" class="lists-panel-close" aria-label="Close">×</button>
+    </div>
+
+    <div id="watchlist-panel" class="lists-panel-section">
+      <p class="field-hint">Add a film you're interested in — you'll see a checkmark once you've actually saved a showing for it in My Bill.</p>
+      <input
+        list="watchlist-film-options"
+        id="watchlist-add-input"
+        class="search-box"
+        placeholder="Type a film title to add…"
+      />
+      <datalist id="watchlist-film-options"></datalist>
+      <div id="watchlist-list" class="lists-panel-list"></div>
+    </div>
+
+    <div id="bill-panel" class="lists-panel-section" hidden>
+      <div id="bill-list" class="lists-panel-list"></div>
+      <button type="button" id="bill-export-btn" class="bill-export-btn" hidden>Copy as text</button>
+    </div>
+  </div>
 
   <div class="view-tabs" id="top-view-tabs" role="tablist" aria-label="View">
     <button class="view-tab" data-view="planner">Double Bill</button>

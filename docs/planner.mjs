@@ -1,6 +1,8 @@
 import { findPairs } from "./pairing.mjs";
 import { minGapMinutes } from "./zones.mjs";
 import { normalizeTitleForGrouping } from "./title-utils.mjs";
+import { addBillButtonHtml, wireResultsBillButtons } from "./bill-ui.mjs";
+import { billStore, refreshListsMenu } from "./app.js";
 
 const DATA_URL = "data/combined.json";
 const MAX_SUGGESTIONS = 4;
@@ -113,7 +115,10 @@ function pairCardHtml({ filmA, filmB, gapMinutes, sameCinema }) {
 
   return `
     <article class="pair-card">
-      <div class="pair-note">${escapeHtml(headerLabel)}</div>
+      <div class="pair-note">
+        ${escapeHtml(headerLabel)}
+        ${addBillButtonHtml({ filmA, filmB }, billStore)}
+      </div>
       ${filmBlockHtml("First", filmA)}
       <div class="pair-gap-divider">${gapMinutes} min gap</div>
       ${filmBlockHtml("Then", filmB)}
@@ -363,6 +368,10 @@ export async function initPlanner() {
   initDateInput();
   initPickForm();
   initShowMore();
+  wireResultsBillButtons(els.results, billStore, () => {
+    render();
+    refreshListsMenu();
+  });
 
   try {
     const res = await fetch(DATA_URL);
