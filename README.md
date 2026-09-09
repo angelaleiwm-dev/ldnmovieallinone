@@ -24,8 +24,9 @@ tabs.
   actually watch back-to-back that evening, with enough travel time between venues), or pick two
   specific films and see every day/time they line up — searchable in either order.
 - **Watchlist & My Bill** — track films you're interested in, save the specific double or triple
-  bill you've actually decided on, and get warned if two saved bills clash in time. Client-side
-  only, no account needed (see [§ Watchlist & My Bill](#watchlist--my-bill)).
+  bill you've actually decided on, get warned if two saved bills clash in time, and export it all
+  as a shareable receipt-style image. Client-side only, no account needed (see
+  [§ Watchlist & My Bill](#watchlist--my-bill)).
 - **BFI London Film Festival 2026** — a fully separate site (own dataset, own venues) layering a
   **triple**-bill planner on top, tuned to the festival's own venue geography.
 - **Browse** — filter by Today / Tomorrow / This Week / All, filter by cinema, search by title.
@@ -123,6 +124,10 @@ client-side (`localStorage`, namespaced per site — no accounts, nothing sent a
   to share.
 - A watchlisted film picks up a **"✓ Planned"** checkmark once it's actually in a saved bill —
   the two lists share one underlying store, not two disconnected features bolted together.
+- **"Export My Bill (Image)"** — renders the whole bill as a receipt-style PNG (film, cinema,
+  screening time, item count, total runtime) with an optional name, sized 9:16 for sharing as a
+  phone wallpaper or story. Drawn entirely with the Canvas 2D API — no image library, no network
+  call, nothing but `<canvas>`.
 
 ## Getting started
 
@@ -170,6 +175,10 @@ Cinema — each behind its own booking system, normalized to one shape by its ow
   part is catching an overlap *between* two separately-saved bills, which meant modelling every
   saved showing as an occupied time window (falling back to a conservative default when a
   runtime's unknown) and checking every entry against every other one, not just within itself.
+- **A fixed aspect ratio fighting variable-length content.** The receipt export is locked to 9:16
+  for sharing, but a saved bill can be 1 film or 20 — solved with a two-pass layout (measure every
+  line's height first, then decide: center the content inside the fixed canvas if it fits, or let
+  the canvas grow past 9:16 rather than crop anything if it doesn't).
 - **Ten booking systems, zero public documentation.** Each had to be reverse-engineered
   individually — a clean JSON API, an API gated behind Cloudflare Bot Management, a CSRF
   handshake, plain server-rendered HTML, embedded JSON-LD, and a legacy system with clean

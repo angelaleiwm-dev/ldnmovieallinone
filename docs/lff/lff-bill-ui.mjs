@@ -5,6 +5,7 @@
 
 import { normalizeTitleForGrouping } from "../title-utils.mjs";
 import { addBillButtonHtml, wireResultsBillButtons } from "../bill-ui.mjs";
+import { downloadReceipt } from "./receipt.mjs";
 
 function escapeHtml(str) {
   const div = document.createElement("div");
@@ -124,6 +125,10 @@ export function initListsMenu({ billStore, getShowings, formatDateShort, formatT
   const watchlistList = document.getElementById("watchlist-list");
   const billList = document.getElementById("bill-list");
   const exportBtn = document.getElementById("bill-export-btn");
+  const receiptBtn = document.getElementById("bill-receipt-btn");
+  const receiptNameRow = document.getElementById("receipt-name-row");
+  const receiptNameInput = document.getElementById("receipt-name-input");
+  const receiptNameConfirm = document.getElementById("receipt-name-confirm");
 
   // Which watchlisted films currently have their showings list expanded —
   // keyed by normalized title, kept across re-renders within one session.
@@ -204,8 +209,10 @@ export function initListsMenu({ billStore, getShowings, formatDateShort, formatT
   function renderBill() {
     const entries = billStore.getBill();
     exportBtn.hidden = entries.length === 0;
+    receiptBtn.hidden = entries.length === 0;
     if (entries.length === 0) {
       billList.innerHTML = `<p class="status status--compact">Nothing saved yet — press + button on a planner result to save your bill.</p>`;
+      hideReceiptNameRow();
       return;
     }
     const showings = getShowings();
@@ -262,6 +269,7 @@ export function initListsMenu({ billStore, getShowings, formatDateShort, formatT
   });
   closeBtn.addEventListener("click", () => {
     panel.hidden = true;
+    hideReceiptNameRow();
   });
 
   tabs.forEach((tab) => {
@@ -271,6 +279,7 @@ export function initListsMenu({ billStore, getShowings, formatDateShort, formatT
       const target = tab.dataset.panel;
       watchlistSection.hidden = target !== "watchlist";
       billSection.hidden = target !== "bill";
+      hideReceiptNameRow();
     });
   });
 
@@ -319,6 +328,30 @@ export function initListsMenu({ billStore, getShowings, formatDateShort, formatT
     setTimeout(() => {
       exportBtn.textContent = "Copy as text";
     }, 1500);
+  });
+
+  function hideReceiptNameRow() {
+    receiptNameRow.hidden = true;
+    receiptNameInput.value = "";
+  }
+
+  function generateReceipt() {
+    const name = receiptNameInput.value.trim();
+    downloadReceipt(billStore.getBill(), { formatDateShort, formatTime12h, name });
+    hideReceiptNameRow();
+  }
+
+  // Every press starts from a blank field — a name typed for a previous
+  // export should never silently carry over into the next one.
+  receiptBtn.addEventListener("click", () => {
+    receiptNameInput.value = "";
+    receiptNameRow.hidden = false;
+    receiptNameInput.focus();
+  });
+
+  receiptNameConfirm.addEventListener("click", generateReceipt);
+  receiptNameInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") generateReceipt();
   });
 
   updateBadge();

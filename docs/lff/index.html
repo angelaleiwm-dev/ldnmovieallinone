@@ -39,7 +39,20 @@
 
     <div id="bill-panel" class="lists-panel-section" hidden>
       <div id="bill-list" class="lists-panel-list"></div>
-      <button type="button" id="bill-export-btn" class="bill-export-btn" hidden>Copy as text</button>
+      <div class="bill-export-actions">
+        <button type="button" id="bill-export-btn" class="bill-export-btn" hidden>Copy as text</button>
+        <button type="button" id="bill-receipt-btn" class="bill-export-btn bill-export-btn--secondary" hidden>Export My Bill (Image)</button>
+      </div>
+      <div id="receipt-name-row" class="receipt-name-row" hidden>
+        <input
+          type="text"
+          id="receipt-name-input"
+          class="search-box"
+          placeholder="Your name (optional)"
+          maxlength="40"
+        />
+        <button type="button" id="receipt-name-confirm" class="bill-export-btn bill-export-btn--secondary">Generate</button>
+      </div>
     </div>
   </div>
 
