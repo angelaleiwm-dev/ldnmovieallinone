@@ -236,9 +236,42 @@ function drawLines(ctx, lines, width, startY) {
   }
 }
 
-function triggerDownload(canvas) {
+// `<a download>` on a data: URI is silently ignored by mobile Safari (and
+// some Android browsers) — it just navigates instead of saving anything,
+// which is why this worked on desktop but did nothing on a phone. The fix
+// is the Web Share sheet where it's supported (which is exactly where the
+// download attribute is unreliable): it hands the browser's own native
+// "Save Image" / share-to-app flow a real file instead.
+function dataUrlToBlob(dataUrl) {
+  const [header, base64] = dataUrl.split(",");
+  const mime = header.match(/data:(.*?);base64/)?.[1] || "image/png";
+  const binary = atob(base64);
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+  return new Blob([bytes], { type: mime });
+}
+
+async function triggerDownload(canvas) {
+  const dataUrl = canvas.toDataURL("image/png");
+
+  if (typeof navigator.share === "function" && typeof navigator.canShare === "function") {
+    try {
+      const file = new File([dataUrlToBlob(dataUrl)], "my-lff-bill.png", { type: "image/png" });
+      if (navigator.canShare({ files: [file] })) {
+        await navigator.share({ files: [file], title: "My LFF Bill" });
+        return;
+      }
+    } catch (err) {
+      // AbortError = the user backed out of the share sheet on purpose —
+      // respect that and stop, rather than dropping a download on them
+      // right after they said no. Any other error falls through to the
+      // plain link below instead of leaving the button looking dead.
+      if (err && err.name === "AbortError") return;
+    }
+  }
+
   const a = document.createElement("a");
-  a.href = canvas.toDataURL("image/png");
+  a.href = dataUrl;
   a.download = "my-lff-bill.png";
   document.body.appendChild(a);
   a.click();
