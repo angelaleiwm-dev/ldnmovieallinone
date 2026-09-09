@@ -80,8 +80,13 @@ export function createBillStore(namespace) {
 
   // ---------- My Bill: specific saved combos ----------
 
+  // filmA is always the earliest-watched film in a saved combo (the
+  // planner only ever builds combos in chronological order), so it's a
+  // reliable sort key without needing to inspect every film in the combo.
   function getBill() {
-    return readList(BILL_KEY);
+    return readList(BILL_KEY).sort((a, b) =>
+      a.combo.filmA.dateTime.localeCompare(b.combo.filmA.dateTime)
+    );
   }
 
   function isInBill(id) {

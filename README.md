@@ -20,12 +20,15 @@ of those cinemas daily, normalizes it into one consistent shape, and serves it a
 mobile-first site — so "what's on tonight, anywhere in London" is one page instead of ten browser
 tabs.
 
-- **Browse** — filter by Today / Tomorrow / This Week / All, filter by cinema, search by title.
 - **Double Bill** — pick a date and get real double-bill suggestions (two films you could
   actually watch back-to-back that evening, with enough travel time between venues), or pick two
   specific films and see every day/time they line up — searchable in either order.
-- **BFI London Film Festival 2026** — a fully separate site (own fetcher, own dataset, own
-  venues) layering a **triple**-bill planner on top, tuned to the festival's own venue geography.
+- **Watchlist & My Bill** — track films you're interested in, save the specific double or triple
+  bill you've actually decided on, and get warned if two saved bills clash in time. Client-side
+  only, no account needed (see [§ Watchlist & My Bill](#watchlist--my-bill)).
+- **BFI London Film Festival 2026** — a fully separate site (own dataset, own venues) layering a
+  **triple**-bill planner on top, tuned to the festival's own venue geography.
+- **Browse** — filter by Today / Tomorrow / This Week / All, filter by cinema, search by title.
 
 ## Why it exists
 
@@ -37,23 +40,25 @@ spread across venues on opposite sides of the city.
 
 ## Key features
 
-- **Unified browsing** across 10 cinemas, filterable and searchable. Films spanning many
-  showtimes collapse into a summary card (`12 showings · 3 cinemas · 106 min`) to keep long lists
-  scannable.
-- **Cross-cinema film matching** — the same film often appears with slightly different
-  formatting per cinema (`"Coyote vs. ACME"` vs `"Coyote vs. Acme"`, or a trailing year); these
-  merge into one listing, while genuinely different prints (e.g. separate language dubs) stay
-  correctly separate.
 - **"Pick a Date" planner** — for any date, automatically finds valid pairings and splits results
   into *Same Cinema* / *Different Cinemas* columns, each with a "show more" if there's more than
   the top few to see.
 - **"Pick films" planner** — choose either film first; the other field live-filters to only
-  titles that can actually pair with it, in that role, somewhere in the data.
+  titles that can actually pair with it, in that role, somewhere in the data — searchable in
+  either order.
+- **Triple-bill planning** (LFF only) — the same matching engine extended to three films in one
+  day, built by chaining the double-bill logic, not rewriting it.
 - **Real travel-time modelling** — London divided into hand-tuned geographic zones with
   minimum-gap rules (same cinema / same zone / cross-zone), plus specific overrides based on real
   transit knowledge.
-- **Triple-bill planning** (LFF only) — the same matching engine extended to three films in one
-  day, built by chaining the double-bill logic, not rewriting it.
+- **Watchlist & My Bill** — a Watchlist for films you're interested in (expand any of them to see
+  every showing and save straight to your bill), and My Bill for the specific plans you've
+  decided on, with a clash check across everything you've saved and a one-tap text export to
+  share. See [§ Watchlist & My Bill](#watchlist--my-bill) below.
+- **Unified browsing** across 10 cinemas, filterable and searchable. Films spanning many
+  showtimes collapse into a summary card (`12 showings · 3 cinemas · 106 min`) to keep long lists
+  scannable, with cross-cinema film matching so the same film listed slightly differently per site
+  (`"Coyote vs. ACME"` vs `"Coyote vs. Acme"`) merges into one entry.
 - **Resilience by design** — a scheduled refresh that returns suspiciously little data (source
   down or blocking) is refused rather than allowed to silently overwrite yesterday's good data.
 
@@ -104,6 +109,21 @@ matching engine as the everyday planner, extended to a third film.
   don't appear automatically. Caught by periodically re-diffing the live programme against the
   cache.
 
+## Watchlist & My Bill
+
+A v2 feature, LFF-first for now. One "My Lists" button opens two linked lists, both entirely
+client-side (`localStorage`, namespaced per site — no accounts, nothing sent anywhere):
+
+- **Watchlist** — films you're interested in but haven't committed to. Expand one to see every
+  remaining showing and add straight to My Bill from there.
+- **My Bill** — the specific double or triple bills you've actually saved. Each entry is checked
+  against every *other* saved entry for an overlapping screening time (using each film's runtime,
+  or a conservative default if it's unknown) and flagged if they'd clash — a saved bill is also
+  flagged if the underlying showing has since changed. One tap copies the whole bill as plain text
+  to share.
+- A watchlisted film picks up a **"✓ Planned"** checkmark once it's actually in a saved bill —
+  the two lists share one underlying store, not two disconnected features bolted together.
+
 ## Getting started
 
 ```bash
@@ -114,8 +134,6 @@ npx playwright install chromium   # only needed for the two Playwright-based fet
 
 npm run combine       # runs all 10 cinema fetchers, writes docs/data/combined.json
 npm run combine:lff    # runs the LFF fetcher, writes docs/lff/data/lff-combined.json
-
-npm run web            # serves docs/ at http://localhost:5173, matching production exactly
 ```
 
 Individual fetchers can also be run on their own, e.g. `npm run fetch:prince-charles`.
@@ -128,20 +146,10 @@ anything itself, it only ever reads the last committed JSON.
 
 ## Cinemas integrated
 
-*The BFI LFF 2026 section is tracked separately — its own venues, not repeated here.*
-
-| Cinema | Method |
-|---|---|
-| Prince Charles Cinema | Playwright (DOM render) |
-| Cineworld O2 Greenwich | Plain HTTP JSON API |
-| Vue Westfield Stratford City | Playwright + JSON API |
-| Picturehouse Central | HTTP + CSRF handshake |
-| BFI Southbank | Server-rendered HTML |
-| Barbican Cinema | Server-rendered HTML |
-| ICA Cinema | Server-rendered HTML |
-| Genesis Cinema | Server-rendered HTML |
-| The Castle Cinema | Server-rendered HTML |
-| Rio Cinema | HTML + JSON-LD |
+Prince Charles Cinema, Cineworld O2 Greenwich, Vue Westfield Stratford City, Picturehouse
+Central, BFI Southbank, Barbican Cinema, ICA Cinema, Genesis Cinema, The Castle Cinema, Rio
+Cinema — each behind its own booking system, normalized to one shape by its own fetcher script.
+*The BFI LFF 2026 section runs its own separate dataset and venues, not repeated here.*
 
 ## Tech stack
 
@@ -157,20 +165,16 @@ anything itself, it only ever reads the last committed JSON.
 
 ## Technical challenges worth knowing about
 
+- **Clash detection across independently-saved plans.** My Bill entries are saved one at a time,
+  each already internally valid (the planner vetted the gap when it was built) — the interesting
+  part is catching an overlap *between* two separately-saved bills, which meant modelling every
+  saved showing as an occupied time window (falling back to a conservative default when a
+  runtime's unknown) and checking every entry against every other one, not just within itself.
 - **Ten booking systems, zero public documentation.** Each had to be reverse-engineered
-  individually — a clean JSON API (Cineworld), an API gated behind Cloudflare Bot Management
-  (Vue, solved by earning a real browser session's trust cookie first), a Laravel CSRF handshake
-  (Picturehouse), plain server-rendered HTML (BFI, Barbican, ICA, Genesis), embedded JSON-LD
-  (Rio), and a legacy ASP-style system with clean `data-*` attributes (The Castle).
-- **Anti-bot protection, solved where legitimate, declined where not.** Six cinemas sit behind
-  Cloudflare's full interactive challenge; rather than escalate to fingerprint spoofing, these are
-  documented as out of scope — a deliberate trade-off, not a technical dead end.
-- **Two silent 2×-duplication bugs caught before shipping** — two cinema sites each render a
-  hidden duplicate copy of their showtimes list for responsive layouts. Caught by checking live
-  DOM element counts against expected showing counts before writing either parser.
-- **A CSS cascade trap** — a component's own `display: flex` was silently overriding the
-  browser's built-in `[hidden]` attribute. Fixed with one global rule making `hidden`
-  unconditionally authoritative.
+  individually — a clean JSON API, an API gated behind Cloudflare Bot Management, a CSRF
+  handshake, plain server-rendered HTML, embedded JSON-LD, and a legacy system with clean
+  `data-*` attributes — six others sit behind Cloudflare's full interactive challenge and are
+  documented as out of scope rather than escalated into fingerprint spoofing.
 - **A block that comes and goes, not a wall.** BFI's festival section intermittently
   rate-limits even a real automated browser session — the same request can fail, then succeed
   seconds later. Fixed architecturally: every festival day and film runtime is cached to disk the
@@ -181,7 +185,8 @@ anything itself, it only ever reads the last committed JSON.
 
 ## Privacy, copyright & robustness
 
-- **Privacy:** no accounts, no tracking cookies, no analytics.
+- **Privacy:** no accounts, no tracking cookies, no analytics. Watchlist and My Bill are saved
+  with `localStorage`, entirely in your own browser — nothing is ever sent to a server.
 - **Copyright:** only factual data is captured — titles, showtimes, runtimes, venue names. No
   posters, no synopses. Every listing links straight back to the source's own official page.
 - **Scraping terms of service:** the one genuinely gray area, acknowledged rather than
@@ -198,15 +203,16 @@ build, defer, or explicitly skip and why); the ethical line on anti-bot workarou
 domain knowledge no amount of code could substitute for (actual London transit times, including
 the festival's own Southbank Centre/BFI Southbank walking distance); flagging the ticket-sale-day
 data-loss risk before it became a real incident; hands-on testing of every feature before
-accepting it as done; and the UX fixes that came only from actually using the product.
+accepting it as done; and the UX fixes that came only from actually using the product. Watchlist
+& My Bill (v2) was fully specced — data model, UX, and the connection between the two lists —
+before any code was written.
 
 **AI-assisted:** site investigation, code implementation, debugging, and verification — done
 under direction, reviewed against real data at every step.
 
 ## Status
 
-Public and live, refreshing daily on its own. Currently used by the author and festival-goer
-friends; architected so wider public use is a small step, not a rewrite.
+Public and live, refreshing daily on its own.
 
 ---
 
