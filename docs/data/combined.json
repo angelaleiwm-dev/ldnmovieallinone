@@ -1,820 +1,6 @@
 {
-  "generatedAt": "2026-10-18T08:46:28.397Z",
+  "generatedAt": "2026-10-19T09:47:30.791Z",
   "showings": [
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Naza",
-      "date": "2026-10-18",
-      "time": "10:00",
-      "dateTime": "2026-10-18T10:00:00",
-      "runtimeMinutes": 80,
-      "endDateTime": "2026-10-18T11:20:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123206/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Tenzing",
-      "date": "2026-10-18",
-      "time": "10:20",
-      "dateTime": "2026-10-18T10:20:00",
-      "runtimeMinutes": 125,
-      "endDateTime": "2026-10-18T12:25:00",
-      "format": "HOHSub, 2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123105/seats"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "Deadline",
-      "date": "2026-10-18",
-      "time": "10:45",
-      "dateTime": "2026-10-18T10:45:00",
-      "runtimeMinutes": 117,
-      "endDateTime": "2026-10-18T12:42:00",
-      "format": "S2",
-      "bookingUrl": "https://thecastlecinema.com/interstitial/pwyc/18093/show"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "The Uprising",
-      "date": "2026-10-18",
-      "time": "11:00",
-      "dateTime": "2026-10-18T11:00:00",
-      "runtimeMinutes": 128,
-      "endDateTime": "2026-10-18T13:08:00",
-      "format": "2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123111/seats"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "Members' Screening: The Social Reckoning",
-      "date": "2026-10-18",
-      "time": "11:00",
-      "dateTime": "2026-10-18T11:00:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3752801"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Digger",
-      "date": "2026-10-18",
-      "time": "11:40",
-      "dateTime": "2026-10-18T11:40:00",
-      "runtimeMinutes": 120,
-      "endDateTime": "2026-10-18T13:40:00",
-      "format": "2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123099/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Extra Geography",
-      "date": "2026-10-18",
-      "time": "11:45",
-      "dateTime": "2026-10-18T11:45:00",
-      "runtimeMinutes": 94,
-      "endDateTime": "2026-10-18T13:19:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123115/seats"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "Case 137",
-      "date": "2026-10-18",
-      "time": "12:00",
-      "dateTime": "2026-10-18T12:00:00",
-      "runtimeMinutes": 116,
-      "endDateTime": "2026-10-18T13:56:00",
-      "format": "S1",
-      "bookingUrl": "https://thecastlecinema.com/bookings/18094/"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "By Design",
-      "date": "2026-10-18",
-      "time": "12:10",
-      "dateTime": "2026-10-18T12:10:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 2",
-      "bookingUrl": "https://www.ica.art/films/by-design"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "Black Church Bay",
-      "date": "2026-10-18",
-      "time": "12:20",
-      "dateTime": "2026-10-18T12:20:00",
-      "runtimeMinutes": 107,
-      "endDateTime": "2026-10-18T14:07:00",
-      "format": null,
-      "bookingUrl": "https://whatson.bfi.org.uk/lff/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E432AEAB-4740-44EC-9A88-F004B8E022C3&BOparam::WScontent::loadArticle::"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Winter of the Crow",
-      "date": "2026-10-18",
-      "time": "12:20",
-      "dateTime": "2026-10-18T12:20:00",
-      "runtimeMinutes": 112,
-      "endDateTime": "2026-10-18T14:12:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123109/seats"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Coyote vs Acme",
-      "date": "2026-10-18",
-      "time": "12:50",
-      "dateTime": "2026-10-18T12:50:00",
-      "runtimeMinutes": 101,
-      "endDateTime": "2026-10-18T14:31:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13836"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Cat Video Fest 2026",
-      "date": "2026-10-18",
-      "time": "13:00",
-      "dateTime": "2026-10-18T13:00:00",
-      "runtimeMinutes": 70,
-      "endDateTime": "2026-10-18T14:10:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=12976"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Mistura",
-      "date": "2026-10-18",
-      "time": "13:00",
-      "dateTime": "2026-10-18T13:00:00",
-      "runtimeMinutes": 97,
-      "endDateTime": "2026-10-18T14:37:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13894"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Forgotten Island",
-      "date": "2026-10-18",
-      "time": "13:10",
-      "dateTime": "2026-10-18T13:10:00",
-      "runtimeMinutes": 109,
-      "endDateTime": "2026-10-18T14:59:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13831"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "Extra Geography",
-      "date": "2026-10-18",
-      "time": "13:15",
-      "dateTime": "2026-10-18T13:15:00",
-      "runtimeMinutes": 94,
-      "endDateTime": "2026-10-18T14:49:00",
-      "format": "S2",
-      "bookingUrl": "https://thecastlecinema.com/bookings/18095/"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "The Social Reckoning",
-      "date": "2026-10-18",
-      "time": "13:20",
-      "dateTime": "2026-10-18T13:20:00",
-      "runtimeMinutes": 120,
-      "endDateTime": "2026-10-18T15:20:00",
-      "format": "2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123104/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Boorman and the Devil",
-      "date": "2026-10-18",
-      "time": "14:00",
-      "dateTime": "2026-10-18T14:00:00",
-      "runtimeMinutes": 112,
-      "endDateTime": "2026-10-18T15:52:00",
-      "format": "2D, Picture Do",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-122393/seats"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "Sunday Shorts: Spaces of Encounter",
-      "date": "2026-10-18",
-      "time": "14:00",
-      "dateTime": "2026-10-18T14:00:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": null,
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3610201"
-    },
-    {
-      "cinema": "Rio Cinema",
-      "film": "THE MAN WITH THE PLAN + Q&A",
-      "date": "2026-10-18",
-      "time": "14:00",
-      "dateTime": "2026-10-18T14:00:00",
-      "runtimeMinutes": 105,
-      "endDateTime": "2026-10-18T15:45:00",
-      "format": null,
-      "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2926280.TcsSection_936"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Verity",
-      "date": "2026-10-18",
-      "time": "14:05",
-      "dateTime": "2026-10-18T14:05:00",
-      "runtimeMinutes": 114,
-      "endDateTime": "2026-10-18T15:59:00",
-      "format": "2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123113/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "The Odyssey (70mm)",
-      "date": "2026-10-18",
-      "time": "14:30",
-      "dateTime": "2026-10-18T14:30:00",
-      "runtimeMinutes": 172,
-      "endDateTime": "2026-10-18T17:22:00",
-      "format": "70mm, 2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-122993/seats"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Digger",
-      "date": "2026-10-18",
-      "time": "14:30",
-      "dateTime": "2026-10-18T14:30:00",
-      "runtimeMinutes": 129,
-      "endDateTime": "2026-10-18T16:39:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13832"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "NAZA",
-      "date": "2026-10-18",
-      "time": "14:30",
-      "dateTime": "2026-10-18T14:30:00",
-      "runtimeMinutes": 77,
-      "endDateTime": "2026-10-18T15:47:00",
-      "format": "S1",
-      "bookingUrl": "https://thecastlecinema.com/bookings/18096/"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "The Social Reckoning",
-      "date": "2026-10-18",
-      "time": "14:45",
-      "dateTime": "2026-10-18T14:45:00",
-      "runtimeMinutes": 112,
-      "endDateTime": "2026-10-18T16:37:00",
-      "format": "CAP, AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3784402"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "Your Mother Your Mother Your Mother",
-      "date": "2026-10-18",
-      "time": "15:00",
-      "dateTime": "2026-10-18T15:00:00",
-      "runtimeMinutes": 111,
-      "endDateTime": "2026-10-18T16:51:00",
-      "format": null,
-      "bookingUrl": "https://whatson.bfi.org.uk/lff/Online/article/your-mother-your-mother-your-mother-lff26"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Sense and Sensibility (2026)",
-      "date": "2026-10-18",
-      "time": "15:00",
-      "dateTime": "2026-10-18T15:00:00",
-      "runtimeMinutes": 132,
-      "endDateTime": "2026-10-18T17:12:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123107/seats"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Street Fighter",
-      "date": "2026-10-18",
-      "time": "15:00",
-      "dateTime": "2026-10-18T15:00:00",
-      "runtimeMinutes": 119,
-      "endDateTime": "2026-10-18T16:59:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13827"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Naza",
-      "date": "2026-10-18",
-      "time": "15:10",
-      "dateTime": "2026-10-18T15:10:00",
-      "runtimeMinutes": 80,
-      "endDateTime": "2026-10-18T16:30:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123205/seats"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Forgotten Island",
-      "date": "2026-10-18",
-      "time": "15:15",
-      "dateTime": "2026-10-18T15:15:00",
-      "runtimeMinutes": 109,
-      "endDateTime": "2026-10-18T17:04:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13830"
-    },
-    {
-      "cinema": "Rio Cinema",
-      "film": "THE SOCIAL RECKONING",
-      "date": "2026-10-18",
-      "time": "15:15",
-      "dateTime": "2026-10-18T15:15:00",
-      "runtimeMinutes": 112,
-      "endDateTime": "2026-10-18T17:07:00",
-      "format": null,
-      "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2968373.TcsSection_1299"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Bad Apples",
-      "date": "2026-10-18",
-      "time": "15:20",
-      "dateTime": "2026-10-18T15:20:00",
-      "runtimeMinutes": 101,
-      "endDateTime": "2026-10-18T17:01:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13889"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "Digger",
-      "date": "2026-10-18",
-      "time": "15:20",
-      "dateTime": "2026-10-18T15:20:00",
-      "runtimeMinutes": 129,
-      "endDateTime": "2026-10-18T17:29:00",
-      "format": "S2",
-      "bookingUrl": "https://thecastlecinema.com/bookings/18097/"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "Sense and Sensibility",
-      "date": "2026-10-18",
-      "time": "15:25",
-      "dateTime": "2026-10-18T15:25:00",
-      "runtimeMinutes": 132,
-      "endDateTime": "2026-10-18T17:37:00",
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3786601"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Coyote vs Acme",
-      "date": "2026-10-18",
-      "time": "15:45",
-      "dateTime": "2026-10-18T15:45:00",
-      "runtimeMinutes": 101,
-      "endDateTime": "2026-10-18T17:26:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13841"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "The Zone of Interest",
-      "date": "2026-10-18",
-      "time": "16:00",
-      "dateTime": "2026-10-18T16:00:00",
-      "runtimeMinutes": 105,
-      "endDateTime": "2026-10-18T17:45:00",
-      "format": "Sub Cinema, 2D, reDiscover",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-120894/seats"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "Naza",
-      "date": "2026-10-18",
-      "time": "16:00",
-      "dateTime": "2026-10-18T16:00:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 2",
-      "bookingUrl": "https://www.ica.art/films/naza"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "Sense And Sensibility",
-      "date": "2026-10-18",
-      "time": "16:30",
-      "dateTime": "2026-10-18T16:30:00",
-      "runtimeMinutes": 132,
-      "endDateTime": "2026-10-18T18:42:00",
-      "format": "S1",
-      "bookingUrl": "https://thecastlecinema.com/bookings/18098/"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Exorcist II - The Heretic",
-      "date": "2026-10-18",
-      "time": "16:40",
-      "dateTime": "2026-10-18T16:40:00",
-      "runtimeMinutes": 113,
-      "endDateTime": "2026-10-18T18:33:00",
-      "format": "2D, reDiscover",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-122392/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Verity",
-      "date": "2026-10-18",
-      "time": "17:00",
-      "dateTime": "2026-10-18T17:00:00",
-      "runtimeMinutes": 114,
-      "endDateTime": "2026-10-18T18:54:00",
-      "format": "2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123116/seats"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "Sense and Sensibility",
-      "date": "2026-10-18",
-      "time": "17:00",
-      "dateTime": "2026-10-18T17:00:00",
-      "runtimeMinutes": 132,
-      "endDateTime": "2026-10-18T19:12:00",
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3786202"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "The Social Reckoning",
-      "date": "2026-10-18",
-      "time": "17:15",
-      "dateTime": "2026-10-18T17:15:00",
-      "runtimeMinutes": 112,
-      "endDateTime": "2026-10-18T19:07:00",
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3784601"
-    },
-    {
-      "cinema": "Rio Cinema",
-      "film": "RETURN TO THE TATLER + VARIETY",
-      "date": "2026-10-18",
-      "time": "17:20",
-      "dateTime": "2026-10-18T17:20:00",
-      "runtimeMinutes": 101,
-      "endDateTime": "2026-10-18T19:01:00",
-      "format": null,
-      "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2796453.TcsSection_936"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Digger",
-      "date": "2026-10-18",
-      "time": "17:25",
-      "dateTime": "2026-10-18T17:25:00",
-      "runtimeMinutes": 129,
-      "endDateTime": "2026-10-18T19:34:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13833"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Naza",
-      "date": "2026-10-18",
-      "time": "17:30",
-      "dateTime": "2026-10-18T17:30:00",
-      "runtimeMinutes": 80,
-      "endDateTime": "2026-10-18T18:50:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-122780/seats"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "Case 137",
-      "date": "2026-10-18",
-      "time": "17:30",
-      "dateTime": "2026-10-18T17:30:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 2",
-      "bookingUrl": "https://www.ica.art/films/case-137"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Street Fighter",
-      "date": "2026-10-18",
-      "time": "17:45",
-      "dateTime": "2026-10-18T17:45:00",
-      "runtimeMinutes": 119,
-      "endDateTime": "2026-10-18T19:44:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13829"
-    },
-    {
-      "cinema": "Rio Cinema",
-      "film": "NAZA",
-      "date": "2026-10-18",
-      "time": "17:45",
-      "dateTime": "2026-10-18T17:45:00",
-      "runtimeMinutes": 80,
-      "endDateTime": "2026-10-18T19:05:00",
-      "format": null,
-      "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2949515.TcsSection_1299"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "Club Kid",
-      "date": "2026-10-18",
-      "time": "17:50",
-      "dateTime": "2026-10-18T17:50:00",
-      "runtimeMinutes": 122,
-      "endDateTime": "2026-10-18T19:52:00",
-      "format": null,
-      "bookingUrl": "https://whatson.bfi.org.uk/lff/Online/article/club-kid-lff26"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "The Uprising",
-      "date": "2026-10-18",
-      "time": "17:50",
-      "dateTime": "2026-10-18T17:50:00",
-      "runtimeMinutes": 128,
-      "endDateTime": "2026-10-18T19:58:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123207/seats"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "The Social Reckoning",
-      "date": "2026-10-18",
-      "time": "17:50",
-      "dateTime": "2026-10-18T17:50:00",
-      "runtimeMinutes": 112,
-      "endDateTime": "2026-10-18T19:42:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13838"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "NAZA",
-      "date": "2026-10-18",
-      "time": "18:00",
-      "dateTime": "2026-10-18T18:00:00",
-      "runtimeMinutes": 77,
-      "endDateTime": "2026-10-18T19:17:00",
-      "format": "S2",
-      "bookingUrl": "https://thecastlecinema.com/bookings/18099/"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "NAZA",
-      "date": "2026-10-18",
-      "time": "18:15",
-      "dateTime": "2026-10-18T18:15:00",
-      "runtimeMinutes": 80,
-      "endDateTime": "2026-10-18T19:35:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13835"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "The Lost Children of Tuam",
-      "date": "2026-10-18",
-      "time": "18:30",
-      "dateTime": "2026-10-18T18:30:00",
-      "runtimeMinutes": 84,
-      "endDateTime": "2026-10-18T19:54:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123215/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "The Odyssey (70mm)",
-      "date": "2026-10-18",
-      "time": "18:30",
-      "dateTime": "2026-10-18T18:30:00",
-      "runtimeMinutes": 172,
-      "endDateTime": "2026-10-18T21:22:00",
-      "format": "70mm, 2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-122994/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Tenzing",
-      "date": "2026-10-18",
-      "time": "19:30",
-      "dateTime": "2026-10-18T19:30:00",
-      "runtimeMinutes": 125,
-      "endDateTime": "2026-10-18T21:35:00",
-      "format": "2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123102/seats"
-    },
-    {
-      "cinema": "Rio Cinema",
-      "film": "HOPE",
-      "date": "2026-10-18",
-      "time": "19:40",
-      "dateTime": "2026-10-18T19:40:00",
-      "runtimeMinutes": 160,
-      "endDateTime": "2026-10-18T22:20:00",
-      "format": null,
-      "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2968375.TcsSection_1299"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Digger",
-      "date": "2026-10-18",
-      "time": "19:45",
-      "dateTime": "2026-10-18T19:45:00",
-      "runtimeMinutes": 120,
-      "endDateTime": "2026-10-18T21:45:00",
-      "format": "2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123096/seats"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "The Social Reckoning",
-      "date": "2026-10-18",
-      "time": "19:45",
-      "dateTime": "2026-10-18T19:45:00",
-      "runtimeMinutes": 112,
-      "endDateTime": "2026-10-18T21:37:00",
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3784801"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "NAZA",
-      "date": "2026-10-18",
-      "time": "19:45",
-      "dateTime": "2026-10-18T19:45:00",
-      "runtimeMinutes": 77,
-      "endDateTime": "2026-10-18T21:02:00",
-      "format": "S1",
-      "bookingUrl": "https://thecastlecinema.com/bookings/18139/"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "The Social Reckoning",
-      "date": "2026-10-18",
-      "time": "19:50",
-      "dateTime": "2026-10-18T19:50:00",
-      "runtimeMinutes": 120,
-      "endDateTime": "2026-10-18T21:50:00",
-      "format": "2D, Audio D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123106/seats"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "Sense and Sensibility",
-      "date": "2026-10-18",
-      "time": "19:50",
-      "dateTime": "2026-10-18T19:50:00",
-      "runtimeMinutes": 132,
-      "endDateTime": "2026-10-18T22:02:00",
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3786602"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Dracula 4K Restoration",
-      "date": "2026-10-18",
-      "time": "20:00",
-      "dateTime": "2026-10-18T20:00:00",
-      "runtimeMinutes": 93,
-      "endDateTime": "2026-10-18T21:33:00",
-      "format": "2D, reDiscover",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123093/seats"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "Deadline",
-      "date": "2026-10-18",
-      "time": "20:00",
-      "dateTime": "2026-10-18T20:00:00",
-      "runtimeMinutes": 117,
-      "endDateTime": "2026-10-18T21:57:00",
-      "format": "S2",
-      "bookingUrl": "https://thecastlecinema.com/bookings/18101/"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "Digger",
-      "date": "2026-10-18",
-      "time": "20:10",
-      "dateTime": "2026-10-18T20:10:00",
-      "runtimeMinutes": 129,
-      "endDateTime": "2026-10-18T22:19:00",
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3785204"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Digger",
-      "date": "2026-10-18",
-      "time": "20:20",
-      "dateTime": "2026-10-18T20:20:00",
-      "runtimeMinutes": 129,
-      "endDateTime": "2026-10-18T22:29:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13834"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Bad Apples",
-      "date": "2026-10-18",
-      "time": "20:25",
-      "dateTime": "2026-10-18T20:25:00",
-      "runtimeMinutes": 101,
-      "endDateTime": "2026-10-18T22:06:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13900"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Resident Evil",
-      "date": "2026-10-18",
-      "time": "20:30",
-      "dateTime": "2026-10-18T20:30:00",
-      "runtimeMinutes": 90,
-      "endDateTime": "2026-10-18T22:00:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13840"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Street Fighter",
-      "date": "2026-10-18",
-      "time": "20:30",
-      "dateTime": "2026-10-18T20:30:00",
-      "runtimeMinutes": 119,
-      "endDateTime": "2026-10-18T22:29:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13828"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "24 Hour Party People (24th Anniversary Re-release)",
-      "date": "2026-10-18",
-      "time": "20:40",
-      "dateTime": "2026-10-18T20:40:00",
-      "runtimeMinutes": 117,
-      "endDateTime": "2026-10-18T22:37:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123112/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Resident Evil",
-      "date": "2026-10-18",
-      "time": "20:40",
-      "dateTime": "2026-10-18T20:40:00",
-      "runtimeMinutes": 90,
-      "endDateTime": "2026-10-18T22:10:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123117/seats"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "The Debut",
-      "date": "2026-10-18",
-      "time": "20:45",
-      "dateTime": "2026-10-18T20:45:00",
-      "runtimeMinutes": 105,
-      "endDateTime": "2026-10-18T22:30:00",
-      "format": null,
-      "bookingUrl": "https://whatson.bfi.org.uk/lff/Online/article/debut-lff26"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Other Mommy",
-      "date": "2026-10-18",
-      "time": "20:55",
-      "dateTime": "2026-10-18T20:55:00",
-      "runtimeMinutes": 93,
-      "endDateTime": "2026-10-18T22:28:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13839"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "Case 137",
-      "date": "2026-10-19",
-      "time": "11:00",
-      "dateTime": "2026-10-19T11:00:00",
-      "runtimeMinutes": 116,
-      "endDateTime": "2026-10-19T12:56:00",
-      "format": "S2",
-      "bookingUrl": "https://thecastlecinema.com/bookings/18102/"
-    },
     {
       "cinema": "Rio Cinema",
       "film": "Carers & Babies: THE SOCIAL RECKONING",
@@ -1388,17 +574,6 @@
       "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123129/seats"
     },
     {
-      "cinema": "Prince Charles Cinema",
-      "film": "Mulholland Dr.",
-      "date": "2026-10-19",
-      "time": "20:30",
-      "dateTime": "2026-10-19T20:30:00",
-      "runtimeMinutes": 147,
-      "endDateTime": "2026-10-19T22:57:00",
-      "format": "35mm",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627509"
-    },
-    {
       "cinema": "Picturehouse Central",
       "film": "Naza",
       "date": "2026-10-19",
@@ -1521,14 +696,14 @@
     },
     {
       "cinema": "Genesis Cinema",
-      "film": "The Social Reckoning",
+      "film": "NAZA",
       "date": "2026-10-19",
       "time": "20:55",
       "dateTime": "2026-10-19T20:55:00",
-      "runtimeMinutes": 112,
-      "endDateTime": "2026-10-19T22:47:00",
+      "runtimeMinutes": 80,
+      "endDateTime": "2026-10-19T22:15:00",
       "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13844"
+      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13932"
     },
     {
       "cinema": "Genesis Cinema",
@@ -2004,17 +1179,6 @@
       "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13854"
     },
     {
-      "cinema": "Prince Charles Cinema",
-      "film": "Cruising",
-      "date": "2026-10-20",
-      "time": "18:15",
-      "dateTime": "2026-10-20T18:15:00",
-      "runtimeMinutes": 102,
-      "endDateTime": "2026-10-20T19:57:00",
-      "format": "35mm",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627604"
-    },
-    {
       "cinema": "BFI Southbank",
       "film": "Ace in the Hole",
       "date": "2026-10-20",
@@ -2057,17 +1221,6 @@
       "endDateTime": "2026-10-20T21:22:00",
       "format": "70mm, 2D",
       "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123082/seats"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "NAZA",
-      "date": "2026-10-20",
-      "time": "18:30",
-      "dateTime": "2026-10-20T18:30:00",
-      "runtimeMinutes": 80,
-      "endDateTime": "2026-10-20T19:50:00",
-      "format": null,
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3787202"
     },
     {
       "cinema": "ICA Cinema",
@@ -2225,14 +1378,14 @@
     },
     {
       "cinema": "Genesis Cinema",
-      "film": "Digger",
+      "film": "NAZA",
       "date": "2026-10-20",
       "time": "20:45",
       "dateTime": "2026-10-20T20:45:00",
-      "runtimeMinutes": 129,
-      "endDateTime": "2026-10-20T22:54:00",
+      "runtimeMinutes": 80,
+      "endDateTime": "2026-10-20T22:05:00",
       "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13860"
+      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13930"
     },
     {
       "cinema": "The Castle Cinema",
@@ -3082,7 +2235,7 @@
       "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3785201"
     },
     {
-      "cinema": "Barbican Cinema",
+      "cinema": "Genesis Cinema",
       "film": "NAZA",
       "date": "2026-10-21",
       "time": "20:45",
@@ -3090,18 +2243,7 @@
       "runtimeMinutes": 80,
       "endDateTime": "2026-10-21T22:05:00",
       "format": null,
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3787401"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Street Fighter",
-      "date": "2026-10-21",
-      "time": "20:45",
-      "dateTime": "2026-10-21T20:45:00",
-      "runtimeMinutes": 119,
-      "endDateTime": "2026-10-21T22:44:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13865"
+      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13931"
     },
     {
       "cinema": "The Castle Cinema",
@@ -3740,17 +2882,6 @@
       "endDateTime": "2026-10-22T20:27:00",
       "format": "S2",
       "bookingUrl": "https://thecastlecinema.com/bookings/18135/"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "NAZA",
-      "date": "2026-10-22",
-      "time": "18:30",
-      "dateTime": "2026-10-22T18:30:00",
-      "runtimeMinutes": 80,
-      "endDateTime": "2026-10-22T19:50:00",
-      "format": null,
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3784203"
     },
     {
       "cinema": "ICA Cinema",
@@ -4751,7 +3882,7 @@
       "runtimeMinutes": 101,
       "endDateTime": "2026-10-25T15:41:00",
       "format": null,
-      "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2889114.TcsSection_936"
+      "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2889114.TcsSection_1299"
     },
     {
       "cinema": "Picturehouse Central",
@@ -4898,7 +4029,7 @@
     },
     {
       "cinema": "Genesis Cinema",
-      "film": "Steel of Film (in 35 mm) + Q&A",
+      "film": "Steel on Film (in 35 mm) + Q&A",
       "date": "2026-10-25",
       "time": "18:30",
       "dateTime": "2026-10-25T18:30:00",
@@ -8054,6 +7185,17 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628250"
     },
     {
+      "cinema": "Barbican Cinema",
+      "film": "Relaxed Screening: Sense and Sensibility",
+      "date": "2026-11-08",
+      "time": "12:00",
+      "dateTime": "2026-11-08T12:00:00",
+      "runtimeMinutes": 132,
+      "endDateTime": "2026-11-08T14:12:00",
+      "format": "CAP, REL, AD",
+      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3777201"
+    },
+    {
       "cinema": "Prince Charles Cinema",
       "film": "The 7th Voyage of Sinbad",
       "date": "2026-11-08",
@@ -8107,6 +7249,17 @@
       "endDateTime": "2026-11-08T16:19:00",
       "format": "hoh",
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628254"
+    },
+    {
+      "cinema": "Barbican Cinema",
+      "film": "Wild Horse Nine",
+      "date": "2026-11-08",
+      "time": "14:40",
+      "dateTime": "2026-11-08T14:40:00",
+      "runtimeMinutes": 118,
+      "endDateTime": "2026-11-08T16:38:00",
+      "format": "CAP, AD",
+      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3788002"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -8164,6 +7317,17 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628295"
     },
     {
+      "cinema": "Barbican Cinema",
+      "film": "Wild Horse Nine",
+      "date": "2026-11-08",
+      "time": "17:15",
+      "dateTime": "2026-11-08T17:15:00",
+      "runtimeMinutes": 118,
+      "endDateTime": "2026-11-08T19:13:00",
+      "format": "AD",
+      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3788203"
+    },
+    {
       "cinema": "Prince Charles Cinema",
       "film": "Fallen Angels",
       "date": "2026-11-08",
@@ -8184,6 +7348,17 @@
       "endDateTime": "2026-11-08T19:48:00",
       "format": null,
       "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D27B3192A-6D42-487D-A749-FBD0968EE924%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
+      "cinema": "Barbican Cinema",
+      "film": "Wild Horse Nine",
+      "date": "2026-11-08",
+      "time": "19:50",
+      "dateTime": "2026-11-08T19:50:00",
+      "runtimeMinutes": 118,
+      "endDateTime": "2026-11-08T21:48:00",
+      "format": "AD",
+      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3787804"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -10316,8 +9491,8 @@
       "dateTime": "2026-11-23T18:40:00",
       "runtimeMinutes": 120,
       "endDateTime": "2026-11-23T20:40:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-122541/seats"
+      "format": "2D, Laser",
+      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-122577/seats"
     },
     {
       "cinema": "Picturehouse Central",
@@ -10327,8 +9502,8 @@
       "dateTime": "2026-11-23T18:40:00",
       "runtimeMinutes": 120,
       "endDateTime": "2026-11-23T20:40:00",
-      "format": "2D, Laser",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-122577/seats"
+      "format": "2D",
+      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-122541/seats"
     },
     {
       "cinema": "Genesis Cinema",
@@ -14701,7 +13876,7 @@
   "errors": [
     {
       "fetcher": "fetchCineworldO2Greenwich",
-      "reason": "Cineworld API request failed (403): https://www.cineworld.co.uk/uk/data-api-service/v1/quickbook/10108/dates/in-cinema/077/until/2026-11-08?attr=&lang=en_GB"
+      "reason": "Cineworld API request failed (403): https://www.cineworld.co.uk/uk/data-api-service/v1/quickbook/10108/dates/in-cinema/077/until/2026-11-09?attr=&lang=en_GB"
     },
     {
       "fetcher": "fetchVueWestfieldStratford",
