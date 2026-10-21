@@ -6,6 +6,7 @@
 import { normalizeTitleForGrouping } from "../title-utils.mjs";
 import { addBillButtonHtml, wireResultsBillButtons } from "../bill-ui.mjs";
 import { downloadReceipt } from "./receipt.mjs";
+import { statusControlHtml, wireStatusControls, getStatus, statusKey, STATUS_ORDER, getStatusLabel } from "./status-ui.mjs";
 
 function escapeHtml(str) {
   const div = document.createElement("div");
@@ -49,15 +50,51 @@ async function copyToClipboard(text) {
   }
 }
 
-function buildExportText(entries) {
-  if (entries.length === 0) return "";
-  const lines = ["My Bill — LFF 2026", ""];
-  entries.forEach((entry, i) => {
-    lines.push(`${i + 1}.`);
-    for (const f of comboFilms(entry.combo)) {
-      lines.push(`   ${f.film} — ${f.cinema}, ${f.date} ${f.time}`);
-    }
-    lines.push("");
+// Every individual film across every saved entry, combo grouping
+// discarded — an export is a checklist of showings, not a list of bills.
+function getAllFilms(entries) {
+  const films = [];
+  entries.forEach((entry) => comboFilms(entry.combo).forEach((f) => films.push(f)));
+  return films;
+}
+
+// A film with no status is always included — the three filter chips only
+// ever narrow down among films that actually carry one of the three
+// statuses, they never hide something nobody's marked yet.
+function filmPassesFilter(f, activeFilters) {
+  const st = getStatus(statusKey(f));
+  return !st || activeFilters.has(st);
+}
+
+function getFilteredFilms(entries, activeFilters) {
+  return getAllFilms(entries).filter((f) => filmPassesFilter(f, activeFilters));
+}
+
+// For the visible list (not the flattened export): a saved entry stays
+// on screen if *any* of its films pass — a double bill with one leg
+// Standby and one Ticketed shouldn't vanish just because "Standby" got
+// switched off, since it's still a real plan worth seeing.
+function entryPassesFilter(entry, activeFilters) {
+  return comboFilms(entry.combo).some((f) => filmPassesFilter(f, activeFilters));
+}
+
+const STATUS_TITLE_PHRASE = {
+  ticketed: "already ticketed",
+  standby: "standby only",
+};
+
+function buildTitleSuffix(activeFilters) {
+  if (activeFilters.size === STATUS_ORDER.length) return "";
+  const phrases = STATUS_ORDER.filter((v) => activeFilters.has(v)).map((v) => STATUS_TITLE_PHRASE[v]);
+  if (phrases.length === 0) return "";
+  return ` (${phrases.join(", ")})`;
+}
+
+function buildExportText(films, activeFilters) {
+  if (films.length === 0) return "";
+  const lines = [`My Bill — LFF 2026${buildTitleSuffix(activeFilters)}`, ""];
+  films.forEach((f, i) => {
+    lines.push(`${i + 1}. ${f.film} — ${f.cinema}, ${f.date} ${f.time}`);
   });
   return lines.join("\n").trim();
 }
@@ -129,6 +166,12 @@ export function initListsMenu({ billStore, getShowings, formatDateShort, formatT
   const receiptNameRow = document.getElementById("receipt-name-row");
   const receiptNameInput = document.getElementById("receipt-name-input");
   const receiptNameConfirm = document.getElementById("receipt-name-confirm");
+  const statusFilterRow = document.getElementById("bill-status-filter");
+  const statusFilterHint = document.getElementById("bill-status-filter-hint");
+  const statusFilterChips = document.querySelectorAll(".status-filter-chip");
+  // In-memory only, not persisted — an export-time narrowing, not a
+  // lasting preference. Starts with all three active (no filtering).
+  const activeStatusFilters = new Set(STATUS_ORDER);
 
   // Which watchlisted films currently have their showings list expanded —
   // keyed by normalized title, kept across re-renders within one session.
@@ -142,12 +185,15 @@ export function initListsMenu({ billStore, getShowings, formatDateShort, formatT
 
   function showingRowHtml(s) {
     return `
-      <div class="watchlist-showing-row">
-        <div class="watchlist-showing-when">${formatDateShort(s.date)} · ${formatTime12h(s.time)}</div>
-        <div class="watchlist-showing-where">${escapeHtml(s.cinema)}${
-          s.runtimeMinutes ? ` · ${s.runtimeMinutes} min` : ""
-        }</div>
-        ${addBillButtonHtml({ filmA: s }, billStore)}
+      <div class="watchlist-showing-entry">
+        <div class="watchlist-showing-row">
+          <div class="watchlist-showing-when">${formatDateShort(s.date)} · ${formatTime12h(s.time)}</div>
+          <div class="watchlist-showing-where">${escapeHtml(s.cinema)}${
+            s.runtimeMinutes ? ` · ${s.runtimeMinutes} min` : ""
+          }</div>
+          ${addBillButtonHtml({ filmA: s }, billStore)}
+        </div>
+        ${statusControlHtml(s)}
       </div>
     `;
   }
@@ -206,18 +252,34 @@ export function initListsMenu({ billStore, getShowings, formatDateShort, formatT
       .join("");
   }
 
+  function updateExportAvailability() {
+    const entries = billStore.getBill();
+    if (entries.length === 0) return;
+    const filtered = getFilteredFilms(entries, activeStatusFilters);
+    exportBtn.disabled = filtered.length === 0;
+    receiptBtn.disabled = filtered.length === 0;
+  }
+
   function renderBill() {
     const entries = billStore.getBill();
     exportBtn.hidden = entries.length === 0;
     receiptBtn.hidden = entries.length === 0;
+    statusFilterRow.hidden = entries.length === 0;
+    statusFilterHint.hidden = entries.length === 0;
     if (entries.length === 0) {
       billList.innerHTML = `<p class="status status--compact">Nothing saved yet — press + button on a planner result to save your bill.</p>`;
       hideReceiptNameRow();
       return;
     }
+    updateExportAvailability();
     const showings = getShowings();
     const clashesByEntry = findClashes(entries);
-    billList.innerHTML = entries
+    const visibleEntries = entries.filter((entry) => entryPassesFilter(entry, activeStatusFilters));
+    if (visibleEntries.length === 0) {
+      billList.innerHTML = `<p class="status status--compact">Nothing in My Bill matches this filter.</p>`;
+      return;
+    }
+    billList.innerHTML = visibleEntries
       .map((entry) => {
         const stale = isStale(entry.combo, showings);
         const clashes = clashesByEntry.get(entry.id) || [];
@@ -244,6 +306,7 @@ export function initListsMenu({ billStore, getShowings, formatDateShort, formatT
                 <span class="bill-item-film-details">${escapeHtml(f.cinema)} · ${formatDateShort(
                   f.date
                 )} · ${formatTime12h(f.time)}</span>
+                ${statusControlHtml(f)}
               </div>
             `
               )
@@ -320,9 +383,26 @@ export function initListsMenu({ billStore, getShowings, formatDateShort, formatT
   // handler the planner cards use, so a single film saved this way and a
   // saved double/triple bill both live in the same My Bill list.
   wireResultsBillButtons(watchlistList, billStore, refresh);
+  // `refresh` (not just the one section's own render) so a status pick
+  // in either list also updates the badge and the other section, since
+  // picking a status can silently add an entry to My Bill.
+  wireStatusControls(watchlistList, refresh, billStore);
+  wireStatusControls(billList, refresh, billStore);
+
+  statusFilterChips.forEach((chip) => {
+    chip.addEventListener("click", () => {
+      const value = chip.dataset.statusFilter;
+      if (activeStatusFilters.has(value)) activeStatusFilters.delete(value);
+      else activeStatusFilters.add(value);
+      chip.classList.toggle("active");
+      renderBill();
+    });
+  });
 
   exportBtn.addEventListener("click", async () => {
-    const text = buildExportText(billStore.getBill());
+    const films = getFilteredFilms(billStore.getBill(), activeStatusFilters);
+    if (films.length === 0) return;
+    const text = buildExportText(films, activeStatusFilters);
     const ok = await copyToClipboard(text);
     exportBtn.textContent = ok ? "Copied!" : "Couldn't copy";
     setTimeout(() => {
@@ -336,8 +416,18 @@ export function initListsMenu({ billStore, getShowings, formatDateShort, formatT
   }
 
   function generateReceipt() {
+    const films = getFilteredFilms(billStore.getBill(), activeStatusFilters);
+    if (films.length === 0) return;
     const name = receiptNameInput.value.trim();
-    downloadReceipt(billStore.getBill(), { formatDateShort, formatTime12h, name });
+    downloadReceipt(films, {
+      formatDateShort,
+      formatTime12h,
+      name,
+      getStatusTag: (f) => {
+        const st = getStatus(statusKey(f));
+        return st ? getStatusLabel(st).toUpperCase() : null;
+      },
+    });
     hideReceiptNameRow();
   }
 

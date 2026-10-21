@@ -20,10 +20,6 @@ const DASH = "#c9c5bd";
 const LINE_HEIGHT_FACTOR = 1.25;
 const RECEIPT_URL = "angelaleiwm-dev.github.io/ldnmovieallinone/lff";
 
-function comboFilms(combo) {
-  return [combo.filmA, combo.filmB, combo.filmC].filter(Boolean);
-}
-
 // Canvas text doesn't wrap on its own — break a string into lines that
 // each fit maxWidth, measuring against whatever font is currently set on
 // the given context.
@@ -72,7 +68,7 @@ function drawBarcode(ctx, centerX, y, height) {
   }
 }
 
-function buildLines(entries, measure, formatDateShort, formatTime12h, name) {
+function buildLines(films, measure, formatDateShort, formatTime12h, name, getStatusTag) {
   const lines = [];
   const push = (text, opts) => lines.push({ text, gapAfter: 0, ...opts });
   const pushRow = (left, right, opts) => lines.push({ row: true, left, right, gapAfter: 0, ...opts });
@@ -88,17 +84,9 @@ function buildLines(entries, measure, formatDateShort, formatTime12h, name) {
 
   lines.push({ divider: true, gapAfter: 18 });
 
-  // Flatten every saved bill into one continuously-numbered film list —
-  // a double bill counts as 2, a triple bill as 3, not "1 plan" each.
-  const allFilms = [];
-  entries.forEach((entry) => {
-    const films = comboFilms(entry.combo);
-    films.forEach((film, i) => allFilms.push({ film, isLastOfEntry: i === films.length - 1 }));
-  });
-
   const summaryText = name
-    ? `PLANNED ${allFilms.length} FILM${allFilms.length === 1 ? "" : "S"} FOR ${name.toUpperCase()}`
-    : `PLANNED ${allFilms.length} FILM${allFilms.length === 1 ? "" : "S"}`;
+    ? `PLANNED ${films.length} FILM${films.length === 1 ? "" : "S"} FOR ${name.toUpperCase()}`
+    : `PLANNED ${films.length} FILM${films.length === 1 ? "" : "S"}`;
   measure.font = `700 16px ${FONT}`;
   const summaryLines = wrapText(measure, summaryText, CONTENT_WIDTH);
   summaryLines.forEach((sl, sli) =>
@@ -114,9 +102,8 @@ function buildLines(entries, measure, formatDateShort, formatTime12h, name) {
   const numberPrefixWidth = measure.measureText("00  ").width;
   const wrapWidth = CONTENT_WIDTH - numberPrefixWidth;
 
-  allFilms.forEach((item, i) => {
+  films.forEach((f, i) => {
     const num = String(i + 1).padStart(2, "0");
-    const f = item.film;
 
     measure.font = `700 19px ${FONT}`;
     const titleLines = wrapText(measure, f.film, wrapWidth);
@@ -129,7 +116,10 @@ function buildLines(entries, measure, formatDateShort, formatTime12h, name) {
       })
     );
 
-    const detail = `${f.cinema} · ${formatDateShort(f.date)} · ${formatTime12h(f.time)}`;
+    const tag = getStatusTag ? getStatusTag(f) : null;
+    const detail = `${f.cinema} · ${formatDateShort(f.date)} · ${formatTime12h(f.time)}${
+      tag ? ` · ${tag}` : ""
+    }`;
     measure.font = `400 15px ${FONT}`;
     const detailLines = wrapText(measure, detail, wrapWidth);
     detailLines.forEach((dl, dli) =>
@@ -142,8 +132,7 @@ function buildLines(entries, measure, formatDateShort, formatTime12h, name) {
       })
     );
 
-    const isLastFilmOverall = i === allFilms.length - 1;
-    lines.push({ spacer: true, gapAfter: item.isLastOfEntry && !isLastFilmOverall ? 10 : 0 });
+    lines.push({ spacer: true, gapAfter: i === films.length - 1 ? 0 : 10 });
   });
 
   lines.push({ divider: true, gapAfter: 14 });
@@ -152,11 +141,11 @@ function buildLines(entries, measure, formatDateShort, formatTime12h, name) {
   // the Surprise Film, "tbc" listings) — those are simply excluded from
   // the sum rather than treated as 0, and flagged with a "+" so the
   // total reads as "at least this many," not a false precise figure.
-  const knownRuntimes = allFilms.map((item) => item.film.runtimeMinutes).filter(Boolean);
+  const knownRuntimes = films.map((f) => f.runtimeMinutes).filter(Boolean);
   const totalMins = knownRuntimes.reduce((sum, m) => sum + m, 0);
-  const hasUnknownRuntime = knownRuntimes.length < allFilms.length;
+  const hasUnknownRuntime = knownRuntimes.length < films.length;
 
-  pushRow("ITEM COUNT", String(allFilms.length), { size: 15, weight: "700", gapAfter: 6 });
+  pushRow("ITEM COUNT", String(films.length), { size: 15, weight: "700", gapAfter: 6 });
   pushRow("TOTAL MINS", `${totalMins}${hasUnknownRuntime ? "+" : ""}`, {
     size: 15,
     weight: "700",
@@ -278,14 +267,17 @@ async function triggerDownload(canvas) {
   a.remove();
 }
 
-export function downloadReceipt(entries, { formatDateShort, formatTime12h, name }) {
-  if (entries.length === 0) return false;
+// `films` is a flat, already-filtered array of showings — the caller
+// (which knows about My Bill's entries/combos and any active status
+// filter) does that work; this module only ever draws a plain list.
+export function downloadReceipt(films, { formatDateShort, formatTime12h, name, getStatusTag }) {
+  if (films.length === 0) return false;
 
   // Text metrics only depend on the font set on a context, not on that
   // context's own canvas size — a throwaway canvas is enough to lay
   // everything out and compute the final height before drawing anything.
   const measure = document.createElement("canvas").getContext("2d");
-  const lines = buildLines(entries, measure, formatDateShort, formatTime12h, name);
+  const lines = buildLines(films, measure, formatDateShort, formatTime12h, name, getStatusTag);
   const contentHeight = measureContentHeight(lines);
 
   // Keep the fixed 9:16 canvas whenever the content fits inside it

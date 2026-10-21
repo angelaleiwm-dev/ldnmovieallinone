@@ -287,16 +287,19 @@ main {
   margin-bottom: 4px;
 }
 
-.showing-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.showing-entry {
   padding: 8px 0;
   border-top: 1px solid var(--border);
 }
 
-.showing-row:first-of-type {
+.showing-entry:first-of-type {
   border-top: none;
+}
+
+.showing-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .showing-cinema {
@@ -950,4 +953,104 @@ main {
   font-size: 0.9rem;
   font-weight: 700;
   cursor: pointer;
+}
+
+/* Per-showing ticket status (Ticketed / Standby) */
+
+.status-control {
+  position: relative;
+  margin-top: 6px;
+}
+
+.status-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.status-toggle-btn--active {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.status-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 20;
+  min-width: 130px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 4px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.status-menu-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 8px;
+  border-radius: 8px;
+  border: none;
+  background: none;
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.status-menu-option:hover {
+  background: var(--surface);
+}
+
+.status-menu-option.active {
+  color: var(--accent);
+}
+
+#bill-status-filter-hint {
+  margin-bottom: 12px;
+}
+
+/* My Bill's export-only status filter chips */
+
+.status-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.status-filter-chip {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.status-filter-chip.active {
+  background: var(--accent);
+  color: var(--accent-text);
+  border-color: var(--accent);
+}
+
+.bill-export-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }

@@ -38,6 +38,11 @@
     </div>
 
     <div id="bill-panel" class="lists-panel-section" hidden>
+      <div id="bill-status-filter" class="status-filter-row" hidden>
+        <button type="button" class="status-filter-chip active" data-status-filter="ticketed">Ticketed</button>
+        <button type="button" class="status-filter-chip active" data-status-filter="standby">Standby</button>
+      </div>
+      <p id="bill-status-filter-hint" class="field-hint" hidden>Tap a status to show or hide those films — also affects what you copy or export.</p>
       <div id="bill-list" class="lists-panel-list"></div>
       <div class="bill-export-actions">
         <button type="button" id="bill-export-btn" class="bill-export-btn" hidden>Copy as text</button>

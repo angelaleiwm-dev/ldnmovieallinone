@@ -1,6 +1,7 @@
 import { normalizeTitleForGrouping } from "../title-utils.mjs";
 import { addBillButtonHtml, wireResultsBillButtons } from "../bill-ui.mjs";
 import { billStore, refreshListsMenu } from "./lff-planner.mjs";
+import { statusControlHtml, wireStatusControls } from "./status-ui.mjs";
 
 const DATA_URL = "data/lff-combined.json";
 const AUTO_EXPAND_THRESHOLD = 2;
@@ -113,13 +114,16 @@ function filmCardHtml(filmGroup, dateKey) {
             ${cinemaGroup.showings
               .map(
                 (s) => `
-              <div class="showing-row">
-                <div class="showing-cinema">
-                  ${s.format ? `<div class="showing-format">${escapeHtml(s.format)}</div>` : ""}
+              <div class="showing-entry">
+                <div class="showing-row">
+                  <div class="showing-cinema">
+                    ${s.format ? `<div class="showing-format">${escapeHtml(s.format)}</div>` : ""}
+                  </div>
+                  <div class="showing-time">${formatTime12h(s.time)}</div>
+                  ${addBillButtonHtml({ filmA: s }, billStore)}
+                  <a class="book-btn" href="${s.bookingUrl}" target="_blank" rel="noopener noreferrer">Info</a>
                 </div>
-                <div class="showing-time">${formatTime12h(s.time)}</div>
-                ${addBillButtonHtml({ filmA: s }, billStore)}
-                <a class="book-btn" href="${s.bookingUrl}" target="_blank" rel="noopener noreferrer">Info</a>
+                ${statusControlHtml(s)}
               </div>
             `
               )
@@ -180,6 +184,14 @@ export async function initLffBrowse() {
     render();
     refreshListsMenu();
   });
+  wireStatusControls(
+    resultsEl,
+    () => {
+      render();
+      refreshListsMenu();
+    },
+    billStore
+  );
 
   try {
     const res = await fetch(DATA_URL);

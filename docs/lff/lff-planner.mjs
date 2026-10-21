@@ -4,6 +4,7 @@ import { normalizeTitleForGrouping } from "../title-utils.mjs";
 import { createBillStore } from "../bill.mjs";
 import { addBillButtonHtml, wireResultsBillButtons } from "../bill-ui.mjs";
 import { initListsMenu } from "./lff-bill-ui.mjs";
+import { statusControlHtml, wireStatusControls } from "./status-ui.mjs";
 
 const DATA_URL = "data/lff-combined.json";
 const MAX_SUGGESTIONS = 4;
@@ -103,6 +104,7 @@ function filmBlockHtml(label, s) {
         ${escapeHtml(s.cinema)}${s.runtimeMinutes ? ` · ${s.runtimeMinutes} min` : ""}
       </div>
       <a class="book-btn" href="${s.bookingUrl}" target="_blank" rel="noopener noreferrer">Info</a>
+      ${statusControlHtml(s)}
     </div>
   `;
 }
@@ -160,6 +162,7 @@ function singleFilmFallbackHtml(dayShowings, dateLabel) {
           <div class="pair-film-title">${escapeHtml(s.film)}</div>
           <div class="pair-film-details">${escapeHtml(s.cinema)} · ${formatDateShort(s.date)} · ${formatTime12h(s.time)}</div>
           <a class="book-btn" href="${s.bookingUrl}" target="_blank" rel="noopener noreferrer">Info</a>
+          ${statusControlHtml(s)}
         </div>
       `
         )
@@ -579,6 +582,22 @@ export async function initLffPlanner() {
     renderTriple();
     refreshListsMenu();
   });
+  wireStatusControls(
+    document.getElementById("lff-double-results"),
+    () => {
+      renderDouble();
+      refreshListsMenu();
+    },
+    billStore
+  );
+  wireStatusControls(
+    document.getElementById("lff-triple-results"),
+    () => {
+      renderTriple();
+      refreshListsMenu();
+    },
+    billStore
+  );
 
   listsMenu = initListsMenu({
     billStore,
