@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T12:50:08.881Z",
+  "generatedAt": "2026-11-19T12:43:50.497Z",
   "showings": [
     {
       "cinema": "Prince Charles Cinema",
@@ -14,710 +14,6 @@
     },
     {
       "cinema": "The Castle Cinema",
-      "film": "Wild Horse Nine",
-      "date": "2026-11-18",
-      "time": "12:00",
-      "dateTime": "2026-11-18T12:00:00",
-      "runtimeMinutes": 117,
-      "endDateTime": "2026-11-18T13:57:00",
-      "format": "S2",
-      "bookingUrl": "https://thecastlecinema.com/bookings/18407/"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "Fjord",
-      "date": "2026-11-18",
-      "time": "12:30",
-      "dateTime": "2026-11-18T12:30:00",
-      "runtimeMinutes": 146,
-      "endDateTime": "2026-11-18T14:56:00",
-      "format": "S1",
-      "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/18408/show"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Ken Russell's The Devils",
-      "date": "2026-11-18",
-      "time": "13:30",
-      "dateTime": "2026-11-18T13:30:00",
-      "runtimeMinutes": 114,
-      "endDateTime": "2026-11-18T15:24:00",
-      "format": "HOHSub, 2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123970/seats"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "The Devils",
-      "date": "2026-11-18",
-      "time": "13:30",
-      "dateTime": "2026-11-18T13:30:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 1",
-      "bookingUrl": "https://www.ica.art/films/the-devils"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "Naza",
-      "date": "2026-11-18",
-      "time": "13:30",
-      "dateTime": "2026-11-18T13:30:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 2",
-      "bookingUrl": "https://www.ica.art/films/naza"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Fjord",
-      "date": "2026-11-18",
-      "time": "14:30",
-      "dateTime": "2026-11-18T14:30:00",
-      "runtimeMinutes": 146,
-      "endDateTime": "2026-11-18T16:56:00",
-      "format": "Sub Cinema, 2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123989/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Wild Horse Nine",
-      "date": "2026-11-18",
-      "time": "14:35",
-      "dateTime": "2026-11-18T14:35:00",
-      "runtimeMinutes": 117,
-      "endDateTime": "2026-11-18T16:32:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-124031/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Being Heumann",
-      "date": "2026-11-18",
-      "time": "14:45",
-      "dateTime": "2026-11-18T14:45:00",
-      "runtimeMinutes": 127,
-      "endDateTime": "2026-11-18T16:52:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-124034/seats"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Fjord",
-      "date": "2026-11-18",
-      "time": "14:45",
-      "dateTime": "2026-11-18T14:45:00",
-      "runtimeMinutes": 146,
-      "endDateTime": "2026-11-18T17:11:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14498"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "La Bola Negra",
-      "date": "2026-11-18",
-      "time": "14:45",
-      "dateTime": "2026-11-18T14:45:00",
-      "runtimeMinutes": 159,
-      "endDateTime": "2026-11-18T17:24:00",
-      "format": "S2",
-      "bookingUrl": "https://thecastlecinema.com/bookings/18410/"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Prima Facie",
-      "date": "2026-11-18",
-      "time": "14:50",
-      "dateTime": "2026-11-18T14:50:00",
-      "runtimeMinutes": 109,
-      "endDateTime": "2026-11-18T16:39:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-124081/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Wildwood",
-      "date": "2026-11-18",
-      "time": "14:50",
-      "dateTime": "2026-11-18T14:50:00",
-      "runtimeMinutes": 131,
-      "endDateTime": "2026-11-18T17:01:00",
-      "format": "35mm, 2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123974/seats"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "The Hunger Games: Sunrise On The Reaping",
-      "date": "2026-11-18",
-      "time": "14:50",
-      "dateTime": "2026-11-18T14:50:00",
-      "runtimeMinutes": 158,
-      "endDateTime": "2026-11-18T17:28:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14497"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Wild Horse Nine",
-      "date": "2026-11-18",
-      "time": "15:00",
-      "dateTime": "2026-11-18T15:00:00",
-      "runtimeMinutes": 118,
-      "endDateTime": "2026-11-18T16:58:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14502"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Wicker",
-      "date": "2026-11-18",
-      "time": "15:15",
-      "dateTime": "2026-11-18T15:15:00",
-      "runtimeMinutes": 105,
-      "endDateTime": "2026-11-18T17:00:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123992/seats"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "One in a Million",
-      "date": "2026-11-18",
-      "time": "15:30",
-      "dateTime": "2026-11-18T15:30:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 2",
-      "bookingUrl": "https://www.ica.art/films/one-in-a-million"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Give Me The Ball!",
-      "date": "2026-11-18",
-      "time": "15:30",
-      "dateTime": "2026-11-18T15:30:00",
-      "runtimeMinutes": 101,
-      "endDateTime": "2026-11-18T17:11:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14501"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "Wild Horse Nine",
-      "date": "2026-11-18",
-      "time": "15:30",
-      "dateTime": "2026-11-18T15:30:00",
-      "runtimeMinutes": 117,
-      "endDateTime": "2026-11-18T17:27:00",
-      "format": "S1",
-      "bookingUrl": "https://thecastlecinema.com/bookings/18409/"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "In The Mood For Love",
-      "date": "2026-11-18",
-      "time": "15:45",
-      "dateTime": "2026-11-18T15:45:00",
-      "runtimeMinutes": 98,
-      "endDateTime": "2026-11-18T17:23:00",
-      "format": "35mm",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628376"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "Raise the Red Lantern",
-      "date": "2026-11-18",
-      "time": "16:00",
-      "dateTime": "2026-11-18T16:00:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 1",
-      "bookingUrl": "https://www.ica.art/films/raise-the-red-lantern"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "La Bola Negra",
-      "date": "2026-11-18",
-      "time": "16:15",
-      "dateTime": "2026-11-18T16:15:00",
-      "runtimeMinutes": 155,
-      "endDateTime": "2026-11-18T18:50:00",
-      "format": "35mm, Sub Cinema, 2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123968/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Wild Horse Nine",
-      "date": "2026-11-18",
-      "time": "17:15",
-      "dateTime": "2026-11-18T17:15:00",
-      "runtimeMinutes": 117,
-      "endDateTime": "2026-11-18T19:12:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-124032/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "National Theatre Live: Golden Boy",
-      "date": "2026-11-18",
-      "time": "17:30",
-      "dateTime": "2026-11-18T17:30:00",
-      "runtimeMinutes": 158,
-      "endDateTime": "2026-11-18T20:08:00",
-      "format": "HOHSub, 2D, Screen Art",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123841/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Primetime",
-      "date": "2026-11-18",
-      "time": "17:40",
-      "dateTime": "2026-11-18T17:40:00",
-      "runtimeMinutes": 110,
-      "endDateTime": "2026-11-18T19:30:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123996/seats"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Fjord",
-      "date": "2026-11-18",
-      "time": "17:40",
-      "dateTime": "2026-11-18T17:40:00",
-      "runtimeMinutes": 146,
-      "endDateTime": "2026-11-18T20:06:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14492"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Wicker",
-      "date": "2026-11-18",
-      "time": "17:45",
-      "dateTime": "2026-11-18T17:45:00",
-      "runtimeMinutes": 105,
-      "endDateTime": "2026-11-18T19:30:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123993/seats"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "La Bola Negra",
-      "date": "2026-11-18",
-      "time": "17:45",
-      "dateTime": "2026-11-18T17:45:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 2",
-      "bookingUrl": "https://www.ica.art/films/la-bola-negra"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "The Hunger Games: Sunrise On The Reaping",
-      "date": "2026-11-18",
-      "time": "17:45",
-      "dateTime": "2026-11-18T17:45:00",
-      "runtimeMinutes": 158,
-      "endDateTime": "2026-11-18T20:23:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14490"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Ebenezer",
-      "date": "2026-11-18",
-      "time": "17:50",
-      "dateTime": "2026-11-18T17:50:00",
-      "runtimeMinutes": 116,
-      "endDateTime": "2026-11-18T19:46:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123987/seats"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "Wild Horse Nine",
-      "date": "2026-11-18",
-      "time": "17:50",
-      "dateTime": "2026-11-18T17:50:00",
-      "runtimeMinutes": 118,
-      "endDateTime": "2026-11-18T19:48:00",
-      "format": "CAP, AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3827404"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Primetime",
-      "date": "2026-11-18",
-      "time": "18:00",
-      "dateTime": "2026-11-18T18:00:00",
-      "runtimeMinutes": 110,
-      "endDateTime": "2026-11-18T19:50:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14500"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Wild Horse Nine",
-      "date": "2026-11-18",
-      "time": "18:00",
-      "dateTime": "2026-11-18T18:00:00",
-      "runtimeMinutes": 118,
-      "endDateTime": "2026-11-18T19:58:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14496"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "Fjord",
-      "date": "2026-11-18",
-      "time": "18:00",
-      "dateTime": "2026-11-18T18:00:00",
-      "runtimeMinutes": 146,
-      "endDateTime": "2026-11-18T20:26:00",
-      "format": "S1",
-      "bookingUrl": "https://thecastlecinema.com/bookings/18411/"
-    },
-    {
-      "cinema": "Rio Cinema",
-      "film": "WILD HORSE NINE",
-      "date": "2026-11-18",
-      "time": "18:10",
-      "dateTime": "2026-11-18T18:10:00",
-      "runtimeMinutes": 117,
-      "endDateTime": "2026-11-18T20:07:00",
-      "format": null,
-      "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3122038.TcsSection_936"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "NAZA",
-      "date": "2026-11-18",
-      "time": "18:15",
-      "dateTime": "2026-11-18T18:15:00",
-      "runtimeMinutes": 80,
-      "endDateTime": "2026-11-18T19:35:00",
-      "format": null,
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3827808"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "This Is Not a Burial, It�s a Resurrection (2019) + Intro - Whose Land? Whose Lens?",
-      "date": "2026-11-18",
-      "time": "18:15",
-      "dateTime": "2026-11-18T18:15:00",
-      "runtimeMinutes": 120,
-      "endDateTime": "2026-11-18T20:15:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13377"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "Primetime",
-      "date": "2026-11-18",
-      "time": "18:15",
-      "dateTime": "2026-11-18T18:15:00",
-      "runtimeMinutes": 109,
-      "endDateTime": "2026-11-18T20:04:00",
-      "format": "S2",
-      "bookingUrl": "https://thecastlecinema.com/bookings/18412/"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "Daisies (Sedmikrásky)",
-      "date": "2026-11-18",
-      "time": "18:20",
-      "dateTime": "2026-11-18T18:20:00",
-      "runtimeMinutes": 76,
-      "endDateTime": "2026-11-18T19:36:00",
-      "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628377"
-    },
-    {
-      "cinema": "Rio Cinema",
-      "film": "ITALIAN FOR BEGINNERS",
-      "date": "2026-11-18",
-      "time": "18:20",
-      "dateTime": "2026-11-18T18:20:00",
-      "runtimeMinutes": 112,
-      "endDateTime": "2026-11-18T20:12:00",
-      "format": null,
-      "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3002808.TcsSection_1299"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "I Am Furious Black: Losing Ground + Introduction",
-      "date": "2026-11-18",
-      "time": "18:30",
-      "dateTime": "2026-11-18T18:30:00",
-      "runtimeMinutes": 85,
-      "endDateTime": "2026-11-18T19:55:00",
-      "format": null,
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3671401"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "Fauna",
-      "date": "2026-11-18",
-      "time": "18:30",
-      "dateTime": "2026-11-18T18:30:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 1",
-      "bookingUrl": "https://www.ica.art/films/pereda-fauna"
-    },
-    {
-      "cinema": "Rio Cinema",
-      "film": "Pink Palace: Army of Lovers (or Revolt of the Perverts)",
-      "date": "2026-11-18",
-      "time": "19:30",
-      "dateTime": "2026-11-18T19:30:00",
-      "runtimeMinutes": 107,
-      "endDateTime": "2026-11-18T21:17:00",
-      "format": null,
-      "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2999533.TcsSection_94575"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "La Bola Negra",
-      "date": "2026-11-18",
-      "time": "19:45",
-      "dateTime": "2026-11-18T19:45:00",
-      "runtimeMinutes": 155,
-      "endDateTime": "2026-11-18T22:20:00",
-      "format": "35mm, Sub Cinema, 2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123969/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Fjord",
-      "date": "2026-11-18",
-      "time": "20:00",
-      "dateTime": "2026-11-18T20:00:00",
-      "runtimeMinutes": 146,
-      "endDateTime": "2026-11-18T22:26:00",
-      "format": "Sub Cinema, 2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-124030/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "I Play Rocky",
-      "date": "2026-11-18",
-      "time": "20:15",
-      "dateTime": "2026-11-18T20:15:00",
-      "runtimeMinutes": 128,
-      "endDateTime": "2026-11-18T22:23:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123995/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Wicker",
-      "date": "2026-11-18",
-      "time": "20:20",
-      "dateTime": "2026-11-18T20:20:00",
-      "runtimeMinutes": 105,
-      "endDateTime": "2026-11-18T22:05:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123994/seats"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "La Bola Negra",
-      "date": "2026-11-18",
-      "time": "20:20",
-      "dateTime": "2026-11-18T20:20:00",
-      "runtimeMinutes": 155,
-      "endDateTime": "2026-11-18T22:55:00",
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3827803"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "Music Video Preservation Society with special guest Tim Pope",
-      "date": "2026-11-18",
-      "time": "20:25",
-      "dateTime": "2026-11-18T20:25:00",
-      "runtimeMinutes": 135,
-      "endDateTime": "2026-11-18T22:40:00",
-      "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628378"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Ebenezer",
-      "date": "2026-11-18",
-      "time": "20:30",
-      "dateTime": "2026-11-18T20:30:00",
-      "runtimeMinutes": 116,
-      "endDateTime": "2026-11-18T22:26:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123986/seats"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "Wild Horse Nine",
-      "date": "2026-11-18",
-      "time": "20:30",
-      "dateTime": "2026-11-18T20:30:00",
-      "runtimeMinutes": 118,
-      "endDateTime": "2026-11-18T22:28:00",
-      "format": "AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3828803"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "Narrow Margin Presents The Tall T on 35mm",
-      "date": "2026-11-18",
-      "time": "20:30",
-      "dateTime": "2026-11-18T20:30:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 1",
-      "bookingUrl": "https://www.ica.art/films/narrow-margin-the-tall-t-on-35mm"
-    },
-    {
-      "cinema": "Rio Cinema",
-      "film": "LA BOLA NEGRA",
-      "date": "2026-11-18",
-      "time": "20:30",
-      "dateTime": "2026-11-18T20:30:00",
-      "runtimeMinutes": 159,
-      "endDateTime": "2026-11-18T23:09:00",
-      "format": null,
-      "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3118984.TcsSection_936"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "La Bola Negra",
-      "date": "2026-11-18",
-      "time": "20:35",
-      "dateTime": "2026-11-18T20:35:00",
-      "runtimeMinutes": 159,
-      "endDateTime": "2026-11-18T23:14:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14499"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "The Hunger Games: Sunrise On The Reaping",
-      "date": "2026-11-18",
-      "time": "20:40",
-      "dateTime": "2026-11-18T20:40:00",
-      "runtimeMinutes": 158,
-      "endDateTime": "2026-11-18T23:18:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14491"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "La Bola Negra",
-      "date": "2026-11-18",
-      "time": "20:40",
-      "dateTime": "2026-11-18T20:40:00",
-      "runtimeMinutes": 159,
-      "endDateTime": "2026-11-18T23:19:00",
-      "format": "S2",
-      "bookingUrl": "https://thecastlecinema.com/bookings/18413/"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "Mystery Movie",
-      "date": "2026-11-18",
-      "time": "20:45",
-      "dateTime": "2026-11-18T20:45:00",
-      "runtimeMinutes": 92,
-      "endDateTime": "2026-11-18T22:17:00",
-      "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628379"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "An Unfinished Film",
-      "date": "2026-11-18",
-      "time": "20:45",
-      "dateTime": "2026-11-18T20:45:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 2",
-      "bookingUrl": "https://www.ica.art/films/an-unfinished-film"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Bar Trash: SHARKNADO (2013)",
-      "date": "2026-11-18",
-      "time": "20:45",
-      "dateTime": "2026-11-18T20:45:00",
-      "runtimeMinutes": 150,
-      "endDateTime": "2026-11-18T23:15:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14223"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Fjord",
-      "date": "2026-11-18",
-      "time": "20:50",
-      "dateTime": "2026-11-18T20:50:00",
-      "runtimeMinutes": 146,
-      "endDateTime": "2026-11-18T23:16:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14493"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Godzilla Minus Zero",
-      "date": "2026-11-18",
-      "time": "20:50",
-      "dateTime": "2026-11-18T20:50:00",
-      "runtimeMinutes": 135,
-      "endDateTime": "2026-11-18T23:05:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14495"
-    },
-    {
-      "cinema": "Rio Cinema",
-      "film": "PRIMETIME",
-      "date": "2026-11-18",
-      "time": "20:50",
-      "dateTime": "2026-11-18T20:50:00",
-      "runtimeMinutes": 109,
-      "endDateTime": "2026-11-18T22:39:00",
-      "format": null,
-      "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3118982.TcsSection_1299"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Prima Facie",
-      "date": "2026-11-18",
-      "time": "20:55",
-      "dateTime": "2026-11-18T20:55:00",
-      "runtimeMinutes": 109,
-      "endDateTime": "2026-11-18T22:44:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123971/seats"
-    },
-    {
-      "cinema": "The Castle Cinema",
-      "film": "Pitchblack Playback: Joni Mitchell 'Hejira' (50th Anniversary)",
-      "date": "2026-11-18",
-      "time": "21:00",
-      "dateTime": "2026-11-18T21:00:00",
-      "runtimeMinutes": 62,
-      "endDateTime": "2026-11-18T22:02:00",
-      "format": "S1",
-      "bookingUrl": "https://thecastlecinema.com/bookings/18073/"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "Primetime",
-      "date": "2026-11-18",
-      "time": "21:05",
-      "dateTime": "2026-11-18T21:05:00",
-      "runtimeMinutes": 110,
-      "endDateTime": "2026-11-18T22:55:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14494"
-    },
-    {
-      "cinema": "The Castle Cinema",
       "film": "La Bola Negra",
       "date": "2026-11-19",
       "time": "11:00",
@@ -726,50 +22,6 @@
       "endDateTime": "2026-11-19T13:39:00",
       "format": "S1",
       "bookingUrl": "https://thecastlecinema.com/interstitial/parent-baby/18414/show"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Fjord",
-      "date": "2026-11-19",
-      "time": "11:45",
-      "dateTime": "2026-11-19T11:45:00",
-      "runtimeMinutes": 146,
-      "endDateTime": "2026-11-19T14:11:00",
-      "format": "Sub Cinema, 2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-124085/seats"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "Vertigo",
-      "date": "2026-11-19",
-      "time": "12:00",
-      "dateTime": "2026-11-19T12:00:00",
-      "runtimeMinutes": 128,
-      "endDateTime": "2026-11-19T14:08:00",
-      "format": "4k",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628338"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Ebenezer",
-      "date": "2026-11-19",
-      "time": "12:00",
-      "dateTime": "2026-11-19T12:00:00",
-      "runtimeMinutes": 116,
-      "endDateTime": "2026-11-19T13:56:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123999/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Primetime",
-      "date": "2026-11-19",
-      "time": "12:00",
-      "dateTime": "2026-11-19T12:00:00",
-      "runtimeMinutes": 110,
-      "endDateTime": "2026-11-19T13:50:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-124015/seats"
     },
     {
       "cinema": "The Castle Cinema",
@@ -781,50 +33,6 @@
       "endDateTime": "2026-11-19T13:57:00",
       "format": "S2",
       "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/18415/show"
-    },
-    {
-      "cinema": "ICA Cinema",
-      "film": "Nova '78",
-      "date": "2026-11-19",
-      "time": "12:10",
-      "dateTime": "2026-11-19T12:10:00",
-      "runtimeMinutes": null,
-      "endDateTime": null,
-      "format": "Cinema 2",
-      "bookingUrl": "https://www.ica.art/films/nova-78"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "The Time Masters",
-      "date": "2026-11-19",
-      "time": "12:15",
-      "dateTime": "2026-11-19T12:15:00",
-      "runtimeMinutes": 79,
-      "endDateTime": "2026-11-19T13:34:00",
-      "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627818"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "La Bola Negra",
-      "date": "2026-11-19",
-      "time": "12:30",
-      "dateTime": "2026-11-19T12:30:00",
-      "runtimeMinutes": 155,
-      "endDateTime": "2026-11-19T15:05:00",
-      "format": "Sub Cinema, 2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123976/seats"
-    },
-    {
-      "cinema": "Picturehouse Central",
-      "film": "Prima Facie",
-      "date": "2026-11-19",
-      "time": "12:30",
-      "dateTime": "2026-11-19T12:30:00",
-      "runtimeMinutes": 109,
-      "endDateTime": "2026-11-19T14:19:00",
-      "format": "2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-124018/seats"
     },
     {
       "cinema": "ICA Cinema",
@@ -1191,17 +399,6 @@
     },
     {
       "cinema": "Genesis Cinema",
-      "film": "Primetime",
-      "date": "2026-11-19",
-      "time": "18:00",
-      "dateTime": "2026-11-19T18:00:00",
-      "runtimeMinutes": 110,
-      "endDateTime": "2026-11-19T19:50:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14512"
-    },
-    {
-      "cinema": "Genesis Cinema",
       "film": "Lost Highway Presented by the Cult Classic Collective",
       "date": "2026-11-19",
       "time": "18:00",
@@ -1210,6 +407,17 @@
       "endDateTime": "2026-11-19T20:14:00",
       "format": null,
       "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14080"
+    },
+    {
+      "cinema": "Genesis Cinema",
+      "film": "Primetime",
+      "date": "2026-11-19",
+      "time": "18:00",
+      "dateTime": "2026-11-19T18:00:00",
+      "runtimeMinutes": 110,
+      "endDateTime": "2026-11-19T19:50:00",
+      "format": null,
+      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14512"
     },
     {
       "cinema": "The Castle Cinema",
@@ -1232,6 +440,17 @@
       "endDateTime": "2026-11-19T20:04:00",
       "format": null,
       "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2927975.TcsSection_936"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "American Doctor",
+      "date": "2026-11-19",
+      "time": "18:10",
+      "dateTime": "2026-11-19T18:10:00",
+      "runtimeMinutes": 93,
+      "endDateTime": "2026-11-19T19:43:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D1B8F8F31-3075-4A13-8B99-9D2C2E40281A%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
       "cinema": "Barbican Cinema",
@@ -1463,17 +682,6 @@
       "endDateTime": "2026-11-19T23:11:00",
       "format": null,
       "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14515"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "The Room",
-      "date": "2026-11-19",
-      "time": "20:50",
-      "dateTime": "2026-11-19T20:50:00",
-      "runtimeMinutes": 99,
-      "endDateTime": "2026-11-19T22:29:00",
-      "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628242"
     },
     {
       "cinema": "Genesis Cinema",
@@ -2191,17 +1399,6 @@
       "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14628"
     },
     {
-      "cinema": "Picturehouse Central",
-      "film": "Ebenezer",
-      "date": "2026-11-20",
-      "time": "20:40",
-      "dateTime": "2026-11-20T20:40:00",
-      "runtimeMinutes": 116,
-      "endDateTime": "2026-11-20T22:36:00",
-      "format": "HOHSub, 2D",
-      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-124127/seats"
-    },
-    {
       "cinema": "Prince Charles Cinema",
       "film": "The Prestige",
       "date": "2026-11-20",
@@ -2488,6 +1685,17 @@
       "bookingUrl": "https://thecastlecinema.com/bookings/18425/"
     },
     {
+      "cinema": "BFI Southbank",
+      "film": "Animal Farm",
+      "date": "2026-11-21",
+      "time": "12:20",
+      "dateTime": "2026-11-21T12:20:00",
+      "runtimeMinutes": 72,
+      "endDateTime": "2026-11-21T13:32:00",
+      "format": "Restoration",
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D6F908070-AB53-4D1F-B172-8A26756904A9%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
       "cinema": "Prince Charles Cinema",
       "film": "Arrietty",
       "date": "2026-11-21",
@@ -2607,6 +1815,17 @@
       "endDateTime": "2026-11-21T16:54:00",
       "format": "S1",
       "bookingUrl": "https://thecastlecinema.com/bookings/18209/"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "Ace in the Hole",
+      "date": "2026-11-21",
+      "time": "14:15",
+      "dateTime": "2026-11-21T14:15:00",
+      "runtimeMinutes": 111,
+      "endDateTime": "2026-11-21T16:06:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D8EE18DA0-D860-4959-B2B4-DC6B08B6358C%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
       "cinema": "Genesis Cinema",
@@ -2895,6 +2114,17 @@
       "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123523/seats"
     },
     {
+      "cinema": "BFI Southbank",
+      "film": "Attack of the Crab Monsters",
+      "date": "2026-11-21",
+      "time": "18:30",
+      "dateTime": "2026-11-21T18:30:00",
+      "runtimeMinutes": 63,
+      "endDateTime": "2026-11-21T19:33:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D74744965-5386-4ABA-94A0-B2FC1A31D0BF%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
       "cinema": "Barbican Cinema",
       "film": "American Doctor",
       "date": "2026-11-21",
@@ -3027,6 +2257,17 @@
       "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-124129/seats"
     },
     {
+      "cinema": "BFI Southbank",
+      "film": "Crooklyn",
+      "date": "2026-11-21",
+      "time": "20:30",
+      "dateTime": "2026-11-21T20:30:00",
+      "runtimeMinutes": 114,
+      "endDateTime": "2026-11-21T22:24:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=seatSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D3D6397D3-9209-4D27-9C75-D7E71A102D91%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
       "cinema": "Genesis Cinema",
       "film": "You Can See Everything",
       "date": "2026-11-21",
@@ -3148,6 +2389,17 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627909"
     },
     {
+      "cinema": "BFI Southbank",
+      "film": "A Bucket of Blood",
+      "date": "2026-11-22",
+      "time": "12:00",
+      "dateTime": "2026-11-22T12:00:00",
+      "runtimeMinutes": 66,
+      "endDateTime": "2026-11-22T13:06:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3DB846DE9F-3CA0-42AA-911F-A17CA3DB7CB3%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
       "cinema": "ICA Cinema",
       "film": "Raise the Red Lantern",
       "date": "2026-11-22",
@@ -3265,7 +2517,7 @@
       "dateTime": "2026-11-22T14:00:00",
       "runtimeMinutes": 175,
       "endDateTime": "2026-11-22T16:55:00",
-      "format": null,
+      "format": "AD",
       "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3820405"
     },
     {
@@ -3617,7 +2869,7 @@
       "dateTime": "2026-11-22T19:45:00",
       "runtimeMinutes": 175,
       "endDateTime": "2026-11-22T22:40:00",
-      "format": null,
+      "format": "AD",
       "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3823401"
     },
     {
@@ -3762,17 +3014,6 @@
       "endDateTime": "2026-11-22T22:50:00",
       "format": null,
       "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14566"
-    },
-    {
-      "cinema": "Barbican Cinema",
-      "film": "Parent & Baby Screening: You Can See Everything",
-      "date": "2026-11-23",
-      "time": "10:30",
-      "dateTime": "2026-11-23T10:30:00",
-      "runtimeMinutes": 175,
-      "endDateTime": "2026-11-23T13:25:00",
-      "format": "CAP, AD",
-      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3830802"
     },
     {
       "cinema": "The Castle Cinema",
@@ -4345,17 +3586,6 @@
       "endDateTime": "2026-11-23T23:00:00",
       "format": "AD",
       "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3842404"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "Yi Yi",
-      "date": "2026-11-23",
-      "time": "20:10",
-      "dateTime": "2026-11-23T20:10:00",
-      "runtimeMinutes": 173,
-      "endDateTime": "2026-11-23T23:03:00",
-      "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628393"
     },
     {
       "cinema": "Barbican Cinema",
@@ -5579,6 +4809,17 @@
       "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=13378"
     },
     {
+      "cinema": "BFI Southbank",
+      "film": "A Dry White Season",
+      "date": "2026-11-25",
+      "time": "18:10",
+      "dateTime": "2026-11-25T18:10:00",
+      "runtimeMinutes": 107,
+      "endDateTime": "2026-11-25T19:57:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3DA0658174-43F9-424A-ABAB-37052B186746%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
       "cinema": "Barbican Cinema",
       "film": "Wild Horse Nine",
       "date": "2026-11-25",
@@ -5718,7 +4959,7 @@
       "dateTime": "2026-11-25T20:05:00",
       "runtimeMinutes": 175,
       "endDateTime": "2026-11-25T23:00:00",
-      "format": null,
+      "format": "AD",
       "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3822801"
     },
     {
@@ -6492,6 +5733,17 @@
       "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14630"
     },
     {
+      "cinema": "BFI Southbank",
+      "film": "Belle",
+      "date": "2026-11-26",
+      "time": "20:40",
+      "dateTime": "2026-11-26T20:40:00",
+      "runtimeMinutes": 104,
+      "endDateTime": "2026-11-26T22:24:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3DD07471B0-40BE-44FA-8CBC-F213851B04CC%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
       "cinema": "Prince Charles Cinema",
       "film": "Solve Along A Murder She Wrote",
       "date": "2026-11-26",
@@ -6690,6 +5942,17 @@
       "bookingUrl": "https://www.ica.art/films/minotaur"
     },
     {
+      "cinema": "Genesis Cinema",
+      "film": "Straight Cirle + Q&A",
+      "date": "2026-11-27",
+      "time": "18:05",
+      "dateTime": "2026-11-27T18:05:00",
+      "runtimeMinutes": 108,
+      "endDateTime": "2026-11-27T19:53:00",
+      "format": null,
+      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14635"
+    },
+    {
       "cinema": "Barbican Cinema",
       "film": "LIAF 2026: Opening Night - Elizabeth Hobbs: History, Heresy",
       "date": "2026-11-27",
@@ -6822,6 +6085,17 @@
       "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3672201"
     },
     {
+      "cinema": "Genesis Cinema",
+      "film": "Straight Cirle + Q&A",
+      "date": "2026-11-28",
+      "time": "14:00",
+      "dateTime": "2026-11-28T14:00:00",
+      "runtimeMinutes": 108,
+      "endDateTime": "2026-11-28T15:48:00",
+      "format": null,
+      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14636"
+    },
+    {
       "cinema": "Prince Charles Cinema",
       "film": "The Odyssey",
       "date": "2026-11-28",
@@ -6834,7 +6108,7 @@
     },
     {
       "cinema": "Rio Cinema",
-      "film": "FILIPIÑANA",
+      "film": "FILIPI�ANA",
       "date": "2026-11-28",
       "time": "14:20",
       "dateTime": "2026-11-28T14:20:00",
@@ -6864,6 +6138,28 @@
       "endDateTime": "2026-11-28T16:15:00",
       "format": "S1",
       "bookingUrl": "https://thecastlecinema.com/bookings/18216/"
+    },
+    {
+      "cinema": "Picturehouse Central",
+      "film": "Brad Bird Presents: The Iron Giant",
+      "date": "2026-11-28",
+      "time": "15:00",
+      "dateTime": "2026-11-28T15:00:00",
+      "runtimeMinutes": 30,
+      "endDateTime": "2026-11-28T15:30:00",
+      "format": "2D",
+      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-124273/seats"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "Daughters of the Dust",
+      "date": "2026-11-28",
+      "time": "15:00",
+      "dateTime": "2026-11-28T15:00:00",
+      "runtimeMinutes": 112,
+      "endDateTime": "2026-11-28T16:52:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3DE8B608C5-7B51-4E93-8F71-4FDB83794DC3%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
       "cinema": "Rio Cinema",
@@ -6899,6 +6195,17 @@
       "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-115939/seats"
     },
     {
+      "cinema": "Barbican Cinema",
+      "film": "Minotaur + ScreenTalk with director Andrey Zvyagintsev",
+      "date": "2026-11-28",
+      "time": "16:00",
+      "dateTime": "2026-11-28T16:00:00",
+      "runtimeMinutes": 141,
+      "endDateTime": "2026-11-28T18:21:00",
+      "format": null,
+      "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3831202"
+    },
+    {
       "cinema": "ICA Cinema",
       "film": "Everything Else is Noise + Q&A",
       "date": "2026-11-28",
@@ -6908,6 +6215,17 @@
       "endDateTime": null,
       "format": "Cinema 2",
       "bookingUrl": "https://www.ica.art/films/off-circuit-everything-else-is-noise"
+    },
+    {
+      "cinema": "Picturehouse Central",
+      "film": "Ratatouille",
+      "date": "2026-11-28",
+      "time": "17:20",
+      "dateTime": "2026-11-28T17:20:00",
+      "runtimeMinutes": 106,
+      "endDateTime": "2026-11-28T19:06:00",
+      "format": "2D",
+      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-124272/seats"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -7086,6 +6404,17 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627878"
     },
     {
+      "cinema": "Picturehouse Central",
+      "film": "The Incredibles",
+      "date": "2026-11-29",
+      "time": "13:00",
+      "dateTime": "2026-11-29T13:00:00",
+      "runtimeMinutes": 115,
+      "endDateTime": "2026-11-29T14:55:00",
+      "format": "2D",
+      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-124275/seats"
+    },
+    {
       "cinema": "Barbican Cinema",
       "film": "LIAF: Marvellous Animations (ages 8–15)",
       "date": "2026-11-29",
@@ -7142,7 +6471,7 @@
     },
     {
       "cinema": "Rio Cinema",
-      "film": "FILIPIÑANA",
+      "film": "FILIPI�ANA",
       "date": "2026-11-29",
       "time": "14:30",
       "dateTime": "2026-11-29T14:30:00",
@@ -7172,6 +6501,17 @@
       "endDateTime": "2026-11-29T18:04:00",
       "format": "2D, Laser, Picture Do",
       "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123470/seats"
+    },
+    {
+      "cinema": "Picturehouse Central",
+      "film": "Brad Bird: Mission Impossible: Ghost Protocol",
+      "date": "2026-11-29",
+      "time": "16:45",
+      "dateTime": "2026-11-29T16:45:00",
+      "runtimeMinutes": 30,
+      "endDateTime": "2026-11-29T17:15:00",
+      "format": "2D",
+      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-124274/seats"
     },
     {
       "cinema": "Barbican Cinema",
@@ -7373,7 +6713,7 @@
     },
     {
       "cinema": "Rio Cinema",
-      "film": "FILIPIÑANA",
+      "film": "FILIPI�ANA",
       "date": "2026-11-30",
       "time": "18:20",
       "dateTime": "2026-11-30T18:20:00",
@@ -7713,6 +7053,17 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627947"
     },
     {
+      "cinema": "BFI Southbank",
+      "film": "Arise, My Love",
+      "date": "2026-12-02",
+      "time": "20:30",
+      "dateTime": "2026-12-02T20:30:00",
+      "runtimeMinutes": 111,
+      "endDateTime": "2026-12-02T22:21:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D94EC076D-CD82-4504-B57C-585CC20A54C3%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
       "cinema": "ICA Cinema",
       "film": "Everything Else is Noise + Q&A",
       "date": "2026-12-02",
@@ -7725,7 +7076,7 @@
     },
     {
       "cinema": "Rio Cinema",
-      "film": "FILIPIÑANA",
+      "film": "FILIPI�ANA",
       "date": "2026-12-02",
       "time": "20:30",
       "dateTime": "2026-12-02T20:30:00",
@@ -7845,6 +7196,17 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626718"
     },
     {
+      "cinema": "Picturehouse Central",
+      "film": "Ray Gunn + Brad Bird Q&A",
+      "date": "2026-12-03",
+      "time": "18:30",
+      "dateTime": "2026-12-03T18:30:00",
+      "runtimeMinutes": 150,
+      "endDateTime": "2026-12-03T21:00:00",
+      "format": "2D, ad-trailer, Priority, Q+A",
+      "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123493/seats"
+    },
+    {
       "cinema": "ICA Cinema",
       "film": "Perpetual Motion",
       "date": "2026-12-03",
@@ -7865,6 +7227,17 @@
       "endDateTime": "2026-12-03T20:41:00",
       "format": "S1",
       "bookingUrl": "https://thecastlecinema.com/bookings/17800/"
+    },
+    {
+      "cinema": "Genesis Cinema",
+      "film": "Poetry Slam Final",
+      "date": "2026-12-03",
+      "time": "19:30",
+      "dateTime": "2026-12-03T19:30:00",
+      "runtimeMinutes": 150,
+      "endDateTime": "2026-12-03T22:00:00",
+      "format": null,
+      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14634"
     },
     {
       "cinema": "Picturehouse Central",
@@ -7898,6 +7271,17 @@
       "endDateTime": "2026-12-03T22:46:00",
       "format": null,
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627951"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "Beau Travail",
+      "date": "2026-12-03",
+      "time": "20:55",
+      "dateTime": "2026-12-03T20:55:00",
+      "runtimeMinutes": 93,
+      "endDateTime": "2026-12-03T22:28:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D6F8D932D-1579-43CF-8406-52CAA058E2DA%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
       "cinema": "The Castle Cinema",
@@ -7986,6 +7370,17 @@
       "endDateTime": "2026-12-04T20:00:00",
       "format": "2D, ad-trailer, Q+A",
       "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123036/seats"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "Amateur",
+      "date": "2026-12-04",
+      "time": "18:15",
+      "dateTime": "2026-12-04T18:15:00",
+      "runtimeMinutes": 105,
+      "endDateTime": "2026-12-04T20:00:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D066FBCBE-E433-4540-9D9B-68A6531C3D4F%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
       "cinema": "Rio Cinema",
@@ -8235,8 +7630,8 @@
       "date": "2026-12-06",
       "time": "12:30",
       "dateTime": "2026-12-06T12:30:00",
-      "runtimeMinutes": 330,
-      "endDateTime": "2026-12-06T18:00:00",
+      "runtimeMinutes": 270,
+      "endDateTime": "2026-12-06T17:00:00",
       "format": null,
       "bookingUrl": "https://dice.fm/event/wwn32g-pozi-6th-dec-rio-cinema-london-tickets"
     },
@@ -8261,6 +7656,17 @@
       "endDateTime": "2026-12-06T16:05:00",
       "format": "2D, reDiscover",
       "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-123845/seats"
+    },
+    {
+      "cinema": "Genesis Cinema",
+      "film": "Castration Movie Anthology III Year of the Hyaena",
+      "date": "2026-12-06",
+      "time": "14:15",
+      "dateTime": "2026-12-06T14:15:00",
+      "runtimeMinutes": 355,
+      "endDateTime": "2026-12-06T20:10:00",
+      "format": null,
+      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14633"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -8327,6 +7733,28 @@
       "endDateTime": "2026-12-06T18:59:00",
       "format": "sing-along",
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628041"
+    },
+    {
+      "cinema": "Rio Cinema",
+      "film": "Cinema Tehran: BASHU THE LITTLE STRANGER",
+      "date": "2026-12-06",
+      "time": "17:30",
+      "dateTime": "2026-12-06T17:30:00",
+      "runtimeMinutes": 120,
+      "endDateTime": "2026-12-06T19:30:00",
+      "format": null,
+      "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3184078.TcsSection_936"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "Coupling: The Reunion",
+      "date": "2026-12-06",
+      "time": "18:00",
+      "dateTime": "2026-12-06T18:00:00",
+      "runtimeMinutes": null,
+      "endDateTime": null,
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D9AE8505F-ECE9-484C-A590-68E070DE6383%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
       "cinema": "ICA Cinema",
@@ -8602,6 +8030,17 @@
       "endDateTime": "2026-12-08T19:58:00",
       "format": null,
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628053"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "Disco!",
+      "date": "2026-12-08",
+      "time": "18:20",
+      "dateTime": "2026-12-08T18:20:00",
+      "runtimeMinutes": null,
+      "endDateTime": null,
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3DDEFBBF31-8811-46B5-9494-E2911B7DFACF%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
       "cinema": "Barbican Cinema",
@@ -9011,28 +8450,6 @@
       "bookingUrl": "https://www.ica.art/films/off-circuit-recherche-medee"
     },
     {
-      "cinema": "Genesis Cinema",
-      "film": "EMPORIUM PRO WRESTLING PRESENTS : CHRISTMAS SHOW -   �16 UPPER SECTION SEATS",
-      "date": "2026-12-11",
-      "time": "19:00",
-      "dateTime": "2026-12-11T19:00:00",
-      "runtimeMinutes": 180,
-      "endDateTime": "2026-12-11T22:00:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14543"
-    },
-    {
-      "cinema": "Genesis Cinema",
-      "film": "EMPORIUM PRO WRESTLING PRESENTS : CHRISTMAS SHOW - �21 LOWER SECTION SEATS (BEST VIEW IN THE HOUSE)",
-      "date": "2026-12-11",
-      "time": "19:00",
-      "dateTime": "2026-12-11T19:00:00",
-      "runtimeMinutes": 180,
-      "endDateTime": "2026-12-11T22:00:00",
-      "format": null,
-      "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14542"
-    },
-    {
       "cinema": "Picturehouse Central",
       "film": "It's A Wonderful Life",
       "date": "2026-12-11",
@@ -9088,6 +8505,17 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628111"
     },
     {
+      "cinema": "BFI Southbank",
+      "film": "Arise, My Love",
+      "date": "2026-12-12",
+      "time": "12:10",
+      "dateTime": "2026-12-12T12:10:00",
+      "runtimeMinutes": 111,
+      "endDateTime": "2026-12-12T14:01:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=seatSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D724F56E5-3282-4FED-BC9B-4B263BEB887D%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
       "cinema": "Picturehouse Central",
       "film": "It's A Wonderful Life",
       "date": "2026-12-12",
@@ -9130,6 +8558,17 @@
       "endDateTime": "2026-12-12T16:11:00",
       "format": null,
       "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3124791.TcsSection_1299"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "Dekalog – Episodes II and X",
+      "date": "2026-12-12",
+      "time": "14:40",
+      "dateTime": "2026-12-12T14:40:00",
+      "runtimeMinutes": 116,
+      "endDateTime": "2026-12-12T16:36:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=seatSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D9357A200-7F3E-4AE6-881D-8C54F504ACA5%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -9240,6 +8679,17 @@
       "endDateTime": "2026-12-12T22:04:00",
       "format": "sing-along",
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628085"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "Amateur",
+      "date": "2026-12-12",
+      "time": "20:50",
+      "dateTime": "2026-12-12T20:50:00",
+      "runtimeMinutes": 105,
+      "endDateTime": "2026-12-12T22:35:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D91BF2B05-359D-4FC0-A7DE-938D330D8C25%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -9449,6 +8899,17 @@
       "endDateTime": "2026-12-14T16:38:00",
       "format": "70mm intro",
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629045"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "Bell, Book and Candle",
+      "date": "2026-12-14",
+      "time": "14:00",
+      "dateTime": "2026-12-14T14:00:00",
+      "runtimeMinutes": 102,
+      "endDateTime": "2026-12-14T15:42:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=seatSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D57854FA1-586B-4C51-B964-FF7884859D88%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -10419,6 +9880,17 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628151"
     },
     {
+      "cinema": "BFI Southbank",
+      "film": "Carol",
+      "date": "2026-12-18",
+      "time": "20:40",
+      "dateTime": "2026-12-18T20:40:00",
+      "runtimeMinutes": 118,
+      "endDateTime": "2026-12-18T22:38:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D7A953638-AE85-43E6-AF82-AB266B13F72A%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
       "cinema": "Genesis Cinema",
       "film": "Avengers: Doomsday",
       "date": "2026-12-18",
@@ -10494,6 +9966,17 @@
       "endDateTime": "2026-12-19T14:45:00",
       "format": "2D",
       "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-122809/seats"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "A Man for All Seasons",
+      "date": "2026-12-19",
+      "time": "12:00",
+      "dateTime": "2026-12-19T12:00:00",
+      "runtimeMinutes": 120,
+      "endDateTime": "2026-12-19T14:00:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3DC9DBFD44-0C5A-4676-921C-26E32988E0C1%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -10749,6 +10232,17 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628166"
     },
     {
+      "cinema": "BFI Southbank",
+      "film": "Carol",
+      "date": "2026-12-20",
+      "time": "12:05",
+      "dateTime": "2026-12-20T12:05:00",
+      "runtimeMinutes": 118,
+      "endDateTime": "2026-12-20T14:03:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3DDED11379-D752-4A21-B0C9-EF2BDEA8C03A%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
       "cinema": "Picturehouse Central",
       "film": "Dune: Part Three",
       "date": "2026-12-20",
@@ -10879,6 +10373,17 @@
       "endDateTime": "2026-12-20T19:10:00",
       "format": null,
       "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=14373"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "Doctor Zhivago",
+      "date": "2026-12-20",
+      "time": "17:10",
+      "dateTime": "2026-12-20T17:10:00",
+      "runtimeMinutes": 200,
+      "endDateTime": "2026-12-20T20:30:00",
+      "format": "Restoration",
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D671971E3-3879-4C79-86E1-53C7D98CBDDA%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -11101,6 +10606,17 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628182"
     },
     {
+      "cinema": "BFI Southbank",
+      "film": "Beau Travail",
+      "date": "2026-12-21",
+      "time": "18:10",
+      "dateTime": "2026-12-21T18:10:00",
+      "runtimeMinutes": 93,
+      "endDateTime": "2026-12-21T19:43:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D362397B7-9115-44D9-9C8E-4A543536777A%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
       "cinema": "Picturehouse Central",
       "film": "Avengers: Doomsday",
       "date": "2026-12-21",
@@ -11198,6 +10714,17 @@
       "endDateTime": "2026-12-22T14:40:00",
       "format": "70mm, 2D",
       "bookingUrl": "https://web.picturehouses.com/order/showtimes/022-122971/seats"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "Carol",
+      "date": "2026-12-22",
+      "time": "14:30",
+      "dateTime": "2026-12-22T14:30:00",
+      "runtimeMinutes": 118,
+      "endDateTime": "2026-12-22T16:28:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D98690A00-D448-4918-ACD5-5E81DCCCB100%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -11429,6 +10956,17 @@
       "endDateTime": "2026-12-23T19:19:00",
       "format": "sing-along",
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628172"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "Carol",
+      "date": "2026-12-23",
+      "time": "18:15",
+      "dateTime": "2026-12-23T18:15:00",
+      "runtimeMinutes": 118,
+      "endDateTime": "2026-12-23T20:13:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D02B84435-4754-4518-B6B2-184B77C997BF%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
       "cinema": "Picturehouse Central",
@@ -11673,6 +11211,28 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628431"
     },
     {
+      "cinema": "BFI Southbank",
+      "film": "Coward",
+      "date": "2026-12-27",
+      "time": "12:10",
+      "dateTime": "2026-12-27T12:10:00",
+      "runtimeMinutes": 127,
+      "endDateTime": "2026-12-27T14:17:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D91485F9F-2613-475C-82C6-A6D3C6F7D76C%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "Buddy Buddy",
+      "date": "2026-12-27",
+      "time": "12:20",
+      "dateTime": "2026-12-27T12:20:00",
+      "runtimeMinutes": 96,
+      "endDateTime": "2026-12-27T13:56:00",
+      "format": "35mm",
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3DC71E408E-89B1-4B0A-A3EA-27F8B8A4264F%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
       "cinema": "Prince Charles Cinema",
       "film": "La Haine",
       "date": "2026-12-27",
@@ -11717,6 +11277,17 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628433"
     },
     {
+      "cinema": "BFI Southbank",
+      "film": "Coward",
+      "date": "2026-12-27",
+      "time": "18:10",
+      "dateTime": "2026-12-27T18:10:00",
+      "runtimeMinutes": 127,
+      "endDateTime": "2026-12-27T20:17:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D59A2B11E-4CBD-4C1A-895E-6ED3F446F39D%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
       "cinema": "Prince Charles Cinema",
       "film": "The Godfather : Part II",
       "date": "2026-12-27",
@@ -11739,6 +11310,17 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628470"
     },
     {
+      "cinema": "BFI Southbank",
+      "film": "Coward",
+      "date": "2026-12-28",
+      "time": "11:50",
+      "dateTime": "2026-12-28T11:50:00",
+      "runtimeMinutes": 127,
+      "endDateTime": "2026-12-28T13:57:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3DD789CEDA-3F34-4D33-B75F-553A5800DE4D%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
       "cinema": "Prince Charles Cinema",
       "film": "Casablanca",
       "date": "2026-12-28",
@@ -11759,6 +11341,17 @@
       "endDateTime": "2026-12-28T14:11:00",
       "format": null,
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628448"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "Doctor Zhivago",
+      "date": "2026-12-28",
+      "time": "14:00",
+      "dateTime": "2026-12-28T14:00:00",
+      "runtimeMinutes": 200,
+      "endDateTime": "2026-12-28T17:20:00",
+      "format": "Restoration",
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D94F6F3FC-9A4A-481B-A1B3-A04E6C1D1353%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -11816,6 +11409,17 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628539"
     },
     {
+      "cinema": "BFI Southbank",
+      "film": "Coward",
+      "date": "2026-12-28",
+      "time": "18:15",
+      "dateTime": "2026-12-28T18:15:00",
+      "runtimeMinutes": 127,
+      "endDateTime": "2026-12-28T20:22:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3DF8269A81-F385-4CFB-BBC6-785E809228BB%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
       "cinema": "Prince Charles Cinema",
       "film": "2001 : A Space Odyssey",
       "date": "2026-12-28",
@@ -11869,6 +11473,17 @@
       "endDateTime": "2026-12-29T17:05:00",
       "format": "70mm",
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628437"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "Coward",
+      "date": "2026-12-29",
+      "time": "14:30",
+      "dateTime": "2026-12-29T14:30:00",
+      "runtimeMinutes": 127,
+      "endDateTime": "2026-12-29T16:37:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3DD0B757A3-7B6C-4AFA-A3A2-9BC2CCF22CB4%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -11926,6 +11541,39 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628452"
     },
     {
+      "cinema": "BFI Southbank",
+      "film": "Coward",
+      "date": "2026-12-29",
+      "time": "20:30",
+      "dateTime": "2026-12-29T20:30:00",
+      "runtimeMinutes": 127,
+      "endDateTime": "2026-12-29T22:37:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D80F4BC05-F6DC-43AB-A431-2E5D184B620C%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "Beau Travail",
+      "date": "2026-12-29",
+      "time": "20:45",
+      "dateTime": "2026-12-29T20:45:00",
+      "runtimeMinutes": 93,
+      "endDateTime": "2026-12-29T22:18:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D107AD3AB-D4F9-4CE7-BD0F-E3D4BCDC6442%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "Buddy Buddy",
+      "date": "2026-12-29",
+      "time": "20:50",
+      "dateTime": "2026-12-29T20:50:00",
+      "runtimeMinutes": 96,
+      "endDateTime": "2026-12-29T22:26:00",
+      "format": "35mm",
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3DDC2A5C4E-3F98-4783-802B-519986DD727D%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
       "cinema": "Prince Charles Cinema",
       "film": "Teenage Sex and Death at Camp Miasma",
       "date": "2026-12-29",
@@ -11970,6 +11618,17 @@
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628411"
     },
     {
+      "cinema": "BFI Southbank",
+      "film": "Coward",
+      "date": "2026-12-30",
+      "time": "14:30",
+      "dateTime": "2026-12-30T14:30:00",
+      "runtimeMinutes": 127,
+      "endDateTime": "2026-12-30T16:37:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3DEFA7EDEF-0DF0-497B-B57A-6E82C72CBF62%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
       "cinema": "Prince Charles Cinema",
       "film": "Your Name [Kimi no Na wa.]",
       "date": "2026-12-30",
@@ -12012,6 +11671,28 @@
       "endDateTime": "2026-12-30T23:00:00",
       "format": "70mm",
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628438"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "Coward",
+      "date": "2026-12-30",
+      "time": "20:25",
+      "dateTime": "2026-12-30T20:25:00",
+      "runtimeMinutes": 127,
+      "endDateTime": "2026-12-30T22:32:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D2668AADD-F570-4055-A877-1F1B74546B31%26from_cinemas%3Dtrue&from_cinemas=true"
+    },
+    {
+      "cinema": "BFI Southbank",
+      "film": "Dekalog – Episodes II and X",
+      "date": "2026-12-30",
+      "time": "20:30",
+      "dateTime": "2026-12-30T20:30:00",
+      "runtimeMinutes": 116,
+      "endDateTime": "2026-12-30T22:26:00",
+      "format": null,
+      "bookingUrl": "https://whatson.bfi.org.uk/Online/login.asp?targetPage=mapSelect.asp%3FBOset%3A%3AWSmap%3A%3Aseatmap%3A%3Aperformance_ids%3D626F28B8-0032-412E-9568-4B6E2C672DDE%26from_cinemas%3Dtrue&from_cinemas=true"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -12132,7 +11813,7 @@
       "runtimeMinutes": 180,
       "endDateTime": "2027-01-01T17:00:00",
       "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628544"
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629074"
     },
     {
       "cinema": "ICA Cinema",
@@ -12144,28 +11825,6 @@
       "endDateTime": null,
       "format": "Cinema 2",
       "bookingUrl": "https://www.ica.art/films/my-undesirable-friends-part-i-last-air-in-moscow"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "Before Sunrise",
-      "date": "2027-01-01",
-      "time": "16:30",
-      "dateTime": "2027-01-01T16:30:00",
-      "runtimeMinutes": 101,
-      "endDateTime": "2027-01-01T18:11:00",
-      "format": "35mm",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628550"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "Angus, Thongs and Perfect Snogging",
-      "date": "2027-01-01",
-      "time": "17:45",
-      "dateTime": "2027-01-01T17:45:00",
-      "runtimeMinutes": 101,
-      "endDateTime": "2027-01-01T19:26:00",
-      "format": "35mm",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628545"
     },
     {
       "cinema": "Picturehouse Central",
@@ -12187,7 +11846,7 @@
       "runtimeMinutes": 188,
       "endDateTime": "2027-01-01T22:08:00",
       "format": "35mm",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628953"
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629072"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -12400,14 +12059,14 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "Leviathan",
+      "film": "Ken Russell's The Devils: The Director's Cut",
       "date": "2027-01-04",
-      "time": "14:55",
-      "dateTime": "2027-01-04T14:55:00",
-      "runtimeMinutes": 141,
-      "endDateTime": "2027-01-04T17:16:00",
+      "time": "15:00",
+      "dateTime": "2027-01-04T15:00:00",
+      "runtimeMinutes": 114,
+      "endDateTime": "2027-01-04T16:54:00",
       "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628598"
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629055"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -12675,14 +12334,14 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "The Fifth Element",
+      "film": "Ken Russell's The Devils: The Director's Cut",
       "date": "2027-01-07",
-      "time": "17:50",
-      "dateTime": "2027-01-07T17:50:00",
-      "runtimeMinutes": 126,
-      "endDateTime": "2027-01-07T19:56:00",
-      "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628647"
+      "time": "18:00",
+      "dateTime": "2027-01-07T18:00:00",
+      "runtimeMinutes": 114,
+      "endDateTime": "2027-01-07T19:54:00",
+      "format": "4k",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629078"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -12840,14 +12499,14 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "Your Name [Kimi no Na wa.]",
+      "film": "Ken Russell's The Devils: The Director's Cut",
       "date": "2027-01-09",
       "time": "12:50",
       "dateTime": "2027-01-09T12:50:00",
-      "runtimeMinutes": 106,
-      "endDateTime": "2027-01-09T14:36:00",
-      "format": "sub",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628760"
+      "runtimeMinutes": 114,
+      "endDateTime": "2027-01-09T14:44:00",
+      "format": "4k",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629085"
     },
     {
       "cinema": "ICA Cinema",
@@ -13071,14 +12730,14 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "Klute",
+      "film": "Ken Russell's The Devils: The Director's Cut",
       "date": "2027-01-11",
       "time": "18:00",
       "dateTime": "2027-01-11T18:00:00",
-      "runtimeMinutes": 113,
-      "endDateTime": "2027-01-11T19:53:00",
-      "format": "35mm",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628682"
+      "runtimeMinutes": 114,
+      "endDateTime": "2027-01-11T19:54:00",
+      "format": "4k",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629087"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -13227,10 +12886,10 @@
       "cinema": "Prince Charles Cinema",
       "film": "The History of Concrete",
       "date": "2027-01-13",
-      "time": "11:50",
-      "dateTime": "2027-01-13T11:50:00",
+      "time": "12:00",
+      "dateTime": "2027-01-13T12:00:00",
       "runtimeMinutes": 101,
-      "endDateTime": "2027-01-13T13:31:00",
+      "endDateTime": "2027-01-13T13:41:00",
       "format": null,
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628781"
     },
@@ -13258,14 +12917,14 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "You Can See Everything",
+      "film": "Ken Russell's The Devils: The Director's Cut",
       "date": "2027-01-13",
-      "time": "14:20",
-      "dateTime": "2027-01-13T14:20:00",
-      "runtimeMinutes": 174,
-      "endDateTime": "2027-01-13T17:14:00",
-      "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628782"
+      "time": "15:00",
+      "dateTime": "2027-01-13T15:00:00",
+      "runtimeMinutes": 114,
+      "endDateTime": "2027-01-13T16:54:00",
+      "format": "4k",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629091"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -13544,14 +13203,14 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "Event Horizon",
+      "film": "Ken Russell's The Devils: The Director's Cut",
       "date": "2027-01-15",
-      "time": "20:40",
-      "dateTime": "2027-01-15T20:40:00",
-      "runtimeMinutes": 96,
-      "endDateTime": "2027-01-15T22:16:00",
-      "format": "35mm",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628706"
+      "time": "20:45",
+      "dateTime": "2027-01-15T20:45:00",
+      "runtimeMinutes": 114,
+      "endDateTime": "2027-01-15T22:39:00",
+      "format": "4k",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629093"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -14006,14 +13665,14 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "Cinema Paradiso [Nuovo Cinema Paradiso]",
+      "film": "Ken Russell's The Devils: The Director's Cut",
       "date": "2027-01-21",
       "time": "12:00",
       "dateTime": "2027-01-21T12:00:00",
-      "runtimeMinutes": 124,
-      "endDateTime": "2027-01-21T14:04:00",
+      "runtimeMinutes": 114,
+      "endDateTime": "2027-01-21T13:54:00",
       "format": "4k",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628740"
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629095"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -14336,14 +13995,14 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "The Odyssey",
+      "film": "Ken Russell's The Devils: The Director's Cut",
       "date": "2027-01-24",
-      "time": "19:35",
-      "dateTime": "2027-01-24T19:35:00",
-      "runtimeMinutes": 173,
-      "endDateTime": "2027-01-24T22:28:00",
-      "format": "70mm",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628842"
+      "time": "19:45",
+      "dateTime": "2027-01-24T19:45:00",
+      "runtimeMinutes": 114,
+      "endDateTime": "2027-01-24T21:39:00",
+      "format": "4k",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629096"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -14468,14 +14127,14 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "The Man Who Shot Liberty Valance",
+      "film": "Ken Russell's The Devils: The Director's Cut",
       "date": "2027-01-27",
       "time": "12:20",
       "dateTime": "2027-01-27T12:20:00",
-      "runtimeMinutes": 123,
-      "endDateTime": "2027-01-27T14:23:00",
-      "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628866"
+      "runtimeMinutes": 114,
+      "endDateTime": "2027-01-27T14:14:00",
+      "format": "4k",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629097"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -14655,14 +14314,14 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "Stop Making Sense",
+      "film": "The Debut",
       "date": "2027-01-29",
       "time": "18:00",
       "dateTime": "2027-01-29T18:00:00",
-      "runtimeMinutes": 87,
-      "endDateTime": "2027-01-29T19:27:00",
-      "format": "4k",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628894"
+      "runtimeMinutes": 105,
+      "endDateTime": "2027-01-29T19:45:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629067"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -14699,17 +14358,6 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "Project Hail Mary",
-      "date": "2027-01-30",
-      "time": "11:40",
-      "dateTime": "2027-01-30T11:40:00",
-      "runtimeMinutes": 157,
-      "endDateTime": "2027-01-30T14:17:00",
-      "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628906"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
       "film": "Fallen Angels",
       "date": "2027-01-30",
       "time": "12:00",
@@ -14718,6 +14366,17 @@
       "endDateTime": "2027-01-30T13:39:00",
       "format": "4k",
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628902"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Debut",
+      "date": "2027-01-30",
+      "time": "12:25",
+      "dateTime": "2027-01-30T12:25:00",
+      "runtimeMinutes": 105,
+      "endDateTime": "2027-01-30T14:10:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629089"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -14820,14 +14479,14 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "Citizen Kane",
+      "film": "Ken Russell's The Devils: The Director's Cut",
       "date": "2027-01-31",
       "time": "12:00",
       "dateTime": "2027-01-31T12:00:00",
-      "runtimeMinutes": 120,
-      "endDateTime": "2027-01-31T14:00:00",
-      "format": "35mm",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628910"
+      "runtimeMinutes": 114,
+      "endDateTime": "2027-01-31T13:54:00",
+      "format": "4k",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629098"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -14886,14 +14545,14 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "The History of Concrete",
+      "film": "The Debut",
       "date": "2027-01-31",
       "time": "20:45",
       "dateTime": "2027-01-31T20:45:00",
-      "runtimeMinutes": 101,
-      "endDateTime": "2027-01-31T22:26:00",
+      "runtimeMinutes": 105,
+      "endDateTime": "2027-01-31T22:30:00",
       "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628917"
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629103"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -14985,25 +14644,14 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "Fatherland",
+      "film": "Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles",
       "date": "2027-02-02",
       "time": "12:00",
       "dateTime": "2027-02-02T12:00:00",
-      "runtimeMinutes": 82,
-      "endDateTime": "2027-02-02T13:22:00",
-      "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628929"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
-      "film": "Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles",
-      "date": "2027-02-02",
-      "time": "14:15",
-      "dateTime": "2027-02-02T14:15:00",
       "runtimeMinutes": 202,
-      "endDateTime": "2027-02-02T17:37:00",
+      "endDateTime": "2027-02-02T15:22:00",
       "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628930"
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629065"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -15018,6 +14666,17 @@
     },
     {
       "cinema": "Prince Charles Cinema",
+      "film": "The Debut",
+      "date": "2027-02-02",
+      "time": "16:10",
+      "dateTime": "2027-02-02T16:10:00",
+      "runtimeMinutes": 105,
+      "endDateTime": "2027-02-02T17:55:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629069"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
       "film": "In The Mood For Love",
       "date": "2027-02-02",
       "time": "18:10",
@@ -15029,14 +14688,25 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "Lost Highway",
+      "film": "Nuts in May",
+      "date": "2027-02-02",
+      "time": "18:40",
+      "dateTime": "2027-02-02T18:40:00",
+      "runtimeMinutes": 84,
+      "endDateTime": "2027-02-02T20:04:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629073"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Ken Russell's The Devils: The Director's Cut",
       "date": "2027-02-02",
       "time": "20:35",
       "dateTime": "2027-02-02T20:35:00",
-      "runtimeMinutes": 134,
-      "endDateTime": "2027-02-02T22:49:00",
+      "runtimeMinutes": 114,
+      "endDateTime": "2027-02-02T22:29:00",
       "format": "4k",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628928"
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629100"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -15047,7 +14717,7 @@
       "runtimeMinutes": 92,
       "endDateTime": "2027-02-02T22:22:00",
       "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628931"
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629076"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -15139,17 +14809,6 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "NAZA",
-      "date": "2027-02-04",
-      "time": "11:45",
-      "dateTime": "2027-02-04T11:45:00",
-      "runtimeMinutes": 77,
-      "endDateTime": "2027-02-04T13:02:00",
-      "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628944"
-    },
-    {
-      "cinema": "Prince Charles Cinema",
       "film": "The Umbrellas of Cherbourg [Les parapluies de Cherbourg]",
       "date": "2027-02-04",
       "time": "12:00",
@@ -15161,14 +14820,14 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "Once Upon A Time in Hollywood",
+      "film": "Fatherland",
       "date": "2027-02-04",
-      "time": "13:55",
-      "dateTime": "2027-02-04T13:55:00",
-      "runtimeMinutes": 161,
-      "endDateTime": "2027-02-04T16:36:00",
-      "format": "35mm",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628946"
+      "time": "12:20",
+      "dateTime": "2027-02-04T12:20:00",
+      "runtimeMinutes": 82,
+      "endDateTime": "2027-02-04T13:42:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629084"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -15183,14 +14842,14 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "The History of Concrete",
+      "film": "Once Upon A Time in Hollywood",
       "date": "2027-02-04",
-      "time": "17:30",
-      "dateTime": "2027-02-04T17:30:00",
-      "runtimeMinutes": 101,
-      "endDateTime": "2027-02-04T19:11:00",
-      "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628947"
+      "time": "14:35",
+      "dateTime": "2027-02-04T14:35:00",
+      "runtimeMinutes": 161,
+      "endDateTime": "2027-02-04T17:16:00",
+      "format": "35mm",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628946"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -15205,14 +14864,25 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "You Can See Everything",
+      "film": "The History of Concrete",
       "date": "2027-02-04",
-      "time": "20:00",
-      "dateTime": "2027-02-04T20:00:00",
-      "runtimeMinutes": 174,
-      "endDateTime": "2027-02-04T22:54:00",
+      "time": "18:10",
+      "dateTime": "2027-02-04T18:10:00",
+      "runtimeMinutes": 101,
+      "endDateTime": "2027-02-04T19:51:00",
       "format": null,
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31628949"
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629079"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Debut",
+      "date": "2027-02-04",
+      "time": "20:30",
+      "dateTime": "2027-02-04T20:30:00",
+      "runtimeMinutes": 105,
+      "endDateTime": "2027-02-04T22:15:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629077"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -15436,6 +15106,17 @@
     },
     {
       "cinema": "Prince Charles Cinema",
+      "film": "Excalibur",
+      "date": "2027-02-08",
+      "time": "12:00",
+      "dateTime": "2027-02-08T12:00:00",
+      "runtimeMinutes": 141,
+      "endDateTime": "2027-02-08T14:21:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629047"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
       "film": "Army of Darkness",
       "date": "2027-02-08",
       "time": "12:15",
@@ -15455,6 +15136,17 @@
       "endDateTime": "2027-02-08T16:50:00",
       "format": null,
       "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629026"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Ken Russell's The Devils: The Director's Cut",
+      "date": "2027-02-08",
+      "time": "15:15",
+      "dateTime": "2027-02-08T15:15:00",
+      "runtimeMinutes": 114,
+      "endDateTime": "2027-02-08T17:09:00",
+      "format": "4k",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629101"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -15612,14 +15304,91 @@
     },
     {
       "cinema": "Prince Charles Cinema",
-      "film": "Mulholland Dr.",
+      "film": "Ken Russell's The Devils: The Director's Cut",
       "date": "2027-02-10",
       "time": "20:30",
       "dateTime": "2027-02-10T20:30:00",
-      "runtimeMinutes": 147,
-      "endDateTime": "2027-02-10T22:57:00",
+      "runtimeMinutes": 114,
+      "endDateTime": "2027-02-10T22:24:00",
+      "format": "4k",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629102"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Holy Mountain",
+      "date": "2027-02-11",
+      "time": "11:45",
+      "dateTime": "2027-02-11T11:45:00",
+      "runtimeMinutes": 115,
+      "endDateTime": "2027-02-11T13:40:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629048"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Life Is Beautiful",
+      "date": "2027-02-11",
+      "time": "12:00",
+      "dateTime": "2027-02-11T12:00:00",
+      "runtimeMinutes": 116,
+      "endDateTime": "2027-02-11T13:56:00",
       "format": "35mm",
-      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629035"
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629052"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Master and Commander : The Far Side of the World",
+      "date": "2027-02-11",
+      "time": "14:25",
+      "dateTime": "2027-02-11T14:25:00",
+      "runtimeMinutes": 138,
+      "endDateTime": "2027-02-11T16:43:00",
+      "format": "35mm",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629049"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Akira",
+      "date": "2027-02-11",
+      "time": "17:30",
+      "dateTime": "2027-02-11T17:30:00",
+      "runtimeMinutes": 125,
+      "endDateTime": "2027-02-11T19:35:00",
+      "format": "4k sub",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629050"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Moonstruck",
+      "date": "2027-02-11",
+      "time": "18:00",
+      "dateTime": "2027-02-11T18:00:00",
+      "runtimeMinutes": 102,
+      "endDateTime": "2027-02-11T19:42:00",
+      "format": "35mm",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629053"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "Interstellar",
+      "date": "2027-02-11",
+      "time": "20:20",
+      "dateTime": "2027-02-11T20:20:00",
+      "runtimeMinutes": 168,
+      "endDateTime": "2027-02-11T23:08:00",
+      "format": "70mm",
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629051"
+    },
+    {
+      "cinema": "Prince Charles Cinema",
+      "film": "The Lion in Winter",
+      "date": "2027-02-11",
+      "time": "20:35",
+      "dateTime": "2027-02-11T20:35:00",
+      "runtimeMinutes": 134,
+      "endDateTime": "2027-02-11T22:49:00",
+      "format": null,
+      "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31629054"
     },
     {
       "cinema": "Prince Charles Cinema",
@@ -16142,15 +15911,11 @@
   "errors": [
     {
       "fetcher": "fetchCineworldO2Greenwich",
-      "reason": "Cineworld API request failed (403): https://www.cineworld.co.uk/uk/data-api-service/v1/quickbook/10108/dates/in-cinema/077/until/2026-12-09?attr=&lang=en_GB"
+      "reason": "Cineworld API request failed (403): https://www.cineworld.co.uk/uk/data-api-service/v1/quickbook/10108/dates/in-cinema/077/until/2026-12-10?attr=&lang=en_GB"
     },
     {
       "fetcher": "fetchVueWestfieldStratford",
       "reason": "page.evaluate: Error: showingDates failed: 403\n    at eval (eval at evaluate (:311:30), <anonymous>:5:28)\n    at async <anonymous>:337:30"
-    },
-    {
-      "fetcher": "fetchBfi",
-      "reason": "Request failed (500): https://cinemas.bfi.org.uk/whats-on"
     }
   ]
 }
